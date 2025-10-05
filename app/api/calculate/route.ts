@@ -25,6 +25,12 @@ interface TipParams {
   people: number;
 }
 
+interface RequestBody {
+  tool: string;
+  params: SpeedParams | BMIParams | PercentageParams | TipParams;
+  locale?: string;
+}
+
 interface LogEvent {
   tool: string;
   params: SpeedParams | BMIParams | PercentageParams | TipParams;
@@ -35,7 +41,7 @@ interface LogEvent {
 
 export async function POST(req: NextRequest) {
   try {
-    const {tool, params, locale} = await req.json();
+    const {tool, params, locale} = await req.json() as RequestBody;
     
     // Extract locale from URL if not provided in body
     const urlLocale = req.nextUrl.pathname.split('/')[1];
