@@ -52,16 +52,16 @@ export async function POST(req: NextRequest) {
     
     switch (tool) {
       case 'speed':
-        result = calculateSpeed(params);
+        result = calculateSpeed(params as SpeedParams);
         break;
       case 'bmi':
-        result = calculateBMI(params);
+        result = calculateBMI(params as BMIParams);
         break;
       case 'percentage':
-        result = calculatePercentage(params);
+        result = calculatePercentage(params as PercentageParams);
         break;
       case 'tip':
-        result = calculateTip(params);
+        result = calculateTip(params as TipParams);
         break;
       default:
         return Response.json({error: 'Invalid tool'}, {status: 400});
