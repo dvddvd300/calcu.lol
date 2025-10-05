@@ -1,5 +1,38 @@
 import {NextRequest} from 'next/server';
 
+interface SpeedParams {
+  fileSize: number;
+  fileSizeUnit: string;
+  speed: number;
+  speedUnit: string;
+}
+
+interface BMIParams {
+  height: number;
+  weight: number;
+  heightUnit: string;
+  weightUnit: string;
+}
+
+interface PercentageParams {
+  value: number;
+  percentage: number;
+}
+
+interface TipParams {
+  billAmount: number;
+  tipPercentage: number;
+  people: number;
+}
+
+interface LogEvent {
+  tool: string;
+  params: SpeedParams | BMIParams | PercentageParams | TipParams;
+  locale: string;
+  timestamp: number;
+  result: unknown;
+}
+
 export async function POST(req: NextRequest) {
   try {
     const {tool, params, locale} = await req.json();
@@ -44,7 +77,7 @@ export async function POST(req: NextRequest) {
   }
 }
 
-function calculateSpeed(params: any) {
+function calculateSpeed(params: SpeedParams) {
   const {fileSize, fileSizeUnit, speed, speedUnit} = params;
   
   const fileSizeBytes = convertToBytes(fileSize, fileSizeUnit);
@@ -58,7 +91,7 @@ function calculateSpeed(params: any) {
   };
 }
 
-function calculateBMI(params: any) {
+function calculateBMI(params: BMIParams) {
   const {height, weight, heightUnit, weightUnit} = params;
   
   let heightInMeters = height;
@@ -82,7 +115,7 @@ function calculateBMI(params: any) {
   };
 }
 
-function calculatePercentage(params: any) {
+function calculatePercentage(params: PercentageParams) {
   const {value, percentage} = params;
   
   return {
@@ -92,7 +125,7 @@ function calculatePercentage(params: any) {
   };
 }
 
-function calculateTip(params: any) {
+function calculateTip(params: TipParams) {
   const {billAmount, tipPercentage, people} = params;
   
   const tipAmount = (billAmount * tipPercentage) / 100;
@@ -149,7 +182,7 @@ function getBMICategory(bmi: number): string {
   return 'obese';
 }
 
-async function logEvent(event: any) {
+async function logEvent(event: LogEvent) {
   // In a real application, you would send this to your analytics service
   // For now, we'll just log it to the console
   console.log('Analytics event:', event);

@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import {useTranslations} from 'next-intl';
-import {routing} from '@/i18n/routing';
 
 type Props = {
   locale: string;

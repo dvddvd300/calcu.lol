@@ -2,7 +2,6 @@
 
 import {useLocale} from 'next-intl';
 import {usePathname, useRouter} from 'next/navigation';
-import {routing} from '@/i18n/routing';
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
@@ -15,7 +14,7 @@ export default function LanguageSwitcher() {
     
     // For now, use the same path for all locales
     // In a production app, you'd want to implement proper path translation
-    router.push(`/${newLocale}${pathWithoutLocale}` as any);
+    router.push(`/${newLocale}${pathWithoutLocale}`);
   }
 
   const languages = [

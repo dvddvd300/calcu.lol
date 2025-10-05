@@ -1,6 +1,6 @@
 import {setRequestLocale} from 'next-intl/server';
 import {getTranslations} from 'next-intl/server';
-import {routing} from '@/i18n/routing';
+import {routing, type Locale} from '@/i18n/routing';
 import {notFound} from 'next/navigation';
 import Link from 'next/link';
 
@@ -11,7 +11,7 @@ type Props = {
 export async function generateMetadata({params}: Props) {
   const {locale} = await params;
   
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale as Locale)) {
     notFound();
   }
 
@@ -37,7 +37,7 @@ export async function generateMetadata({params}: Props) {
 export default async function HomePage({params}: Props) {
   const {locale} = await params;
   
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale as Locale)) {
     notFound();
   }
 
@@ -93,7 +93,7 @@ export default async function HomePage({params}: Props) {
           {calculators.map((calculator) => (
             <Link
               key={calculator.key}
-              href={`/${locale}${calculator.path}` as any}
+              href={`/${locale}${calculator.path}`}
               className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200 border border-gray-200"
             >
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
