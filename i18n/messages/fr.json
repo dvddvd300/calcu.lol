@@ -1,0 +1,164 @@
+{
+  "common": {
+    "buttons": {
+      "calculate": "Calculer",
+      "reset": "Réinitialiser",
+      "clear": "Effacer"
+    },
+    "navigation": {
+      "home": "Accueil",
+      "calculators": "Calculateurs",
+      "about": "À propos",
+      "contact": "Contact"
+    },
+    "language": {
+      "switch": "Changer de langue",
+      "english": "English",
+      "spanish": "Español",
+      "german": "Deutsch",
+      "french": "Français"
+    }
+  },
+  "home": {
+    "title": "Calculateurs en Ligne Gratuits",
+    "subtitle": "Calculez tout avec nos outils gratuits",
+    "description": "Une collection complète de calculateurs gratuits pour les calculs quotidiens. De la vitesse et du temps au IMC et aux pourcentages.",
+    "meta": {
+      "title": "Calculateurs en Ligne Gratuits | calcu.lol",
+      "description": "Calculateurs en ligne gratuits pour la vitesse, le temps, l'IMC, les pourcentages et plus. Calculez tout avec notre collection complète d'outils."
+    },
+    "featured": {
+      "title": "Calculateurs en Vedette",
+      "speed": "Calculateur de Vitesse",
+      "bmi": "Calculateur d'IMC",
+      "percentage": "Calculateur de Pourcentage",
+      "tip": "Calculateur de Pourboire"
+    }
+  },
+  "speedCalc": {
+    "title": "Calculateur de Vitesse de Téléchargement",
+    "subtitle": "Calculez le temps de téléchargement basé sur la taille du fichier et la vitesse de connexion",
+    "meta": {
+      "title": "Calculateur de Vitesse de Téléchargement | Calculer le Temps de Téléchargement",
+      "description": "Outil gratuit pour calculer le temps de téléchargement basé sur la taille du fichier et la vitesse de connexion internet. Prend en charge diverses unités et types de connexion."
+    },
+    "form": {
+      "fileSize": "Taille du Fichier",
+      "fileSizePlaceholder": "Entrez la taille du fichier",
+      "speed": "Vitesse de Connexion",
+      "speedPlaceholder": "Entrez la vitesse de connexion",
+      "calculate": "Calculer le Temps de Téléchargement",
+      "reset": "Réinitialiser"
+    },
+    "units": {
+      "fileSize": {
+        "bytes": "Bytes",
+        "kb": "KB",
+        "mb": "MB",
+        "gb": "GB",
+        "tb": "TB"
+      },
+      "speed": {
+        "bps": "bps",
+        "kbps": "Kbps",
+        "mbps": "Mbps",
+        "gbps": "Gbps"
+      }
+    },
+    "result": {
+      "title": "Temps de Téléchargement",
+      "time": "Temps",
+      "hours": "heures",
+      "minutes": "minutes",
+      "seconds": "secondes",
+      "days": "jours"
+    },
+    "examples": {
+      "title": "Exemples Courants",
+      "movie": "Film HD (4GB)",
+      "album": "Album Musical (100MB)",
+      "game": "Jeu Vidéo (50GB)",
+      "document": "Document PDF (5MB)",
+      "movieResult": "4GB à 100 Mbps = ~5 minutes",
+      "albumResult": "100MB à 50 Mbps = ~16 secondes",
+      "gameResult": "50GB à 200 Mbps = ~33 minutes",
+      "documentResult": "5MB à 25 Mbps = ~2 secondes"
+    }
+  },
+  "bmiCalc": {
+    "title": "Calculateur d'IMC",
+    "subtitle": "Calculez votre Indice de Masse Corporelle",
+    "meta": {
+      "title": "Calculateur d'IMC | Calculer l'Indice de Masse Corporelle",
+      "description": "Calculateur d'IMC gratuit pour déterminer votre indice de masse corporelle. Obtenez des résultats instantanés et des recommandations de santé."
+    },
+    "form": {
+      "height": "Taille",
+      "weight": "Poids",
+      "heightPlaceholder": "Entrez la taille",
+      "weightPlaceholder": "Entrez le poids",
+      "calculate": "Calculer l'IMC",
+      "reset": "Réinitialiser"
+    },
+    "units": {
+      "height": {
+        "cm": "cm",
+        "ft": "pieds",
+        "in": "pouces"
+      },
+      "weight": {
+        "kg": "kg",
+        "lbs": "lbs"
+      }
+    },
+    "result": {
+      "title": "Votre IMC",
+      "bmi": "IMC",
+      "category": "Catégorie",
+      "underweight": "Insuffisance pondérale",
+      "normal": "Poids normal",
+      "overweight": "Surpoids",
+      "obese": "Obésité"
+    }
+  },
+  "percentageCalc": {
+    "title": "Calculateur de Pourcentage",
+    "subtitle": "Calculez les pourcentages facilement",
+    "meta": {
+      "title": "Calculateur de Pourcentage | Calculer les Pourcentages",
+      "description": "Calculateur de pourcentage gratuit pour tous vos calculs de pourcentage. Calculez l'augmentation de pourcentage, la diminution et plus."
+    },
+    "form": {
+      "value": "Valeur",
+      "percentage": "Pourcentage",
+      "calculate": "Calculer",
+      "reset": "Réinitialiser"
+    },
+    "result": {
+      "title": "Résultat",
+      "percentage": "Pourcentage",
+      "value": "Valeur"
+    }
+  },
+  "tipCalc": {
+    "title": "Calculateur de Pourboire",
+    "subtitle": "Calculez le montant du pourboire et la facture totale",
+    "meta": {
+      "title": "Calculateur de Pourboire | Calculer le Montant du Pourboire",
+      "description": "Calculateur de pourboire gratuit pour calculer le montant du pourboire et la facture totale. Prend en charge différents pourcentages de pourboire."
+    },
+    "form": {
+      "billAmount": "Montant de la Facture",
+      "tipPercentage": "Pourcentage de Pourboire",
+      "people": "Nombre de Personnes",
+      "calculate": "Calculer le Pourboire",
+      "reset": "Réinitialiser"
+    },
+    "result": {
+      "title": "Calcul du Pourboire",
+      "tipAmount": "Montant du Pourboire",
+      "totalPerPerson": "Total par Personne",
+      "totalBill": "Facture Totale"
+    }
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "common": {
+    "buttons": {
+      "calculate": "Calculate",
+      "reset": "Reset",
+      "clear": "Clear"
+    },
+    "navigation": {
+      "home": "Home",
+      "calculators": "Calculators",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "language": {
+      "switch": "Switch Language",
+      "english": "English",
+      "spanish": "Español",
+      "german": "Deutsch",
+      "french": "Français"
+    }
+  },
+  "home": {
+    "title": "Free Online Calculators",
+    "subtitle": "Calculate anything with our free online tools",
+    "description": "A comprehensive collection of free calculators for everyday calculations. From speed and time to BMI and percentages.",
+    "meta": {
+      "title": "Free Online Calculators | calcu.lol",
+      "description": "Free online calculators for speed, time, BMI, percentages, and more. Calculate anything with our comprehensive collection of tools."
+    },
+    "featured": {
+      "title": "Featured Calculators",
+      "speed": "Speed Calculator",
+      "bmi": "BMI Calculator",
+      "percentage": "Percentage Calculator",
+      "tip": "Tip Calculator"
+    }
+  },
+  "speedCalc": {
+    "title": "Download Speed Calculator",
+    "subtitle": "Calculate download time based on file size and connection speed",
+    "meta": {
+      "title": "Download Speed Calculator | Calculate Download Time",
+      "description": "Free tool to calculate download time based on file size and internet connection speed. Supports various units and connection types."
+    },
+    "form": {
+      "fileSize": "File Size",
+      "fileSizePlaceholder": "Enter file size",
+      "speed": "Connection Speed",
+      "speedPlaceholder": "Enter connection speed",
+      "calculate": "Calculate Download Time",
+      "reset": "Reset"
+    },
+    "units": {
+      "fileSize": {
+        "bytes": "Bytes",
+        "kb": "KB",
+        "mb": "MB",
+        "gb": "GB",
+        "tb": "TB"
+      },
+      "speed": {
+        "bps": "bps",
+        "kbps": "Kbps",
+        "mbps": "Mbps",
+        "gbps": "Gbps"
+      }
+    },
+    "result": {
+      "title": "Download Time",
+      "time": "Time",
+      "hours": "hours",
+      "minutes": "minutes",
+      "seconds": "seconds",
+      "days": "days"
+    },
+    "examples": {
+      "title": "Common Examples",
+      "movie": "HD Movie (4GB)",
+      "album": "Music Album (100MB)",
+      "game": "Video Game (50GB)",
+      "document": "PDF Document (5MB)",
+      "movieResult": "4GB at 100 Mbps = ~5 minutes",
+      "albumResult": "100MB at 50 Mbps = ~16 seconds",
+      "gameResult": "50GB at 200 Mbps = ~33 minutes",
+      "documentResult": "5MB at 25 Mbps = ~2 seconds"
+    }
+  },
+  "bmiCalc": {
+    "title": "BMI Calculator",
+    "subtitle": "Calculate your Body Mass Index",
+    "meta": {
+      "title": "BMI Calculator | Calculate Body Mass Index",
+      "description": "Free BMI calculator to determine your body mass index. Get instant results and health recommendations."
+    },
+    "form": {
+      "height": "Height",
+      "weight": "Weight",
+      "heightPlaceholder": "Enter height",
+      "weightPlaceholder": "Enter weight",
+      "calculate": "Calculate BMI",
+      "reset": "Reset"
+    },
+    "units": {
+      "height": {
+        "cm": "cm",
+        "ft": "ft",
+        "in": "in"
+      },
+      "weight": {
+        "kg": "kg",
+        "lbs": "lbs"
+      }
+    },
+    "result": {
+      "title": "Your BMI",
+      "bmi": "BMI",
+      "category": "Category",
+      "underweight": "Underweight",
+      "normal": "Normal weight",
+      "overweight": "Overweight",
+      "obese": "Obese"
+    }
+  },
+  "percentageCalc": {
+    "title": "Percentage Calculator",
+    "subtitle": "Calculate percentages easily",
+    "meta": {
+      "title": "Percentage Calculator | Calculate Percentages",
+      "description": "Free percentage calculator for all your percentage calculations. Calculate percentage increase, decrease, and more."
+    },
+    "form": {
+      "value": "Value",
+      "percentage": "Percentage",
+      "calculate": "Calculate",
+      "reset": "Reset"
+    },
+    "result": {
+      "title": "Result",
+      "percentage": "Percentage",
+      "value": "Value"
+    }
+  },
+  "tipCalc": {
+    "title": "Tip Calculator",
+    "subtitle": "Calculate tip amount and total bill",
+    "meta": {
+      "title": "Tip Calculator | Calculate Tip Amount",
+      "description": "Free tip calculator to calculate tip amount and total bill. Supports different tip percentages."
+    },
+    "form": {
+      "billAmount": "Bill Amount",
+      "tipPercentage": "Tip Percentage",
+      "people": "Number of People",
+      "calculate": "Calculate Tip",
+      "reset": "Reset"
+    },
+    "result": {
+      "title": "Tip Calculation",
+      "tipAmount": "Tip Amount",
+      "totalPerPerson": "Total per Person",
+      "totalBill": "Total Bill"
+    }
+  }
+}
