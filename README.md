@@ -1,112 +1,36 @@
-# calcu.lol - Free Online Calculators
-
-A comprehensive collection of free online calculators with full internationalization support. Built with Next.js 15 and next-intl for optimal SEO and user experience.
-
-## Features
-
-- 🌍 **Multi-language Support**: English, Spanish, German, and French
-- 🚀 **SEO Optimized**: Subdirectory URL structure with hreflang tags
-- 📱 **Responsive Design**: Works perfectly on all devices
-- ⚡ **Fast Performance**: Built with Next.js 15 and optimized for speed
-- 🎯 **User-Friendly**: Intuitive interface with real-time calculations
-
-## URL Structure
-
-The application uses subdirectory-based internationalization:
-
-- `calcu.lol/en/speed-calculator/` - English
-- `calcu.lol/es/calculadora-velocidad/` - Spanish  
-- `calcu.lol/de/geschwindigkeit-rechner/` - German
-- `calcu.lol/fr/calculateur-vitesse/` - French
-
-## Available Calculators
-
-- **Speed Calculator** - Calculate download time based on file size and connection speed
-- **BMI Calculator** - Calculate Body Mass Index with health recommendations
-- **Percentage Calculator** - Calculate percentages, increases, and decreases
-- **Tip Calculator** - Calculate tip amounts and split bills
-- **Age Calculator** - Calculate age in years, months, and days
-- **Time Calculator** - Add and subtract time values
-- **Date Calculator** - Calculate differences between dates
-- **Unit Converter** - Convert between different units of measurement
-- **Currency Converter** - Convert between different currencies
-- **Temperature Converter** - Convert between temperature scales
-
-## Tech Stack
-
-- **Framework**: Next.js 15 with App Router
-- **Internationalization**: next-intl
-- **Styling**: Tailwind CSS
-- **Language**: TypeScript
-- **Deployment**: Optimized for Cloudflare Pages
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-1. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+First, run the development server:
 
-2. **Run the development server**:
-   ```bash
-   npm run dev
-   ```
-
-3. **Open your browser**:
-   Navigate to [http://localhost:3000](http://localhost:3000)
-
-## Project Structure
-
-```
-calcu.lol/
-├── app/
-│   ├── [locale]/                 # Internationalized routes
-│   │   ├── layout.tsx           # Locale-specific layout
-│   │   ├── page.tsx             # Homepage
-│   │   └── speed-calculator/   # Calculator pages
-│   ├── api/                     # API routes
-│   └── sitemap.ts              # Multi-locale sitemap
-├── components/                  # Reusable components
-├── i18n/                       # Internationalization config
-│   ├── routing.ts              # Locale routing configuration
-│   ├── request.ts              # Message loading logic
-│   └── messages/               # Translation files
-│       ├── en.json
-│       ├── es.json
-│       ├── de.json
-│       └── fr.json
-└── middleware.ts                # Locale detection & routing
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## SEO Features
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- **Hreflang Tags**: Automatic generation for all pages
-- **Canonical URLs**: Proper canonical URL structure
-- **Meta Tags**: Optimized for each language
-- **Sitemap**: Multi-locale XML sitemap
-- **Open Graph**: Social media optimization
-- **Twitter Cards**: Twitter-specific meta tags
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Deployment
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-The application is optimized for deployment on Cloudflare Pages:
+## Learn More
 
-1. **Build Command**: `npm run build`
-2. **Output Directory**: `.next`
-3. **Node Version**: 18.x or higher
+To learn more about Next.js, take a look at the following resources:
 
-## Contributing
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## License
+## Deploy on Vercel
 
-MIT License - see LICENSE file for details.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## Support
-
-For support, email support@calcu.lol or create an issue on GitHub.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
