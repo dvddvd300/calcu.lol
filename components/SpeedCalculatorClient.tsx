@@ -25,13 +25,19 @@ export default function SpeedCalculatorClient() {
 
   const convertToBps = (speed: number, unit: string): number => {
     const units: {[key: string]: number} = {
-      'bps': 1,
-      'kbps': 1000,
-      'mbps': 1000 * 1000,
-      'gbps': 1000 * 1000 * 1000
+      // Bits per second units (already divided by 8)
+      'bps': 1 / 8,
+      'kbps': 1000 / 8,
+      'mbps': 1000 * 1000 / 8,
+      'gbps': 1000 * 1000 * 1000 / 8,
+      // Bytes per second units (no division needed)
+      'B/s': 1,
+      'KB/s': 1000,
+      'MB/s': 1000 * 1000,
+      'GB/s': 1000 * 1000 * 1000
     };
-    // Convert bits per second to bytes per second (divide by 8)
-    return (speed * (units[unit] || 1)) / 8;
+    
+    return speed * (units[unit] || 1);
   };
 
   const formatTime = (seconds: number): {time: number; unit: string; formatted: string} => {
@@ -115,7 +121,11 @@ export default function SpeedCalculatorClient() {
         {value: 'bps', label: t('units.speed.bps')},
         {value: 'kbps', label: t('units.speed.kbps')},
         {value: 'mbps', label: t('units.speed.mbps')},
-        {value: 'gbps', label: t('units.speed.gbps')}
+        {value: 'gbps', label: t('units.speed.gbps')},
+        {value: 'B/s', label: t('units.speed.Bps')},
+        {value: 'KB/s', label: t('units.speed.KBps')},
+        {value: 'MB/s', label: t('units.speed.MBps')},
+        {value: 'GB/s', label: t('units.speed.GBps')}
       ],
       onChange: setSpeed,
       onUnitChange: setSpeedUnit

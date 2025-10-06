@@ -62,7 +62,11 @@
         "bps": "bps",
         "kbps": "Kbps",
         "mbps": "Mbps",
-        "gbps": "Gbps"
+        "gbps": "Gbps",
+        "Bps": "B/s",
+        "KBps": "KB/s",
+        "MBps": "MB/s",
+        "GBps": "GB/s"
       }
     },
     "result": {
