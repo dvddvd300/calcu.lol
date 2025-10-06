@@ -1,6 +1,6 @@
 'use client';
 
-import {useState} from 'react';
+import {useState, useMemo} from 'react';
 import {useTranslations} from 'next-intl';
 import Calculator2In1Out, {CalculatorConfig} from './Calculator2In1Out';
 
@@ -79,9 +79,9 @@ export default function SpeedCalculatorClient() {
     };
   };
 
-  const config: CalculatorConfig = {
+  const config: CalculatorConfig = useMemo(() => ({
     title: t('title'),
-    description: t('description'),
+    description: t('subtitle'),
     icon: (
       <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -179,7 +179,7 @@ export default function SpeedCalculatorClient() {
       input2Param: 'speed',
       input2UnitParam: 'speedUnit'
     }
-  };
+  }), [t, fileSize, fileSizeUnit, speed, speedUnit]);
 
   return <Calculator2In1Out config={config} />;
 }

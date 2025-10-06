@@ -89,15 +89,12 @@ export default function Calculator2In1Out({config, className = ''}: Calculator2I
   const router = useRouter();
   const searchParams = useSearchParams();
   
-  const [input1Value, setInput1Value] = useState('');
-  const [input1Unit, setInput1Unit] = useState(config.input1.unit);
-  const [input2Value, setInput2Value] = useState('');
-  const [input2Unit, setInput2Unit] = useState(config.input2.unit);
   const [result, setResult] = useState<ResultConfig | null>(null);
+  const [urlParamsLoaded, setUrlParamsLoaded] = useState(false);
 
-  // URL parameter support
+  // URL parameter support - only run once on mount
   useEffect(() => {
-    if (!config.urlParams?.enabled) return;
+    if (!config.urlParams?.enabled || urlParamsLoaded) return;
 
     const input1Param = searchParams.get(config.urlParams.input1Param);
     const input1UnitParam = searchParams.get(config.urlParams.input1UnitParam);
@@ -107,29 +104,27 @@ export default function Calculator2In1Out({config, className = ''}: Calculator2I
     if (input1Param) {
       const num = parseFloat(input1Param);
       if (!isNaN(num) && num > 0) {
-        setInput1Value(input1Param);
         config.input1.onChange(input1Param);
       }
     }
     
     if (input1UnitParam && config.input1.units.some(u => u.value === input1UnitParam)) {
-      setInput1Unit(input1UnitParam);
       config.input1.onUnitChange(input1UnitParam);
     }
     
     if (input2Param) {
       const num = parseFloat(input2Param);
       if (!isNaN(num) && num > 0) {
-        setInput2Value(input2Param);
         config.input2.onChange(input2Param);
       }
     }
     
     if (input2UnitParam && config.input2.units.some(u => u.value === input2UnitParam)) {
-      setInput2Unit(input2UnitParam);
       config.input2.onUnitChange(input2UnitParam);
     }
-  }, [searchParams, config]);
+    
+    setUrlParamsLoaded(true);
+  }, [searchParams, config, urlParamsLoaded]);
 
   // Update URL parameters
   const updateURLParams = useCallback((newInput1Value: string, newInput1Unit: string, newInput2Value: string, newInput2Unit: string) => {
@@ -154,29 +149,27 @@ export default function Calculator2In1Out({config, className = ''}: Calculator2I
         clearTimeout(timeoutId);
         timeoutId = setTimeout(() => {
           updateURLParams(newInput1Value, newInput1Unit, newInput2Value, newInput2Unit);
-        }, 500);
+        }, 150);
       };
     })(),
     [updateURLParams]
   );
 
   const calculate = () => {
-    if (!input1Value || !input2Value) return;
+    if (!config.input1.value || !config.input2.value) return;
 
-    const input1Num = parseFloat(input1Value);
-    const input2Num = parseFloat(input2Value);
+    const input1Num = parseFloat(config.input1.value);
+    const input2Num = parseFloat(config.input2.value);
 
     if (isNaN(input1Num) || isNaN(input2Num) || input1Num <= 0 || input2Num <= 0) {
       return;
     }
 
-    const result = config.calculate(input1Num, input1Unit, input2Num, input2Unit);
+    const result = config.calculate(input1Num, config.input1.unit, input2Num, config.input2.unit);
     setResult(result);
   };
 
   const reset = () => {
-    setInput1Value('');
-    setInput2Value('');
     setResult(null);
     config.input1.onChange('');
     config.input2.onChange('');
@@ -191,10 +184,10 @@ export default function Calculator2In1Out({config, className = ''}: Calculator2I
 
     const params = new URLSearchParams();
     
-    if (input1Value) params.set(config.urlParams.input1Param, input1Value);
-    if (input1Unit && input1Unit !== config.input1.unit) params.set(config.urlParams.input1UnitParam, input1Unit);
-    if (input2Value) params.set(config.urlParams.input2Param, input2Value);
-    if (input2Unit && input2Unit !== config.input2.unit) params.set(config.urlParams.input2UnitParam, input2Unit);
+    if (config.input1.value) params.set(config.urlParams.input1Param, config.input1.value);
+    if (config.input1.unit && config.input1.unit !== config.input1.units[0]?.value) params.set(config.urlParams.input1UnitParam, config.input1.unit);
+    if (config.input2.value) params.set(config.urlParams.input2Param, config.input2.value);
+    if (config.input2.unit && config.input2.unit !== config.input2.units[0]?.value) params.set(config.urlParams.input2UnitParam, config.input2.unit);
 
     const shareUrl = params.toString() ? `${window.location.origin}${window.location.pathname}?${params.toString()}` : window.location.href;
     
@@ -241,24 +234,22 @@ export default function Calculator2In1Out({config, className = ''}: Calculator2I
               <div className="flex rounded-2xl overflow-hidden shadow-lg border border-gray-200 focus-within:ring-2 focus-within:ring-blue-500 focus-within:border-blue-500 transition-all duration-300">
                 <input
                   type="number"
-                  value={input1Value}
+                  value={config.input1.value}
                   onChange={(e) => {
-                    setInput1Value(e.target.value);
                     config.input1.onChange(e.target.value);
                     if (config.urlParams?.enabled) {
-                      debouncedUpdateURL(e.target.value, input1Unit, input2Value, input2Unit);
+                      debouncedUpdateURL(e.target.value, config.input1.unit, config.input2.value, config.input2.unit);
                     }
                   }}
                   placeholder={config.input1.placeholder}
                   className="flex-1 px-6 py-4 text-lg focus:outline-none bg-white"
                 />
                 <select
-                  value={input1Unit}
+                  value={config.input1.unit}
                   onChange={(e) => {
-                    setInput1Unit(e.target.value);
                     config.input1.onUnitChange(e.target.value);
                     if (config.urlParams?.enabled) {
-                      updateURLParams(input1Value, e.target.value, input2Value, input2Unit);
+                      updateURLParams(config.input1.value, e.target.value, config.input2.value, config.input2.unit);
                     }
                   }}
                   className="px-6 py-4 text-lg focus:outline-none bg-gray-50 border-l border-gray-200 font-medium"
@@ -280,24 +271,22 @@ export default function Calculator2In1Out({config, className = ''}: Calculator2I
               <div className="flex rounded-2xl overflow-hidden shadow-lg border border-gray-200 focus-within:ring-2 focus-within:ring-blue-500 focus-within:border-blue-500 transition-all duration-300">
                 <input
                   type="number"
-                  value={input2Value}
+                  value={config.input2.value}
                   onChange={(e) => {
-                    setInput2Value(e.target.value);
                     config.input2.onChange(e.target.value);
                     if (config.urlParams?.enabled) {
-                      debouncedUpdateURL(input1Value, input1Unit, e.target.value, input2Unit);
+                      debouncedUpdateURL(config.input1.value, config.input1.unit, e.target.value, config.input2.unit);
                     }
                   }}
                   placeholder={config.input2.placeholder}
                   className="flex-1 px-6 py-4 text-lg focus:outline-none bg-white"
                 />
                 <select
-                  value={input2Unit}
+                  value={config.input2.unit}
                   onChange={(e) => {
-                    setInput2Unit(e.target.value);
                     config.input2.onUnitChange(e.target.value);
                     if (config.urlParams?.enabled) {
-                      updateURLParams(input1Value, input1Unit, input2Value, e.target.value);
+                      updateURLParams(config.input1.value, config.input1.unit, config.input2.value, e.target.value);
                     }
                   }}
                   className="px-6 py-4 text-lg focus:outline-none bg-gray-50 border-l border-gray-200 font-medium"
@@ -354,7 +343,7 @@ export default function Calculator2In1Out({config, className = ''}: Calculator2I
               </span>
             </button>
 
-            {config.shareButton && (input1Value || input2Value) && config.urlParams?.enabled && (
+            {config.shareButton && (config.input1.value || config.input2.value) && config.urlParams?.enabled && (
               <button
                 onClick={shareURL}
                 className={`group text-white px-8 py-4 rounded-2xl text-lg font-semibold focus:outline-none focus:ring-4 focus:ring-offset-2 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 ${
