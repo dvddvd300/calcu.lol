@@ -17,7 +17,7 @@ export interface InputConfig {
 export interface ResultConfig {
   value: number;
   unit: string;
-  formatted: string;
+  formatted: string | ReactNode;
   title: string;
   subtitle: string;
 }

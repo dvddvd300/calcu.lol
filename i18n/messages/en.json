@@ -75,7 +75,9 @@
       "hours": "hours",
       "minutes": "minutes",
       "seconds": "seconds",
-      "days": "days"
+      "days": "days",
+      "months": "months",
+      "years": "years"
     },
     "examples": {
       "title": "Common Examples",

@@ -75,7 +75,9 @@
       "hours": "Stunden",
       "minutes": "Minuten",
       "seconds": "Sekunden",
-      "days": "Tage"
+      "days": "Tage",
+      "months": "Monate",
+      "years": "Jahre"
     },
     "examples": {
       "title": "Häufige Beispiele",

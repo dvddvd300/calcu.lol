@@ -1,6 +1,6 @@
 'use client';
 
-import {useState, useMemo} from 'react';
+import {useState, useMemo, JSX} from 'react';
 import {useTranslations} from 'next-intl';
 import Calculator2In1Out, {CalculatorConfig} from './Calculator2In1Out';
 
@@ -40,7 +40,11 @@ export default function SpeedCalculatorClient() {
     return speed * (units[unit] || 1);
   };
 
-  const formatTime = (seconds: number): {time: number; unit: string; formatted: string} => {
+  const formatTime = (seconds: number): {time: number; unit: string; formatted: string | JSX.Element} => {
+    const days = seconds / 86400;
+    const hours = seconds / 3600;
+    const minutes = seconds / 60;
+    
     if (seconds < 60) {
       return {
         time: Math.round(seconds * 100) / 100,
@@ -48,25 +52,71 @@ export default function SpeedCalculatorClient() {
         formatted: `${Math.round(seconds * 100) / 100} ${t('result.seconds')}`
       };
     } else if (seconds < 3600) {
-      const minutes = seconds / 60;
       return {
         time: Math.round(minutes * 100) / 100,
         unit: t('result.minutes'),
-        formatted: `${Math.round(minutes * 100) / 100} ${t('result.minutes')}`
+        formatted: (
+          <>
+            {Math.round(minutes * 100) / 100} {t('result.minutes')}{' '}
+            <span className="text-sm text-gray-500">
+              ({Math.round(seconds * 100) / 100} {t('result.seconds')})
+            </span>
+          </>
+        )
       };
     } else if (seconds < 86400) {
-      const hours = seconds / 3600;
       return {
         time: Math.round(hours * 100) / 100,
         unit: t('result.hours'),
-        formatted: `${Math.round(hours * 100) / 100} ${t('result.hours')}`
+        formatted: (
+          <>
+            {Math.round(hours * 100) / 100} {t('result.hours')}{' '}
+            <span className="text-sm text-gray-500">
+              ({Math.round(minutes * 100) / 100} {t('result.minutes')})
+            </span>
+          </>
+        )
       };
-    } else {
-      const days = seconds / 86400;
+    } else if (seconds < 2592000) { // Less than 1 month (30 days)
       return {
         time: Math.round(days * 100) / 100,
         unit: t('result.days'),
-        formatted: `${Math.round(days * 100) / 100} ${t('result.days')}`
+        formatted: (
+          <>
+            {Math.round(days * 100) / 100} {t('result.days')}{' '}
+            <span className="text-sm text-gray-500">
+              ({Math.round(hours * 100) / 100} {t('result.hours')})
+            </span>
+          </>
+        )
+      };
+    } else if (seconds < 31536000) { // Less than 1 year (365 days)
+      const months = seconds / 2592000; // 30 days per month
+      return {
+        time: Math.round(months * 100) / 100,
+        unit: t('result.months'),
+        formatted: (
+          <>
+            {Math.round(months * 100) / 100} {t('result.months')}{' '}
+            <span className="text-sm text-gray-500">
+              ({Math.round(days * 100) / 100} {t('result.days')})
+            </span>
+          </>
+        )
+      };
+    } else {
+      const years = seconds / 31536000; // 365 days per year
+      return {
+        time: Math.round(years * 100) / 100,
+        unit: t('result.years'),
+        formatted: (
+          <>
+            {Math.round(years * 100) / 100} {t('result.years')}{' '}
+            <span className="text-sm text-gray-500">
+              ({Math.round(days * 100) / 100} {t('result.days')})
+            </span>
+          </>
+        )
       };
     }
   };
@@ -86,6 +136,7 @@ export default function SpeedCalculatorClient() {
     };
   };
 
+  // Configuration for the calculator
   const config: CalculatorConfig = useMemo(() => ({
     title: t('title'),
     description: t('subtitle'),
