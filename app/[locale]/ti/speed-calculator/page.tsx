@@ -2,7 +2,7 @@ import {setRequestLocale} from 'next-intl/server';
 import {getTranslations} from 'next-intl/server';
 import {routing, type Locale} from '@/i18n/routing';
 import {notFound} from 'next/navigation';
-import SpeedCalculator from '@/components/SpeedCalculator';
+import SpeedCalculatorClient from '@/components/SpeedCalculatorClient';
 
 type Props = {
   params: Promise<{locale: string}>;
@@ -47,7 +47,7 @@ export default async function SpeedCalculatorPage({params}: Props) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <SpeedCalculator />
+        <SpeedCalculatorClient />
 
         <div className="mt-20">
           <div className="text-center mb-12">
