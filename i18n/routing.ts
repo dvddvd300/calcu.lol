@@ -10,11 +10,11 @@ export const routing = defineRouting({
       de: '/',
       fr: '/'
     },
-    '/speed-calculator': {
-      en: '/speed-calculator',
-      es: '/calculadora-velocidad',
-      de: '/geschwindigkeit-rechner',
-      fr: '/calculateur-vitesse'
+    '/ti/speed-calculator': {
+      en: '/ti/speed-calculator',
+      es: '/ti/calculadora-velocidad',
+      de: '/ti/geschwindigkeit-rechner',
+      fr: '/ti/calculateur-vitesse'
     },
     '/bmi-calculator': {
       en: '/bmi-calculator',

@@ -22,13 +22,13 @@ export async function generateMetadata({params}: Props) {
     title: t('meta.title'),
     description: t('meta.description'),
     alternates: {
-      canonical: `https://calcu.lol/${locale}/speed-calculator`,
+      canonical: `https://calcu.lol/${locale}/ti/speed-calculator`,
       languages: {
-        'en': 'https://calcu.lol/en/speed-calculator',
-        'es': 'https://calcu.lol/es/calculadora-velocidad',
-        'de': 'https://calcu.lol/de/geschwindigkeit-rechner',
-        'fr': 'https://calcu.lol/fr/calculateur-vitesse',
-        'x-default': 'https://calcu.lol/en/speed-calculator'
+        'en': 'https://calcu.lol/en/ti/speed-calculator',
+        'es': 'https://calcu.lol/es/ti/calculadora-velocidad',
+        'de': 'https://calcu.lol/de/ti/geschwindigkeit-rechner',
+        'fr': 'https://calcu.lol/fr/ti/calculateur-vitesse',
+        'x-default': 'https://calcu.lol/en/ti/speed-calculator'
       }
     }
   };

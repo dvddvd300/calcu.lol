@@ -14,10 +14,10 @@ A comprehensive collection of free online calculators with full internationaliza
 
 The application uses subdirectory-based internationalization:
 
-- `calcu.lol/en/speed-calculator/` - English
-- `calcu.lol/es/calculadora-velocidad/` - Spanish  
-- `calcu.lol/de/geschwindigkeit-rechner/` - German
-- `calcu.lol/fr/calculateur-vitesse/` - French
+- `calcu.lol/en/ti/speed-calculator/` - English
+- `calcu.lol/es/ti/calculadora-velocidad/` - Spanish  
+- `calcu.lol/de/ti/geschwindigkeit-rechner/` - German
+- `calcu.lol/fr/ti/calculateur-vitesse/` - French
 
 ## Available Calculators
 

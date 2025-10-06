@@ -48,7 +48,7 @@ export default async function HomePage({params}: Props) {
     {
       key: 'speed',
       name: t('featured.speed'),
-      path: '/speed-calculator',
+      path: '/ti/speed-calculator',
       description: 'Calculate download time based on file size and connection speed'
     },
     {
