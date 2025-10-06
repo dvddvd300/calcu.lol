@@ -72,66 +72,94 @@ export default async function HomePage({params}: Props) {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          {t('title')}
-        </h1>
-        <p className="text-xl text-gray-600 mb-2">
-          {t('subtitle')}
-        </p>
-        <p className="text-lg text-gray-500">
-          {t('description')}
-        </p>
-      </div>
-
-      <div className="mb-12">
-        <h2 className="text-2xl font-semibold text-gray-900 mb-8 text-center">
-          {t('featured.title')}
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {calculators.map((calculator) => (
-            <Link
-              key={calculator.key}
-              href={`/${locale}${calculator.path}`}
-              className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200 border border-gray-200"
-            >
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {calculator.name}
-              </h3>
-              <p className="text-gray-600 text-sm">
-                {calculator.description}
-              </p>
-            </Link>
-          ))}
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        {/* Hero Section */}
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full mb-8 shadow-lg">
+            <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            {t('title')}
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-600 mb-4 max-w-3xl mx-auto">
+            {t('subtitle')}
+          </p>
+          <p className="text-lg text-gray-500 max-w-2xl mx-auto">
+            {t('description')}
+          </p>
         </div>
-      </div>
 
-      <div className="bg-blue-50 rounded-lg p-8 text-center">
-        <h3 className="text-2xl font-semibold text-blue-900 mb-4">
-          Why Choose calcu.lol?
-        </h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="text-center">
-            <div className="text-3xl mb-2">🚀</div>
-            <h4 className="font-semibold text-blue-900 mb-2">Fast & Accurate</h4>
-            <p className="text-blue-700 text-sm">
-              Get instant, accurate calculations for all your needs
-            </p>
+        {/* Featured Calculators */}
+        <div className="mb-20">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+            {t('featured.title')}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {calculators.map((calculator, index) => (
+              <Link
+                key={calculator.key}
+                href={`/${locale}${calculator.path}`}
+                className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-blue-200 hover:-translate-y-2"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
+                  {calculator.name}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {calculator.description}
+                </p>
+                <div className="mt-4 flex items-center text-blue-600 font-medium text-sm group-hover:text-blue-700">
+                  Try it now
+                  <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </Link>
+            ))}
           </div>
-          <div className="text-center">
-            <div className="text-3xl mb-2">🌍</div>
-            <h4 className="font-semibold text-blue-900 mb-2">Multi-Language</h4>
-            <p className="text-blue-700 text-sm">
-              Available in English, Spanish, German, and French
-            </p>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl mb-2">💯</div>
-            <h4 className="font-semibold text-blue-900 mb-2">100% Free</h4>
-            <p className="text-blue-700 text-sm">
-              All calculators are completely free to use
-            </p>
+        </div>
+
+        {/* Features Section */}
+        <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-3xl p-12 text-center text-white shadow-2xl">
+          <h3 className="text-3xl font-bold mb-8">
+            Why Choose calcu.lol?
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center group">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-white bg-opacity-20 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                <span className="text-3xl">🚀</span>
+              </div>
+              <h4 className="text-xl font-bold mb-3">Fast & Accurate</h4>
+              <p className="text-blue-100 leading-relaxed">
+                Get instant, accurate calculations for all your needs
+              </p>
+            </div>
+            <div className="text-center group">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-white bg-opacity-20 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                <span className="text-3xl">🌍</span>
+              </div>
+              <h4 className="text-xl font-bold mb-3">Multi-Language</h4>
+              <p className="text-blue-100 leading-relaxed">
+                Available in English, Spanish, German, and French
+              </p>
+            </div>
+            <div className="text-center group">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-white bg-opacity-20 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                <span className="text-3xl">💯</span>
+              </div>
+              <h4 className="text-xl font-bold mb-3">100% Free</h4>
+              <p className="text-blue-100 leading-relaxed">
+                All calculators are completely free to use
+              </p>
+            </div>
           </div>
         </div>
       </div>
