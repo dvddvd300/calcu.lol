@@ -1,10 +1,14 @@
 'use client';
 
-import {useState} from 'react';
+import {useState, useEffect, useCallback} from 'react';
 import {useTranslations} from 'next-intl';
+import {useRouter, useSearchParams} from 'next/navigation';
 
 export default function SpeedCalculator() {
   const t = useTranslations('speedCalc');
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  
   const [fileSize, setFileSize] = useState('');
   const [fileSizeUnit, setFileSizeUnit] = useState('mb');
   const [speed, setSpeed] = useState('');
@@ -14,6 +18,67 @@ export default function SpeedCalculator() {
     unit: string;
     formatted: string;
   } | null>(null);
+
+  // Read URL parameters on component mount
+  useEffect(() => {
+    const fileSizeParam = searchParams.get('fileSize');
+    const fileSizeUnitParam = searchParams.get('fileSizeUnit');
+    const speedParam = searchParams.get('speed');
+    const speedUnitParam = searchParams.get('speedUnit');
+
+    // Validate and set file size
+    if (fileSizeParam) {
+      const fileSizeNum = parseFloat(fileSizeParam);
+      if (!isNaN(fileSizeNum) && fileSizeNum > 0) {
+        setFileSize(fileSizeParam);
+      }
+    }
+    
+    // Validate and set file size unit
+    if (fileSizeUnitParam && ['bytes', 'kb', 'mb', 'gb', 'tb'].includes(fileSizeUnitParam)) {
+      setFileSizeUnit(fileSizeUnitParam);
+    }
+    
+    // Validate and set speed
+    if (speedParam) {
+      const speedNum = parseFloat(speedParam);
+      if (!isNaN(speedNum) && speedNum > 0) {
+        setSpeed(speedParam);
+      }
+    }
+    
+    // Validate and set speed unit
+    if (speedUnitParam && ['bps', 'kbps', 'mbps', 'gbps'].includes(speedUnitParam)) {
+      setSpeedUnit(speedUnitParam);
+    }
+  }, [searchParams]);
+
+  // Debounced URL update function
+  const updateURLParams = useCallback((newFileSize: string, newFileSizeUnit: string, newSpeed: string, newSpeedUnit: string) => {
+    const params = new URLSearchParams();
+    
+    if (newFileSize) params.set('fileSize', newFileSize);
+    if (newFileSizeUnit && newFileSizeUnit !== 'mb') params.set('fileSizeUnit', newFileSizeUnit);
+    if (newSpeed) params.set('speed', newSpeed);
+    if (newSpeedUnit && newSpeedUnit !== 'mbps') params.set('speedUnit', newSpeedUnit);
+
+    const newURL = params.toString() ? `?${params.toString()}` : window.location.pathname;
+    router.replace(newURL, { scroll: false });
+  }, [router]);
+
+  // Debounced version for input fields
+  const debouncedUpdateURL = useCallback(
+    (() => {
+      let timeoutId: NodeJS.Timeout;
+      return (newFileSize: string, newFileSizeUnit: string, newSpeed: string, newSpeedUnit: string) => {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => {
+          updateURLParams(newFileSize, newFileSizeUnit, newSpeed, newSpeedUnit);
+        }, 500);
+      };
+    })(),
+    [updateURLParams]
+  );
 
   const convertToBytes = (size: number, unit: string): number => {
     const units: {[key: string]: number} = {
@@ -90,6 +155,31 @@ export default function SpeedCalculator() {
     setFileSize('');
     setSpeed('');
     setResult(null);
+    // Clear URL parameters
+    router.replace(window.location.pathname, { scroll: false });
+  };
+
+  const shareURL = () => {
+    const params = new URLSearchParams();
+    
+    if (fileSize) params.set('fileSize', fileSize);
+    if (fileSizeUnit && fileSizeUnit !== 'mb') params.set('fileSizeUnit', fileSizeUnit);
+    if (speed) params.set('speed', speed);
+    if (speedUnit && speedUnit !== 'mbps') params.set('speedUnit', speedUnit);
+
+    const shareUrl = params.toString() ? `${window.location.origin}${window.location.pathname}?${params.toString()}` : window.location.href;
+    
+    if (navigator.share) {
+      navigator.share({
+        title: t('share.title'),
+        text: t('share.text'),
+        url: shareUrl
+      });
+    } else {
+      navigator.clipboard.writeText(shareUrl);
+      // You could add a toast notification here
+      alert(t('share.copied'));
+    }
   };
 
   return (
@@ -119,13 +209,19 @@ export default function SpeedCalculator() {
                 <input
                   type="number"
                   value={fileSize}
-                  onChange={(e) => setFileSize(e.target.value)}
+                  onChange={(e) => {
+                    setFileSize(e.target.value);
+                    debouncedUpdateURL(e.target.value, fileSizeUnit, speed, speedUnit);
+                  }}
                   placeholder={t('form.fileSizePlaceholder')}
                   className="flex-1 px-6 py-4 text-lg focus:outline-none bg-white"
                 />
                 <select
                   value={fileSizeUnit}
-                  onChange={(e) => setFileSizeUnit(e.target.value)}
+                  onChange={(e) => {
+                    setFileSizeUnit(e.target.value);
+                    updateURLParams(fileSize, e.target.value, speed, speedUnit);
+                  }}
                   className="px-6 py-4 text-lg focus:outline-none bg-gray-50 border-l border-gray-200 font-medium"
                 >
                   <option value="bytes">{t('units.fileSize.bytes')}</option>
@@ -145,13 +241,19 @@ export default function SpeedCalculator() {
                 <input
                   type="number"
                   value={speed}
-                  onChange={(e) => setSpeed(e.target.value)}
+                  onChange={(e) => {
+                    setSpeed(e.target.value);
+                    debouncedUpdateURL(fileSize, fileSizeUnit, e.target.value, speedUnit);
+                  }}
                   placeholder={t('form.speedPlaceholder')}
                   className="flex-1 px-6 py-4 text-lg focus:outline-none bg-white"
                 />
                 <select
                   value={speedUnit}
-                  onChange={(e) => setSpeedUnit(e.target.value)}
+                  onChange={(e) => {
+                    setSpeedUnit(e.target.value);
+                    updateURLParams(fileSize, fileSizeUnit, speed, e.target.value);
+                  }}
                   className="px-6 py-4 text-lg focus:outline-none bg-gray-50 border-l border-gray-200 font-medium"
                 >
                   <option value="bps">{t('units.speed.bps')}</option>
@@ -186,6 +288,19 @@ export default function SpeedCalculator() {
                 {t('form.reset')}
               </span>
             </button>
+            {(fileSize || speed) && (
+              <button
+                onClick={shareURL}
+                className="group bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:from-green-700 hover:to-emerald-700 focus:outline-none focus:ring-4 focus:ring-green-300 focus:ring-offset-2 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
+                <span className="flex items-center justify-center">
+                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
+                  </svg>
+                    Share
+                </span>
+              </button>
+            )}
           </div>
 
           {result && (
