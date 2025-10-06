@@ -15,10 +15,10 @@ export default function SpeedCalculatorClient() {
   const convertToBytes = (size: number, unit: string): number => {
     const units: {[key: string]: number} = {
       'bytes': 1,
-      'kb': 1024,
-      'mb': 1024 * 1024,
-      'gb': 1024 * 1024 * 1024,
-      'tb': 1024 * 1024 * 1024 * 1024
+      'kb': 1000,
+      'mb': 1000 * 1000,
+      'gb': 1000 * 1000 * 1000,
+      'tb': 1000 * 1000 * 1000 * 1000
     };
     return size * (units[unit] || 1);
   };
@@ -30,7 +30,8 @@ export default function SpeedCalculatorClient() {
       'mbps': 1000 * 1000,
       'gbps': 1000 * 1000 * 1000
     };
-    return speed * (units[unit] || 1);
+    // Convert bits per second to bytes per second (divide by 8)
+    return (speed * (units[unit] || 1)) / 8;
   };
 
   const formatTime = (seconds: number): {time: number; unit: string; formatted: string} => {
