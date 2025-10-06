@@ -35,7 +35,7 @@ interface LogEvent {
 
 export async function POST(req: NextRequest) {
   try {
-    const {tool, params, locale} = await req.json();
+    const {tool, params, locale}: {tool: string; params: any; locale?: string} = await req.json();
     
     // Extract locale from URL if not provided in body
     const urlLocale = req.nextUrl.pathname.split('/')[1];
