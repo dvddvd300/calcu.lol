@@ -166,5 +166,47 @@
       "totalPerPerson": "Total per Person",
       "totalBill": "Total Bill"
     }
+  },
+  "storageCalc": {
+    "title": "Storage Unit Converter",
+    "subtitle": "Convert between different storage units (bytes, KB, MB, GB, TB, PB, etc.)",
+    "meta": {
+      "title": "Storage Unit Converter | Convert Bytes, KB, MB, GB, TB",
+      "description": "Free storage unit converter to convert between bytes, kilobytes, megabytes, gigabytes, terabytes, petabytes and more."
+    },
+    "form": {
+      "fromValue": "From Value",
+      "fromValuePlaceholder": "Enter storage amount",
+      "toUnit": "To Unit",
+      "toUnitPlaceholder": "Select target unit",
+      "convert": "Convert Storage",
+      "reset": "Reset"
+    },
+    "units": {
+      "bytes": "Bytes",
+      "kb": "KB",
+      "mb": "MB",
+      "gb": "GB",
+      "tb": "TB",
+      "pb": "PB",
+      "eb": "EB",
+      "zb": "ZB",
+      "yb": "YB"
+    },
+    "result": {
+      "title": "Converted Storage",
+      "subtitle": "Storage unit conversion result"
+    },
+    "examples": {
+      "title": "Common Storage Examples",
+      "photo": "High-res Photo (5MB)",
+      "song": "MP3 Song (4MB)",
+      "video": "HD Video (1GB)",
+      "game": "Video Game (50GB)",
+      "photoResult": "5MB = 5,000 KB",
+      "songResult": "4MB = 4,000 KB",
+      "videoResult": "1GB = 1,000 MB",
+      "gameResult": "50GB = 50,000 MB"
+    }
   }
 }

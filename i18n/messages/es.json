@@ -166,5 +166,47 @@
       "totalPerPerson": "Total por Persona",
       "totalBill": "Total de la Cuenta"
     }
+  },
+  "storageCalc": {
+    "title": "Convertidor de Unidades de Almacenamiento",
+    "subtitle": "Convierte entre diferentes unidades de almacenamiento (bytes, KB, MB, GB, TB, PB, etc.)",
+    "meta": {
+      "title": "Convertidor de Unidades de Almacenamiento | Convertir Bytes, KB, MB, GB, TB",
+      "description": "Convertidor gratuito de unidades de almacenamiento para convertir entre bytes, kilobytes, megabytes, gigabytes, terabytes, petabytes y más."
+    },
+    "form": {
+      "fromValue": "Valor Desde",
+      "fromValuePlaceholder": "Ingresa la cantidad de almacenamiento",
+      "toUnit": "Unidad Destino",
+      "toUnitPlaceholder": "Selecciona la unidad destino",
+      "convert": "Convertir Almacenamiento",
+      "reset": "Reiniciar"
+    },
+    "units": {
+      "bytes": "Bytes",
+      "kb": "KB",
+      "mb": "MB",
+      "gb": "GB",
+      "tb": "TB",
+      "pb": "PB",
+      "eb": "EB",
+      "zb": "ZB",
+      "yb": "YB"
+    },
+    "result": {
+      "title": "Almacenamiento Convertido",
+      "subtitle": "Resultado de conversión de unidad de almacenamiento"
+    },
+    "examples": {
+      "title": "Ejemplos Comunes de Almacenamiento",
+      "photo": "Foto de Alta Resolución (5MB)",
+      "song": "Canción MP3 (4MB)",
+      "video": "Video HD (1GB)",
+      "game": "Videojuego (50GB)",
+      "photoResult": "5MB = 5,000 KB",
+      "songResult": "4MB = 4,000 KB",
+      "videoResult": "1GB = 1,000 MB",
+      "gameResult": "50GB = 50,000 MB"
+    }
   }
 }
