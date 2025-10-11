@@ -52,12 +52,6 @@ export default async function HomePage({params}: Props) {
       description: 'Calculate download time based on file size and connection speed'
     },
     {
-      key: 'bmi',
-      name: t('featured.bmi'),
-      path: '/bmi-calculator',
-      description: 'Calculate your Body Mass Index'
-    },
-    {
       key: 'percentage',
       name: t('featured.percentage'),
       path: '/percentage-calculator',

@@ -16,12 +16,6 @@ export const routing = defineRouting({
       de: '/ti/geschwindigkeit-rechner',
       fr: '/ti/calculateur-vitesse'
     },
-    '/bmi-calculator': {
-      en: '/bmi-calculator',
-      es: '/calculadora-imc',
-      de: '/bmi-rechner',
-      fr: '/calculateur-imc'
-    },
     '/math/percentage-calculator': {
       en: '/math/percentage-calculator',
       es: '/matematicas/calculadora-porcentaje',

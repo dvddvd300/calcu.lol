@@ -5,7 +5,6 @@ export const dynamic = 'force-static';
 export default function sitemap() {
   const calculators = [
     'speed-calculator',
-    'bmi-calculator', 
     'percentage-calculator',
     'tip-calculator',
     'age-calculator',

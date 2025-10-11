@@ -68,19 +68,6 @@ export default async function CalculatorsPage({params}: Props) {
       ]
     },
     {
-      id: 'health',
-      name: t('categories.health'),
-      calculators: [
-        {
-          key: 'bmi',
-          name: t('calculators.bmi.name'),
-          description: t('calculators.bmi.description'),
-          path: '/bmi-calculator',
-          icon: '🏥'
-        }
-      ]
-    },
-    {
       id: 'math',
       name: t('categories.math'),
       calculators: [

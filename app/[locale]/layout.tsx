@@ -155,7 +155,6 @@ export default async function LocaleLayout({
                     <h3 className="text-lg font-semibold mb-4">Calculators</h3>
                     <ul className="space-y-2">
                       <li><a href={`/${locale}/ti/speed-calculator`} className="text-gray-300 hover:text-white transition-colors duration-200">Speed Calculator</a></li>
-                      <li><a href={`/${locale}/bmi-calculator`} className="text-gray-300 hover:text-white transition-colors duration-200">BMI Calculator</a></li>
                       <li><a href={`/${locale}/percentage-calculator`} className="text-gray-300 hover:text-white transition-colors duration-200">Percentage Calculator</a></li>
                       <li><a href={`/${locale}/tip-calculator`} className="text-gray-300 hover:text-white transition-colors duration-200">Tip Calculator</a></li>
                     </ul>
