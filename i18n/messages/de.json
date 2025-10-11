@@ -208,5 +208,66 @@
       "videoResult": "1GB = 1,000 MB",
       "gameResult": "50GB = 50,000 MB"
     }
+  },
+  "calculators": {
+    "title": "Alle Rechner",
+    "subtitle": "Durchsuche unsere komplette Sammlung kostenloser Online-Rechner",
+    "meta": {
+      "title": "Alle Rechner | Kostenlose Online-Tools",
+      "description": "Komplette Sammlung kostenloser Online-Rechner nach Kategorien organisiert. Finde das perfekte Tool für deine Berechnungen."
+    },
+    "categories": {
+      "technology": "Technologie",
+      "health": "Gesundheit & Fitness",
+      "finance": "Finanzen",
+      "time": "Zeit & Datum",
+      "conversion": "Einheitenumrechnung"
+    },
+    "calculators": {
+      "speed": {
+        "name": "Geschwindigkeitsrechner",
+        "description": "Berechne Download-Zeit basierend auf Dateigröße und Verbindungsgeschwindigkeit"
+      },
+      "storage": {
+        "name": "Speicher-Konverter",
+        "description": "Konvertieren zwischen verschiedenen Speichereinheiten (Bytes, KB, MB, GB, TB, PB, etc.)"
+      },
+      "bmi": {
+        "name": "BMI-Rechner",
+        "description": "Berechne deinen Body-Mass-Index mit Gesundheitsempfehlungen"
+      },
+      "percentage": {
+        "name": "Prozentrechner",
+        "description": "Berechne Prozentsätze, Steigerungen und Verringerungen"
+      },
+      "tip": {
+        "name": "Trinkgeldrechner",
+        "description": "Berechne Trinkgeldbetrag und teile Rechnungen"
+      },
+      "age": {
+        "name": "Altersrechner",
+        "description": "Berechne Alter in Jahren, Monaten und Tagen"
+      },
+      "time": {
+        "name": "Zeitrechner",
+        "description": "Addiere und subtrahiere Zeitwerte"
+      },
+      "date": {
+        "name": "Datumsrechner",
+        "description": "Berechne Unterschiede zwischen Daten"
+      },
+      "unit": {
+        "name": "Einheitenumrechner",
+        "description": "Konvertieren zwischen verschiedenen Maßeinheiten"
+      },
+      "currency": {
+        "name": "Währungsrechner",
+        "description": "Konvertieren zwischen verschiedenen Währungen"
+      },
+      "temperature": {
+        "name": "Temperaturumrechner",
+        "description": "Konvertieren zwischen Temperaturskalen"
+      }
+    }
   }
 }

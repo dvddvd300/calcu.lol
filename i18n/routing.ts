@@ -69,6 +69,12 @@ export const routing = defineRouting({
       es: '/convertidor-temperatura',
       de: '/temperatur-umrechner',
       fr: '/convertisseur-temperature'
+    },
+    '/calculators': {
+      en: '/calculators',
+      es: '/calculadoras',
+      de: '/rechner',
+      fr: '/calculateurs'
     }
   }
 });

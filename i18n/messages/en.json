@@ -208,5 +208,66 @@
       "videoResult": "1GB = 1,000 MB",
       "gameResult": "50GB = 50,000 MB"
     }
+  },
+  "calculators": {
+    "title": "All Calculators",
+    "subtitle": "Browse our complete collection of free online calculators",
+    "meta": {
+      "title": "All Calculators | Free Online Tools",
+      "description": "Complete collection of free online calculators organized by category. Find the perfect tool for your calculations."
+    },
+    "categories": {
+      "technology": "Technology",
+      "health": "Health & Fitness",
+      "finance": "Finance",
+      "time": "Time & Date",
+      "conversion": "Unit Conversion"
+    },
+    "calculators": {
+      "speed": {
+        "name": "Speed Calculator",
+        "description": "Calculate download time based on file size and connection speed"
+      },
+      "storage": {
+        "name": "Storage Converter",
+        "description": "Convert between different storage units (bytes, KB, MB, GB, TB, PB, etc.)"
+      },
+      "bmi": {
+        "name": "BMI Calculator",
+        "description": "Calculate your Body Mass Index with health recommendations"
+      },
+      "percentage": {
+        "name": "Percentage Calculator",
+        "description": "Calculate percentages, increases, and decreases"
+      },
+      "tip": {
+        "name": "Tip Calculator",
+        "description": "Calculate tip amount and split bills"
+      },
+      "age": {
+        "name": "Age Calculator",
+        "description": "Calculate age in years, months, and days"
+      },
+      "time": {
+        "name": "Time Calculator",
+        "description": "Add and subtract time values"
+      },
+      "date": {
+        "name": "Date Calculator",
+        "description": "Calculate differences between dates"
+      },
+      "unit": {
+        "name": "Unit Converter",
+        "description": "Convert between different units of measurement"
+      },
+      "currency": {
+        "name": "Currency Converter",
+        "description": "Convert between different currencies"
+      },
+      "temperature": {
+        "name": "Temperature Converter",
+        "description": "Convert between temperature scales"
+      }
+    }
   }
 }

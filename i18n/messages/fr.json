@@ -208,5 +208,66 @@
       "videoResult": "1GB = 1,000 MB",
       "gameResult": "50GB = 50,000 MB"
     }
+  },
+  "calculators": {
+    "title": "Tous les Calculateurs",
+    "subtitle": "Parcourez notre collection complète de calculateurs en ligne gratuits",
+    "meta": {
+      "title": "Tous les Calculateurs | Outils en Ligne Gratuits",
+      "description": "Collection complète de calculateurs en ligne gratuits organisés par catégorie. Trouvez l'outil parfait pour vos calculs."
+    },
+    "categories": {
+      "technology": "Technologie",
+      "health": "Santé & Fitness",
+      "finance": "Finance",
+      "time": "Temps & Date",
+      "conversion": "Conversion d'Unités"
+    },
+    "calculators": {
+      "speed": {
+        "name": "Calculateur de Vitesse",
+        "description": "Calculez le temps de téléchargement basé sur la taille du fichier et la vitesse de connexion"
+      },
+      "storage": {
+        "name": "Convertisseur de Stockage",
+        "description": "Convertir entre différentes unités de stockage (bytes, KB, MB, GB, TB, PB, etc.)"
+      },
+      "bmi": {
+        "name": "Calculateur d'IMC",
+        "description": "Calculez votre Indice de Masse Corporelle avec recommandations de santé"
+      },
+      "percentage": {
+        "name": "Calculateur de Pourcentage",
+        "description": "Calculez les pourcentages, augmentations et diminutions"
+      },
+      "tip": {
+        "name": "Calculateur de Pourboire",
+        "description": "Calculez le montant du pourboire et divisez les factures"
+      },
+      "age": {
+        "name": "Calculateur d'Âge",
+        "description": "Calculez l'âge en années, mois et jours"
+      },
+      "time": {
+        "name": "Calculateur de Temps",
+        "description": "Additionnez et soustrayez les valeurs de temps"
+      },
+      "date": {
+        "name": "Calculateur de Date",
+        "description": "Calculez les différences entre les dates"
+      },
+      "unit": {
+        "name": "Convertisseur d'Unités",
+        "description": "Convertir entre différentes unités de mesure"
+      },
+      "currency": {
+        "name": "Convertisseur de Devise",
+        "description": "Convertir entre différentes devises"
+      },
+      "temperature": {
+        "name": "Convertisseur de Température",
+        "description": "Convertir entre échelles de température"
+      }
+    }
   }
 }
