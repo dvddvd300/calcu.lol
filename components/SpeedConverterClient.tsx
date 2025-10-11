@@ -19,11 +19,11 @@ export default function SpeedConverterClient() {
     // Convert to m/s first
     const msPerUnit: {[key: string]: number} = {
       'mps': 1, // meters per second
-      'kmh': 1000/3600, // kilometers per hour
-      'mph': 1609.34/3600, // miles per hour
-      'fps': 0.3048, // feet per second
-      'knots': 1852/3600, // knots
-      'mach': 343 // mach (speed of sound)
+      'kmh': 1000/3600, // kilometers per hour (1000m/3600s = 0.2778 m/s)
+      'mph': 1609.344/3600, // miles per hour (1 mile = 1609.344m)
+      'fps': 0.3048, // feet per second (1ft = 0.3048m)
+      'knots': 1852/3600, // knots (1 nautical mile = 1852m)
+      'mach': 343 // mach (speed of sound at sea level)
     };
 
     const valueInMs = value * (msPerUnit[fromUnitValue] || 1);
