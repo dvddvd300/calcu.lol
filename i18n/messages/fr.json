@@ -157,14 +157,21 @@
       "billAmount": "Montant de la Facture",
       "tipPercentage": "Pourcentage de Pourboire",
       "people": "Nombre de Personnes",
+      "peopleDescription": "Diviser la facture entre plusieurs personnes",
+      "peoplePlaceholder": "Nombre de personnes",
       "calculate": "Calculer le Pourboire",
-      "reset": "Réinitialiser"
+      "reset": "Réinitialiser",
+      "share": "Partager"
     },
     "result": {
       "title": "Calcul du Pourboire",
       "tipAmount": "Montant du Pourboire",
       "totalPerPerson": "Total par Personne",
       "totalBill": "Facture Totale"
+    },
+    "examples": {
+      "title": "Exemples Courants de Pourboire",
+      "subtitle": "Essayez ces calculs courants de pourboire pour voir comment fonctionne le calculateur"
     }
   },
   "storageCalc": {
@@ -219,6 +226,7 @@
     "categories": {
       "technology": "Technologie",
       "health": "Santé & Fitness",
+      "math": "Mathématiques & Sciences",
       "finance": "Finance",
       "time": "Temps & Date",
       "conversion": "Conversion d'Unités"

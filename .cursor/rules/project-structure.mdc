@@ -1,0 +1,237 @@
+---
+alwaysApply: true
+---
+
+# Calcu.lol - Calculator Project Rules
+
+This project is a multi-language calculator website built with Next.js 15, TypeScript, and next-intl. All calculators follow strict URL patterns and internationalization requirements.
+
+## Project Context
+
+### Tech Stack:
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Internationalization**: next-intl
+- **Styling**: Tailwind CSS
+- **Deployment**: Cloudflare Pages
+
+### Key Components:
+- `Calculator2In1Out` - Reusable calculator component
+- `FloatingBackToTop` - Smart floating back-to-top button
+- All calculators use consistent patterns and i18n
+
+### Current Calculators:
+- **Math**: Percentage Calculator (`/math/percentage-calculator`)
+- **Finance**: Tip Calculator (`/finance/tip-calculator`)
+- **Technology**: Speed Calculator, Storage Converter (`/ti/`)
+- **Health**: BMI Calculator
+- **Time**: Age, Time, Date Calculators
+- **Conversion**: Unit, Currency, Temperature Converters
+
+## URL Structure & Internationalization
+
+### URL Format Pattern
+```
+/{locale}/{category}/{tool-name}
+```
+
+### Examples:
+- English: `/en/math/percentage-calculator`
+- Spanish: `/es/matematicas/calculadora-porcentaje`
+- German: `/de/mathematik/prozentsatz-rechner`
+- French: `/fr/mathematiques/calculateur-pourcentage`
+
+### Categories:
+- `math` - Math & Science calculators
+- `finance` - Financial calculators
+- `health` - Health & Fitness calculators
+- `technology` - Technology calculators (ti/)
+- `time` - Time & Date calculators
+- `conversion` - Unit conversion calculators
+
+## File Structure Rules
+
+### Page Structure:
+```
+app/[locale]/{category}/{tool-name}/page.tsx
+```
+
+### Component Structure:
+```
+components/{ToolName}Client.tsx
+components/{ToolName}Examples.tsx
+```
+
+### Translation Keys:
+- Always use `useTranslations('namespace')` for client components
+- Use `getTranslations({locale, namespace: 'namespace'})` for server components
+- Translation namespaces should match the tool name (e.g., `tipCalc`, `percentageCalc`)
+
+## Translation Requirements
+
+### Required Translation Keys for Each Calculator:
+```json
+{
+  "toolName": {
+    "title": "Tool Title",
+    "subtitle": "Tool Description",
+    "meta": {
+      "title": "SEO Title",
+      "description": "SEO Description"
+    },
+    "form": {
+      "field1": "Field Label",
+      "field2": "Field Label",
+      "calculate": "Calculate Button",
+      "reset": "Reset Button"
+    },
+    "result": {
+      "title": "Result Title",
+      "subtitle": "Result Subtitle"
+    }
+  }
+}
+```
+
+### Routing Configuration:
+Always add to `i18n/routing.ts`:
+```typescript
+'/{category}/{tool-name}': {
+  en: '/{category}/{tool-name}',
+  es: '/{category-es}/{tool-name-es}',
+  de: '/{category-de}/{tool-name-de}',
+  fr: '/{category-fr}/{tool-name-fr}'
+}
+```
+
+## Component Development Rules
+
+### Calculator Components:
+1. Use `Calculator2In1Out` component for 2-input calculators
+2. Always include URL parameter support
+3. Include share functionality
+4. Add comprehensive examples
+5. Use proper i18n for all text
+
+### Page Components:
+1. Always include metadata with translations
+2. Use proper locale validation
+3. Include canonical URLs for all languages
+4. Use Suspense for client components
+
+### Styling:
+- Use gradient backgrounds: `bg-gradient-to-br from-{color}-50 via-white to-{color}-50`
+- Calculator theme colors:
+  - Math: Green (`green-600`, `emerald-600`)
+  - Finance: Green (`green-600`, `emerald-600`)
+  - Health: Blue (`blue-600`, `indigo-600`)
+  - Technology: Blue (`blue-600`, `indigo-600`)
+  - Time: Purple (`purple-600`, `pink-600`)
+  - Conversion: Orange (`orange-600`, `red-600`)
+
+## Checklist for New Calculators
+
+### 1. File Structure:
+- [ ] Create `app/[locale]/{category}/{tool-name}/page.tsx`
+- [ ] Create `components/{ToolName}Client.tsx`
+- [ ] Create `components/{ToolName}Examples.tsx`
+
+### 2. Translations:
+- [ ] Add translations to all 4 language files (en, es, de, fr)
+- [ ] Include meta tags for SEO
+- [ ] Add to calculators page translations
+
+### 3. Routing:
+- [ ] Add to `i18n/routing.ts` with all language variants
+- [ ] Update `app/[locale]/calculators/page.tsx` to include new calculator
+
+### 4. Components:
+- [ ] Use proper i18n with `useTranslations`
+- [ ] Include URL parameter support
+- [ ] Add share functionality
+- [ ] Include comprehensive examples
+- [ ] Use consistent styling and animations
+
+### 5. Testing:
+- [ ] Test all language variants
+- [ ] Test URL parameter functionality
+- [ ] Test share functionality
+- [ ] Verify SEO metadata
+
+## Critical Rules (Always Follow)
+
+### 1. NEVER use hardcoded strings
+- Always use `useTranslations('namespace')` for client components
+- Always use `getTranslations({locale, namespace: 'namespace'})` for server components
+- All text must be translatable
+
+### 2. URL Structure is MANDATORY
+- Format: `/{locale}/{category}/{tool-name}`
+- Must add to `i18n/routing.ts` with all language variants
+- Must update `app/[locale]/calculators/page.tsx` to include new calculator
+
+### 3. File Structure is FIXED
+- Pages: `app/[locale]/{category}/{tool-name}/page.tsx`
+- Components: `components/{ToolName}Client.tsx` and `components/{ToolName}Examples.tsx`
+- Never create calculators outside this structure
+
+### 4. Translation Namespace Pattern
+- Use tool name as namespace (e.g., `tipCalc`, `percentageCalc`)
+- Always include: `title`, `subtitle`, `meta`, `form`, `result`, `examples`
+- Add to all 4 language files: `en.json`, `es.json`, `de.json`, `fr.json`
+
+## Common Patterns
+
+### Calculator Client Component:
+```typescript
+'use client';
+import { useState } from 'react';
+import { useTranslations } from 'next-intl';
+import Calculator2In1Out, { CalculatorConfig } from './Calculator2In1Out';
+
+export default function {ToolName}Client() {
+  const t = useTranslations('{toolName}');
+  // ... component logic
+}
+```
+
+### Page Component:
+```typescript
+import {setRequestLocale} from 'next-intl/server';
+import {getTranslations} from 'next-intl/server';
+import {routing, type Locale} from '@/i18n/routing';
+import {notFound} from 'next/navigation';
+import {Suspense} from 'react';
+
+export async function generateMetadata({params}: Props) {
+  const {locale} = await params;
+  const t = await getTranslations({locale, namespace: '{toolName}'});
+  // ... metadata
+}
+```
+
+## Language-Specific URL Patterns
+
+### Spanish (es):
+- math → matematicas
+- finance → finanzas
+- health → salud
+- technology → tecnologia
+- time → tiempo
+- conversion → conversion
+
+### German (de):
+- math → mathematik
+- finance → finanzen
+- health → gesundheit
+- technology → technologie
+- time → zeit
+- conversion → umrechnung
+
+### French (fr):
+- math → mathematiques
+- finance → finance
+- health → sante
+- technology → technologie
+- time → temps
+- conversion → conversion

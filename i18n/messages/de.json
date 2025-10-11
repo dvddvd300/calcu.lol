@@ -157,14 +157,21 @@
       "billAmount": "Rechnungsbetrag",
       "tipPercentage": "Trinkgeldprozentsatz",
       "people": "Anzahl Personen",
+      "peopleDescription": "Rechnung zwischen mehreren Personen aufteilen",
+      "peoplePlaceholder": "Anzahl Personen",
       "calculate": "Trinkgeld berechnen",
-      "reset": "Zurücksetzen"
+      "reset": "Zurücksetzen",
+      "share": "Teilen"
     },
     "result": {
       "title": "Trinkgeldberechnung",
       "tipAmount": "Trinkgeldbetrag",
       "totalPerPerson": "Gesamt pro Person",
       "totalBill": "Gesamtrechnung"
+    },
+    "examples": {
+      "title": "Häufige Trinkgeld-Beispiele",
+      "subtitle": "Probiere diese häufigen Trinkgeld-Berechnungen aus, um zu sehen, wie der Rechner funktioniert"
     }
   },
   "storageCalc": {
@@ -219,6 +226,7 @@
     "categories": {
       "technology": "Technologie",
       "health": "Gesundheit & Fitness",
+      "math": "Mathematik & Wissenschaft",
       "finance": "Finanzen",
       "time": "Zeit & Datum",
       "conversion": "Einheitenumrechnung"

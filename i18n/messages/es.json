@@ -157,14 +157,21 @@
       "billAmount": "Monto de la Cuenta",
       "tipPercentage": "Porcentaje de Propina",
       "people": "Número de Personas",
+      "peopleDescription": "Divide la cuenta entre múltiples personas",
+      "peoplePlaceholder": "Número de personas",
       "calculate": "Calcular Propina",
-      "reset": "Reiniciar"
+      "reset": "Reiniciar",
+      "share": "Compartir"
     },
     "result": {
       "title": "Cálculo de Propina",
       "tipAmount": "Cantidad de Propina",
       "totalPerPerson": "Total por Persona",
       "totalBill": "Total de la Cuenta"
+    },
+    "examples": {
+      "title": "Ejemplos Comunes de Propina",
+      "subtitle": "Prueba estos cálculos comunes de propina para ver cómo funciona la calculadora"
     }
   },
   "storageCalc": {
@@ -219,6 +226,7 @@
     "categories": {
       "technology": "Tecnología",
       "health": "Salud y Fitness",
+      "math": "Matemáticas y Ciencias",
       "finance": "Finanzas",
       "time": "Tiempo y Fecha",
       "conversion": "Conversión de Unidades"

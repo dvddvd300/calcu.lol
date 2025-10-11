@@ -22,11 +22,11 @@ export const routing = defineRouting({
       de: '/bmi-rechner',
       fr: '/calculateur-imc'
     },
-    '/percentage-calculator': {
-      en: '/percentage-calculator',
-      es: '/calculadora-porcentaje',
-      de: '/prozentsatz-rechner',
-      fr: '/calculateur-pourcentage'
+    '/math/percentage-calculator': {
+      en: '/math/percentage-calculator',
+      es: '/matematicas/calculadora-porcentaje',
+      de: '/mathematik/prozentsatz-rechner',
+      fr: '/mathematiques/calculateur-pourcentage'
     },
     '/tip-calculator': {
       en: '/tip-calculator',
@@ -75,6 +75,12 @@ export const routing = defineRouting({
       es: '/calculadoras',
       de: '/rechner',
       fr: '/calculateurs'
+    },
+    '/finance/tip-calculator': {
+      en: '/finance/tip-calculator',
+      es: '/finanzas/calculadora-propina',
+      de: '/finanzen/trinkgeld-rechner',
+      fr: '/finance/calculateur-pourboire'
     }
   }
 });

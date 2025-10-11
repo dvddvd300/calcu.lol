@@ -81,21 +81,27 @@ export default async function CalculatorsPage({params}: Props) {
       ]
     },
     {
-      id: 'finance',
-      name: t('categories.finance'),
+      id: 'math',
+      name: t('categories.math'),
       calculators: [
         {
           key: 'percentage',
           name: t('calculators.percentage.name'),
           description: t('calculators.percentage.description'),
-          path: '/percentage-calculator',
+          path: '/math/percentage-calculator',
           icon: '📊'
-        },
+        }
+      ]
+    },
+    {
+      id: 'finance',
+      name: t('categories.finance'),
+      calculators: [
         {
           key: 'tip',
           name: t('calculators.tip.name'),
           description: t('calculators.tip.description'),
-          path: '/tip-calculator',
+          path: '/finance/tip-calculator',
           icon: '💰'
         }
       ]
