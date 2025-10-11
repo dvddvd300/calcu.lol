@@ -264,6 +264,18 @@
         "name": "Calculateur de Date",
         "description": "Calculez les différences entre les dates"
       },
+      "distance": {
+        "name": "Convertisseur de Distance",
+        "description": "Convertir entre différentes unités de distance"
+      },
+      "weight": {
+        "name": "Convertisseur de Poids",
+        "description": "Convertir entre différentes unités de poids"
+      },
+      "speed": {
+        "name": "Convertisseur de Vitesse",
+        "description": "Convertir entre différentes unités de vitesse"
+      },
       "unit": {
         "name": "Convertisseur d'Unités",
         "description": "Convertir entre différentes unités de mesure"
@@ -514,6 +526,335 @@
         "fast": {
           "title": "Résultats Instantanés",
           "description": "Obtenez vos calculs de temps en secondes"
+        }
+      }
+    }
+  },
+  "distanceConverter": {
+    "title": "Convertisseur de Distance",
+    "subtitle": "Convertir entre différentes unités de distance",
+    "meta": {
+      "title": "Convertisseur de Distance | Convertir les Unités de Longueur et Distance",
+      "description": "Convertisseur de distance gratuit pour convertir entre millimètres, centimètres, mètres, kilomètres, pouces, pieds, yards et miles avec des calculs précis."
+    },
+    "form": {
+      "value": "Distance",
+      "valuePlaceholder": "Entrez la valeur de distance",
+      "toUnit": "Convertir vers",
+      "toUnitPlaceholder": "Sélectionnez l'unité cible",
+      "convert": "Convertir Distance",
+      "reset": "Réinitialiser"
+    },
+    "units": {
+      "millimeters": "mm",
+      "centimeters": "cm",
+      "meters": "m",
+      "kilometers": "km",
+      "inches": "pouces",
+      "feet": "pieds",
+      "yards": "yards",
+      "miles": "miles"
+    },
+    "result": {
+      "title": "Conversion de Distance",
+      "subtitle": "Valeur de distance convertie",
+      "convertedFrom": "Converti depuis {value} {fromUnit}"
+    },
+    "examples": {
+      "title": "Exemples du Convertisseur de Distance",
+      "subtitle": "Voyez comment le convertisseur de distance fonctionne avec différents scénarios",
+      "valueLabel": "Distance",
+      "toLabel": "Convertir vers",
+      "result": "Résultat",
+      "metersToKm": {
+        "title": "Mètres vers Kilomètres",
+        "description": "Convertir 1000 mètres vers kilomètres",
+        "result": "1.00 km"
+      },
+      "feetToMeters": {
+        "title": "Pieds vers Mètres",
+        "description": "Convertir 10 pieds vers mètres",
+        "result": "3.05 m"
+      },
+      "milesToKm": {
+        "title": "Miles vers Kilomètres",
+        "description": "Convertir 5 miles vers kilomètres",
+        "result": "8.05 km"
+      },
+      "inchesToCm": {
+        "title": "Pouces vers Centimètres",
+        "description": "Convertir 12 pouces vers centimètres",
+        "result": "30.48 cm"
+      },
+      "yardsToMeters": {
+        "title": "Yards vers Mètres",
+        "description": "Convertir 100 yards vers mètres",
+        "result": "91.44 m"
+      },
+      "smallUnits": {
+        "title": "Petites Unités",
+        "description": "Convertir 1 millimètre vers pouces",
+        "result": "0.039370 pouces"
+      },
+      "features": {
+        "title": "Pourquoi utiliser notre Convertisseur de Distance ?",
+        "subtitle": "Précis, complet et facile à utiliser",
+        "accurate": {
+          "title": "Conversions Précises",
+          "description": "Calculs précis pour toutes les unités de distance avec arrondi approprié"
+        },
+        "comprehensive": {
+          "title": "Unités Complètes",
+          "description": "Supporte les unités métriques, impériales et scientifiques de distance"
+        },
+        "fast": {
+          "title": "Résultats Instantanés",
+          "description": "Obtenez vos conversions de distance en secondes"
+        }
+      }
+    }
+  },
+  "weightConverter": {
+    "title": "Convertisseur de Poids",
+    "subtitle": "Convertir entre différentes unités de poids",
+    "meta": {
+      "title": "Convertisseur de Poids | Convertir les Unités de Masse et Poids",
+      "description": "Convertisseur de poids gratuit pour convertir entre milligrammes, grammes, kilogrammes, livres, onces, tonnes et stone avec des calculs précis."
+    },
+    "form": {
+      "value": "Poids",
+      "valuePlaceholder": "Entrez la valeur de poids",
+      "toUnit": "Convertir vers",
+      "toUnitPlaceholder": "Sélectionnez l'unité cible",
+      "convert": "Convertir Poids",
+      "reset": "Réinitialiser"
+    },
+    "units": {
+      "milligrams": "mg",
+      "grams": "g",
+      "kilograms": "kg",
+      "pounds": "lbs",
+      "ounces": "oz",
+      "tons": "t",
+      "stone": "st"
+    },
+    "result": {
+      "title": "Conversion de Poids",
+      "subtitle": "Valeur de poids convertie",
+      "convertedFrom": "Converti depuis {value} {fromUnit}"
+    },
+    "examples": {
+      "title": "Exemples du Convertisseur de Poids",
+      "subtitle": "Voyez comment le convertisseur de poids fonctionne avec différents scénarios",
+      "valueLabel": "Poids",
+      "toLabel": "Convertir vers",
+      "result": "Résultat",
+      "kgToPounds": {
+        "title": "Kilogrammes vers Livres",
+        "description": "Convertir 70 kilogrammes vers livres",
+        "result": "154.32 lbs"
+      },
+      "poundsToKg": {
+        "title": "Livres vers Kilogrammes",
+        "description": "Convertir 150 livres vers kilogrammes",
+        "result": "68.04 kg"
+      },
+      "ouncesToGrams": {
+        "title": "Onces vers Grammes",
+        "description": "Convertir 16 onces vers grammes",
+        "result": "453.59 g"
+      },
+      "gramsToOunces": {
+        "title": "Grammes vers Onces",
+        "description": "Convertir 500 grammes vers onces",
+        "result": "17.64 oz"
+      },
+      "stoneToKg": {
+        "title": "Stone vers Kilogrammes",
+        "description": "Convertir 10 stone vers kilogrammes",
+        "result": "63.50 kg"
+      },
+      "tonsToKg": {
+        "title": "Tonnes vers Kilogrammes",
+        "description": "Convertir 2 tonnes vers kilogrammes",
+        "result": "2000.00 kg"
+      },
+      "features": {
+        "title": "Pourquoi utiliser notre Convertisseur de Poids ?",
+        "subtitle": "Précis, polyvalent et facile à utiliser",
+        "precise": {
+          "title": "Calculs Précis",
+          "description": "Conversions précises pour toutes les unités de poids avec précision appropriée"
+        },
+        "versatile": {
+          "title": "Unités Polyvalentes",
+          "description": "Supporte les unités métriques, impériales et spécialisées de poids"
+        },
+        "fast": {
+          "title": "Résultats Instantanés",
+          "description": "Obtenez vos conversions de poids en secondes"
+        }
+      }
+    }
+  },
+  "temperatureConverter": {
+    "title": "Convertisseur de Température",
+    "subtitle": "Convertir entre différentes échelles de température",
+    "meta": {
+      "title": "Convertisseur de Température | Convertir les Unités de Température",
+      "description": "Convertisseur de température gratuit pour convertir entre Celsius, Fahrenheit, Kelvin et Rankine avec des calculs scientifiques précis."
+    },
+    "form": {
+      "value": "Température",
+      "valuePlaceholder": "Entrez la valeur de température",
+      "toUnit": "Convertir vers",
+      "toUnitPlaceholder": "Sélectionnez l'échelle cible",
+      "convert": "Convertir Température",
+      "reset": "Réinitialiser"
+    },
+    "units": {
+      "celsius": "C",
+      "fahrenheit": "F",
+      "kelvin": "K",
+      "rankine": "R"
+    },
+    "result": {
+      "title": "Conversion de Température",
+      "subtitle": "Valeur de température convertie",
+      "convertedFrom": "Converti depuis {value}°{fromUnit}"
+    },
+    "examples": {
+      "title": "Exemples du Convertisseur de Température",
+      "subtitle": "Voyez comment le convertisseur de température fonctionne avec différents scénarios",
+      "valueLabel": "Température",
+      "toLabel": "Convertir vers",
+      "result": "Résultat",
+      "celsiusToFahrenheit": {
+        "title": "Celsius vers Fahrenheit",
+        "description": "Convertir 25°C vers Fahrenheit",
+        "result": "77.00°F"
+      },
+      "fahrenheitToCelsius": {
+        "title": "Fahrenheit vers Celsius",
+        "description": "Convertir 77°F vers Celsius",
+        "result": "25.00°C"
+      },
+      "celsiusToKelvin": {
+        "title": "Celsius vers Kelvin",
+        "description": "Convertir 0°C vers Kelvin",
+        "result": "273.15 K"
+      },
+      "kelvinToCelsius": {
+        "title": "Kelvin vers Celsius",
+        "description": "Convertir 273.15 K vers Celsius",
+        "result": "0.00°C"
+      },
+      "fahrenheitToKelvin": {
+        "title": "Fahrenheit vers Kelvin",
+        "description": "Convertir 32°F vers Kelvin",
+        "result": "273.15 K"
+      },
+      "rankineToCelsius": {
+        "title": "Rankine vers Celsius",
+        "description": "Convertir 491.67°R vers Celsius",
+        "result": "0.00°C"
+      },
+      "features": {
+        "title": "Pourquoi utiliser notre Convertisseur de Température ?",
+        "subtitle": "Scientifique, précis et facile à utiliser",
+        "scientific": {
+          "title": "Échelles Scientifiques",
+          "description": "Supporte toutes les échelles de température principales incluant Kelvin et Rankine"
+        },
+        "accurate": {
+          "title": "Conversions Précises",
+          "description": "Calculs scientifiques précis pour toutes les conversions de température"
+        },
+        "fast": {
+          "title": "Résultats Instantanés",
+          "description": "Obtenez vos conversions de température en secondes"
+        }
+      }
+    }
+  },
+  "speedConverter": {
+    "title": "Convertisseur de Vitesse",
+    "subtitle": "Convertir entre différentes unités de vitesse",
+    "meta": {
+      "title": "Convertisseur de Vitesse | Convertir les Unités de Vitesse et Vélocité",
+      "description": "Convertisseur de vitesse gratuit pour convertir entre m/s, km/h, mph, ft/s, nœuds et Mach avec des calculs précis."
+    },
+    "form": {
+      "value": "Vitesse",
+      "valuePlaceholder": "Entrez la valeur de vitesse",
+      "toUnit": "Convertir vers",
+      "toUnitPlaceholder": "Sélectionnez l'unité cible",
+      "convert": "Convertir Vitesse",
+      "reset": "Réinitialiser"
+    },
+    "units": {
+      "mps": "m/s",
+      "kmh": "km/h",
+      "mph": "mph",
+      "fps": "ft/s",
+      "knots": "nœuds",
+      "mach": "Mach"
+    },
+    "result": {
+      "title": "Conversion de Vitesse",
+      "subtitle": "Valeur de vitesse convertie",
+      "convertedFrom": "Converti depuis {value} {fromUnit}"
+    },
+    "examples": {
+      "title": "Exemples du Convertisseur de Vitesse",
+      "subtitle": "Voyez comment le convertisseur de vitesse fonctionne avec différents scénarios",
+      "valueLabel": "Vitesse",
+      "toLabel": "Convertir vers",
+      "result": "Résultat",
+      "kmhToMph": {
+        "title": "km/h vers mph",
+        "description": "Convertir 100 km/h vers mph",
+        "result": "62.14 mph"
+      },
+      "mphToKmh": {
+        "title": "mph vers km/h",
+        "description": "Convertir 60 mph vers km/h",
+        "result": "96.56 km/h"
+      },
+      "mpsToKmh": {
+        "title": "m/s vers km/h",
+        "description": "Convertir 10 m/s vers km/h",
+        "result": "36.00 km/h"
+      },
+      "knotsToMph": {
+        "title": "Nœuds vers mph",
+        "description": "Convertir 30 nœuds vers mph",
+        "result": "34.52 mph"
+      },
+      "fpsToMph": {
+        "title": "ft/s vers mph",
+        "description": "Convertir 88 ft/s vers mph",
+        "result": "60.00 mph"
+      },
+      "machToKmh": {
+        "title": "Mach vers km/h",
+        "description": "Convertir 1 Mach vers km/h",
+        "result": "1234.80 km/h"
+      },
+      "features": {
+        "title": "Pourquoi utiliser notre Convertisseur de Vitesse ?",
+        "subtitle": "Précis, complet et facile à utiliser",
+        "precise": {
+          "title": "Calculs Précis",
+          "description": "Conversions précises pour toutes les unités de vitesse avec précision appropriée"
+        },
+        "comprehensive": {
+          "title": "Unités Complètes",
+          "description": "Supporte les unités de vitesse automobiles, aéronautiques et scientifiques"
+        },
+        "fast": {
+          "title": "Résultats Instantanés",
+          "description": "Obtenez vos conversions de vitesse en secondes"
         }
       }
     }

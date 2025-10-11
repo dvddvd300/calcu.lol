@@ -261,8 +261,24 @@
         "description": "Add and subtract time values"
       },
       "date": {
-        "name": "Date Calculator",
+        "name": "Date Calculator", 
         "description": "Calculate differences between dates"
+      },
+      "distance": {
+        "name": "Distance Converter",
+        "description": "Convert between different distance units"
+      },
+      "weight": {
+        "name": "Weight Converter",
+        "description": "Convert between different weight units"
+      },
+      "temperature": {
+        "name": "Temperature Converter",
+        "description": "Convert between different temperature scales"
+      },
+      "speed": {
+        "name": "Speed Converter",
+        "description": "Convert between different speed units"
       },
       "unit": {
         "name": "Unit Converter",
@@ -514,6 +530,335 @@
         "fast": {
           "title": "Instant Results",
           "description": "Get your time calculations in seconds"
+        }
+      }
+    }
+  },
+  "distanceConverter": {
+    "title": "Distance Converter",
+    "subtitle": "Convert between different distance units",
+    "meta": {
+      "title": "Distance Converter | Convert Length and Distance Units",
+      "description": "Free distance converter to convert between millimeters, centimeters, meters, kilometers, inches, feet, yards, and miles with precise calculations."
+    },
+    "form": {
+      "value": "Distance",
+      "valuePlaceholder": "Enter distance value",
+      "toUnit": "Convert To",
+      "toUnitPlaceholder": "Select target unit",
+      "convert": "Convert Distance",
+      "reset": "Reset"
+    },
+    "units": {
+      "millimeters": "mm",
+      "centimeters": "cm",
+      "meters": "m",
+      "kilometers": "km",
+      "inches": "in",
+      "feet": "ft",
+      "yards": "yd",
+      "miles": "mi"
+    },
+    "result": {
+      "title": "Distance Conversion",
+      "subtitle": "Converted distance value",
+      "convertedFrom": "Converted from {value} {fromUnit}"
+    },
+    "examples": {
+      "title": "Distance Converter Examples",
+      "subtitle": "See how the distance converter works with different scenarios",
+      "valueLabel": "Distance",
+      "toLabel": "Convert To",
+      "result": "Result",
+      "metersToKm": {
+        "title": "Meters to Kilometers",
+        "description": "Convert 1000 meters to kilometers",
+        "result": "1.00 km"
+      },
+      "feetToMeters": {
+        "title": "Feet to Meters",
+        "description": "Convert 10 feet to meters",
+        "result": "3.05 m"
+      },
+      "milesToKm": {
+        "title": "Miles to Kilometers",
+        "description": "Convert 5 miles to kilometers",
+        "result": "8.05 km"
+      },
+      "inchesToCm": {
+        "title": "Inches to Centimeters",
+        "description": "Convert 12 inches to centimeters",
+        "result": "30.48 cm"
+      },
+      "yardsToMeters": {
+        "title": "Yards to Meters",
+        "description": "Convert 100 yards to meters",
+        "result": "91.44 m"
+      },
+      "smallUnits": {
+        "title": "Small Units",
+        "description": "Convert 1 millimeter to inches",
+        "result": "0.039370 in"
+      },
+      "features": {
+        "title": "Why Use Our Distance Converter?",
+        "subtitle": "Accurate, comprehensive, and easy to use",
+        "accurate": {
+          "title": "Accurate Conversions",
+          "description": "Precise calculations for all distance units with proper rounding"
+        },
+        "comprehensive": {
+          "title": "Comprehensive Units",
+          "description": "Supports metric, imperial, and scientific distance units"
+        },
+        "fast": {
+          "title": "Instant Results",
+          "description": "Get your distance conversions in seconds"
+        }
+      }
+    }
+  },
+  "weightConverter": {
+    "title": "Weight Converter",
+    "subtitle": "Convert between different weight units",
+    "meta": {
+      "title": "Weight Converter | Convert Mass and Weight Units",
+      "description": "Free weight converter to convert between milligrams, grams, kilograms, pounds, ounces, tons, and stone with precise calculations."
+    },
+    "form": {
+      "value": "Weight",
+      "valuePlaceholder": "Enter weight value",
+      "toUnit": "Convert To",
+      "toUnitPlaceholder": "Select target unit",
+      "convert": "Convert Weight",
+      "reset": "Reset"
+    },
+    "units": {
+      "milligrams": "mg",
+      "grams": "g",
+      "kilograms": "kg",
+      "pounds": "lbs",
+      "ounces": "oz",
+      "tons": "t",
+      "stone": "st"
+    },
+    "result": {
+      "title": "Weight Conversion",
+      "subtitle": "Converted weight value",
+      "convertedFrom": "Converted from {value} {fromUnit}"
+    },
+    "examples": {
+      "title": "Weight Converter Examples",
+      "subtitle": "See how the weight converter works with different scenarios",
+      "valueLabel": "Weight",
+      "toLabel": "Convert To",
+      "result": "Result",
+      "kgToPounds": {
+        "title": "Kilograms to Pounds",
+        "description": "Convert 70 kilograms to pounds",
+        "result": "154.32 lbs"
+      },
+      "poundsToKg": {
+        "title": "Pounds to Kilograms",
+        "description": "Convert 150 pounds to kilograms",
+        "result": "68.04 kg"
+      },
+      "ouncesToGrams": {
+        "title": "Ounces to Grams",
+        "description": "Convert 16 ounces to grams",
+        "result": "453.59 g"
+      },
+      "gramsToOunces": {
+        "title": "Grams to Ounces",
+        "description": "Convert 500 grams to ounces",
+        "result": "17.64 oz"
+      },
+      "stoneToKg": {
+        "title": "Stone to Kilograms",
+        "description": "Convert 10 stone to kilograms",
+        "result": "63.50 kg"
+      },
+      "tonsToKg": {
+        "title": "Tons to Kilograms",
+        "description": "Convert 2 tons to kilograms",
+        "result": "2000.00 kg"
+      },
+      "features": {
+        "title": "Why Use Our Weight Converter?",
+        "subtitle": "Precise, versatile, and easy to use",
+        "precise": {
+          "title": "Precise Calculations",
+          "description": "Accurate conversions for all weight units with proper precision"
+        },
+        "versatile": {
+          "title": "Versatile Units",
+          "description": "Supports metric, imperial, and specialized weight units"
+        },
+        "fast": {
+          "title": "Instant Results",
+          "description": "Get your weight conversions in seconds"
+        }
+      }
+    }
+  },
+  "temperatureConverter": {
+    "title": "Temperature Converter",
+    "subtitle": "Convert between different temperature scales",
+    "meta": {
+      "title": "Temperature Converter | Convert Temperature Units",
+      "description": "Free temperature converter to convert between Celsius, Fahrenheit, Kelvin, and Rankine with precise scientific calculations."
+    },
+    "form": {
+      "value": "Temperature",
+      "valuePlaceholder": "Enter temperature value",
+      "toUnit": "Convert To",
+      "toUnitPlaceholder": "Select target scale",
+      "convert": "Convert Temperature",
+      "reset": "Reset"
+    },
+    "units": {
+      "celsius": "C",
+      "fahrenheit": "F",
+      "kelvin": "K",
+      "rankine": "R"
+    },
+    "result": {
+      "title": "Temperature Conversion",
+      "subtitle": "Converted temperature value",
+      "convertedFrom": "Converted from {value}°{fromUnit}"
+    },
+    "examples": {
+      "title": "Temperature Converter Examples",
+      "subtitle": "See how the temperature converter works with different scenarios",
+      "valueLabel": "Temperature",
+      "toLabel": "Convert To",
+      "result": "Result",
+      "celsiusToFahrenheit": {
+        "title": "Celsius to Fahrenheit",
+        "description": "Convert 25°C to Fahrenheit",
+        "result": "77.00°F"
+      },
+      "fahrenheitToCelsius": {
+        "title": "Fahrenheit to Celsius",
+        "description": "Convert 77°F to Celsius",
+        "result": "25.00°C"
+      },
+      "celsiusToKelvin": {
+        "title": "Celsius to Kelvin",
+        "description": "Convert 0°C to Kelvin",
+        "result": "273.15 K"
+      },
+      "kelvinToCelsius": {
+        "title": "Kelvin to Celsius",
+        "description": "Convert 273.15 K to Celsius",
+        "result": "0.00°C"
+      },
+      "fahrenheitToKelvin": {
+        "title": "Fahrenheit to Kelvin",
+        "description": "Convert 32°F to Kelvin",
+        "result": "273.15 K"
+      },
+      "rankineToCelsius": {
+        "title": "Rankine to Celsius",
+        "description": "Convert 491.67°R to Celsius",
+        "result": "0.00°C"
+      },
+      "features": {
+        "title": "Why Use Our Temperature Converter?",
+        "subtitle": "Scientific, accurate, and easy to use",
+        "scientific": {
+          "title": "Scientific Scales",
+          "description": "Supports all major temperature scales including Kelvin and Rankine"
+        },
+        "accurate": {
+          "title": "Accurate Conversions",
+          "description": "Precise scientific calculations for all temperature conversions"
+        },
+        "fast": {
+          "title": "Instant Results",
+          "description": "Get your temperature conversions in seconds"
+        }
+      }
+    }
+  },
+  "speedConverter": {
+    "title": "Speed Converter",
+    "subtitle": "Convert between different speed units",
+    "meta": {
+      "title": "Speed Converter | Convert Speed and Velocity Units",
+      "description": "Free speed converter to convert between m/s, km/h, mph, ft/s, knots, and Mach with precise calculations."
+    },
+    "form": {
+      "value": "Speed",
+      "valuePlaceholder": "Enter speed value",
+      "toUnit": "Convert To",
+      "toUnitPlaceholder": "Select target unit",
+      "convert": "Convert Speed",
+      "reset": "Reset"
+    },
+    "units": {
+      "mps": "m/s",
+      "kmh": "km/h",
+      "mph": "mph",
+      "fps": "ft/s",
+      "knots": "knots",
+      "mach": "Mach"
+    },
+    "result": {
+      "title": "Speed Conversion",
+      "subtitle": "Converted speed value",
+      "convertedFrom": "Converted from {value} {fromUnit}"
+    },
+    "examples": {
+      "title": "Speed Converter Examples",
+      "subtitle": "See how the speed converter works with different scenarios",
+      "valueLabel": "Speed",
+      "toLabel": "Convert To",
+      "result": "Result",
+      "kmhToMph": {
+        "title": "km/h to mph",
+        "description": "Convert 100 km/h to mph",
+        "result": "62.14 mph"
+      },
+      "mphToKmh": {
+        "title": "mph to km/h",
+        "description": "Convert 60 mph to km/h",
+        "result": "96.56 km/h"
+      },
+      "mpsToKmh": {
+        "title": "m/s to km/h",
+        "description": "Convert 10 m/s to km/h",
+        "result": "36.00 km/h"
+      },
+      "knotsToMph": {
+        "title": "Knots to mph",
+        "description": "Convert 30 knots to mph",
+        "result": "34.52 mph"
+      },
+      "fpsToMph": {
+        "title": "ft/s to mph",
+        "description": "Convert 88 ft/s to mph",
+        "result": "60.00 mph"
+      },
+      "machToKmh": {
+        "title": "Mach to km/h",
+        "description": "Convert 1 Mach to km/h",
+        "result": "1234.80 km/h"
+      },
+      "features": {
+        "title": "Why Use Our Speed Converter?",
+        "subtitle": "Precise, comprehensive, and easy to use",
+        "precise": {
+          "title": "Precise Calculations",
+          "description": "Accurate conversions for all speed units with proper precision"
+        },
+        "comprehensive": {
+          "title": "Comprehensive Units",
+          "description": "Supports automotive, aviation, and scientific speed units"
+        },
+        "fast": {
+          "title": "Instant Results",
+          "description": "Get your speed conversions in seconds"
         }
       }
     }

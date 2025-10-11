@@ -125,25 +125,32 @@ export default async function CalculatorsPage({params}: Props) {
       name: t('categories.conversion'),
       calculators: [
         {
-          key: 'unit',
-          name: t('calculators.unit.name'),
-          description: t('calculators.unit.description'),
-          path: '/unit-converter',
+          key: 'distance',
+          name: t('calculators.distance.name'),
+          description: t('calculators.distance.description'),
+          path: '/conversion/distance-converter',
           icon: '📏'
         },
         {
-          key: 'currency',
-          name: t('calculators.currency.name'),
-          description: t('calculators.currency.description'),
-          path: '/currency-converter',
-          icon: '💱'
+          key: 'weight',
+          name: t('calculators.weight.name'),
+          description: t('calculators.weight.description'),
+          path: '/conversion/weight-converter',
+          icon: '⚖️'
         },
         {
           key: 'temperature',
           name: t('calculators.temperature.name'),
           description: t('calculators.temperature.description'),
-          path: '/temperature-converter',
+          path: '/conversion/temperature-converter',
           icon: '🌡️'
+        },
+        {
+          key: 'speed',
+          name: t('calculators.speed.name'),
+          description: t('calculators.speed.description'),
+          path: '/conversion/speed-converter',
+          icon: '🚀'
         }
       ]
     }

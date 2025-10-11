@@ -69,7 +69,7 @@ export interface CalculatorConfig {
   };
   
   // Calculation function
-  calculate: (input1Value: number, input1Unit: string, input2Value: number, input2Unit: string) => ResultConfig | null;
+  calculate: (input1Value: number | string, input1Unit: string, input2Value: number | string, input2Unit: string) => ResultConfig | null;
   
   // URL parameters (optional)
   urlParams?: {
@@ -169,7 +169,7 @@ export default function Calculator2In1Out({config, className = ''}: Calculator2I
   );
 
   const calculate = () => {
-    if (!config.input1.value || !config.input2.value) return;
+    if (!config.input1.value) return;
 
     // Handle different input types
     if (config.input1.type === 'date' || config.input2.type === 'date') {
@@ -179,14 +179,23 @@ export default function Calculator2In1Out({config, className = ''}: Calculator2I
     } else {
       // For number inputs, parse as numbers
       const input1Num = parseFloat(config.input1.value);
-      const input2Num = parseFloat(config.input2.value);
+      const input2Num = parseFloat(config.input2.value || '0'); // Default to 0 if input2 is empty
 
-      if (isNaN(input1Num) || isNaN(input2Num) || input1Num <= 0 || input2Num <= 0) {
+      if (isNaN(input1Num) || input1Num <= 0) {
         return;
       }
 
-      const result = config.calculate(input1Num, config.input1.unit || '', input2Num, config.input2.unit || '');
-      setResult(result);
+      // For unit converters, we only need input1 value and input2 unit
+      // For regular calculators, we need both inputs
+      if (config.input2.value && !isNaN(input2Num) && input2Num > 0) {
+        // Regular calculator with two inputs
+        const result = config.calculate(input1Num, config.input1.unit || '', input2Num, config.input2.unit || '');
+        setResult(result);
+      } else {
+        // Unit converter with one input and target unit
+        const result = config.calculate(input1Num, config.input1.unit || '', 0, config.input2.unit || '');
+        setResult(result);
+      }
     }
   };
 
@@ -292,18 +301,21 @@ export default function Calculator2In1Out({config, className = ''}: Calculator2I
                 {config.input2.label}
               </label>
               <div className={`${config.input2.units ? 'flex' : ''} rounded-2xl overflow-hidden shadow-lg border border-gray-200 focus-within:ring-2 focus-within:ring-blue-500 focus-within:border-blue-500 transition-all duration-300`}>
-                <input
-                  type={config.input2.type || "number"}
-                  value={config.input2.value}
-                  onChange={(e) => {
-                    config.input2.onChange(e.target.value);
-                    if (config.urlParams?.enabled) {
-                      debouncedUpdateURL(config.input1.value, config.input1.unit || '', e.target.value, config.input2.unit || '');
-                    }
-                  }}
-                  placeholder={config.input2.placeholder}
-                  className="flex-1 px-6 py-4 text-lg focus:outline-none bg-white"
-                />
+                {/* Only show input field if it's not a unit converter (has a value) */}
+                {config.input2.value !== '' && (
+                  <input
+                    type={config.input2.type || "number"}
+                    value={config.input2.value}
+                    onChange={(e) => {
+                      config.input2.onChange(e.target.value);
+                      if (config.urlParams?.enabled) {
+                        debouncedUpdateURL(config.input1.value, config.input1.unit || '', e.target.value, config.input2.unit || '');
+                      }
+                    }}
+                    placeholder={config.input2.placeholder}
+                    className="flex-1 px-6 py-4 text-lg focus:outline-none bg-white"
+                  />
+                )}
                 {config.input2.units && (
                   <select
                     value={config.input2.unit}
@@ -313,7 +325,7 @@ export default function Calculator2In1Out({config, className = ''}: Calculator2I
                         updateURLParams(config.input1.value, config.input1.unit || '', config.input2.value, e.target.value);
                       }
                     }}
-                    className="px-6 py-4 text-lg focus:outline-none bg-gray-50 border-l border-gray-200 font-medium"
+                    className={`px-6 py-4 text-lg focus:outline-none bg-gray-50 font-medium ${config.input2.value === '' ? 'w-full' : 'border-l border-gray-200'}`}
                   >
                     {config.input2.units.map((unit) => (
                       <option key={unit.value} value={unit.value}>

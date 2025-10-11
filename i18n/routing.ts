@@ -93,6 +93,30 @@ export const routing = defineRouting({
       es: '/tiempo/calculadora-tiempo',
       de: '/zeit/zeit-rechner',
       fr: '/temps/calculateur-temps'
+    },
+    '/conversion/distance-converter': {
+      en: '/conversion/distance-converter',
+      es: '/conversion/convertidor-distancia',
+      de: '/umrechnung/entfernung-umrechner',
+      fr: '/conversion/convertisseur-distance'
+    },
+    '/conversion/weight-converter': {
+      en: '/conversion/weight-converter',
+      es: '/conversion/convertidor-peso',
+      de: '/umrechnung/gewicht-umrechner',
+      fr: '/conversion/convertisseur-poids'
+    },
+    '/conversion/temperature-converter': {
+      en: '/conversion/temperature-converter',
+      es: '/conversion/convertidor-temperatura',
+      de: '/umrechnung/temperatur-umrechner',
+      fr: '/conversion/convertisseur-temperature'
+    },
+    '/conversion/speed-converter': {
+      en: '/conversion/speed-converter',
+      es: '/conversion/convertidor-velocidad',
+      de: '/umrechnung/geschwindigkeit-umrechner',
+      fr: '/conversion/convertisseur-vitesse'
     }
   }
 });

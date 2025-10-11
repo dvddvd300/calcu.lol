@@ -264,6 +264,18 @@
         "name": "Datumsrechner",
         "description": "Berechne Unterschiede zwischen Daten"
       },
+      "distance": {
+        "name": "Entfernungsrechner",
+        "description": "Konvertieren zwischen verschiedenen Entfernungseinheiten"
+      },
+      "weight": {
+        "name": "Gewichtsrechner",
+        "description": "Konvertieren zwischen verschiedenen Gewichtseinheiten"
+      },
+      "speed": {
+        "name": "Geschwindigkeitsrechner",
+        "description": "Konvertieren zwischen verschiedenen Geschwindigkeitseinheiten"
+      },
       "unit": {
         "name": "Einheitenumrechner",
         "description": "Konvertieren zwischen verschiedenen Maßeinheiten"
@@ -514,6 +526,335 @@
         "fast": {
           "title": "Sofortige Ergebnisse",
           "description": "Erhalte deine Zeitberechnungen in Sekunden"
+        }
+      }
+    }
+  },
+  "distanceConverter": {
+    "title": "Entfernungsrechner",
+    "subtitle": "Konvertieren zwischen verschiedenen Entfernungseinheiten",
+    "meta": {
+      "title": "Entfernungsrechner | Längen- und Entfernungseinheiten konvertieren",
+      "description": "Kostenloser Entfernungsrechner zur Umrechnung zwischen Millimetern, Zentimetern, Metern, Kilometern, Zoll, Fuß, Yards und Meilen mit präzisen Berechnungen."
+    },
+    "form": {
+      "value": "Entfernung",
+      "valuePlaceholder": "Entfernungswert eingeben",
+      "toUnit": "Konvertieren zu",
+      "toUnitPlaceholder": "Zieleinheit auswählen",
+      "convert": "Entfernung konvertieren",
+      "reset": "Zurücksetzen"
+    },
+    "units": {
+      "millimeters": "mm",
+      "centimeters": "cm",
+      "meters": "m",
+      "kilometers": "km",
+      "inches": "Zoll",
+      "feet": "Fuß",
+      "yards": "Yards",
+      "miles": "Meilen"
+    },
+    "result": {
+      "title": "Entfernungskonvertierung",
+      "subtitle": "Konvertierter Entfernungswert",
+      "convertedFrom": "Konvertiert von {value} {fromUnit}"
+    },
+    "examples": {
+      "title": "Entfernungsrechner Beispiele",
+      "subtitle": "Sehen Sie, wie der Entfernungsrechner mit verschiedenen Szenarien funktioniert",
+      "valueLabel": "Entfernung",
+      "toLabel": "Konvertieren zu",
+      "result": "Ergebnis",
+      "metersToKm": {
+        "title": "Meter zu Kilometer",
+        "description": "1000 Meter zu Kilometer konvertieren",
+        "result": "1.00 km"
+      },
+      "feetToMeters": {
+        "title": "Fuß zu Meter",
+        "description": "10 Fuß zu Meter konvertieren",
+        "result": "3.05 m"
+      },
+      "milesToKm": {
+        "title": "Meilen zu Kilometer",
+        "description": "5 Meilen zu Kilometer konvertieren",
+        "result": "8.05 km"
+      },
+      "inchesToCm": {
+        "title": "Zoll zu Zentimeter",
+        "description": "12 Zoll zu Zentimeter konvertieren",
+        "result": "30.48 cm"
+      },
+      "yardsToMeters": {
+        "title": "Yards zu Meter",
+        "description": "100 Yards zu Meter konvertieren",
+        "result": "91.44 m"
+      },
+      "smallUnits": {
+        "title": "Kleine Einheiten",
+        "description": "1 Millimeter zu Zoll konvertieren",
+        "result": "0.039370 Zoll"
+      },
+      "features": {
+        "title": "Warum unseren Entfernungsrechner verwenden?",
+        "subtitle": "Präzise, umfassend und einfach zu verwenden",
+        "accurate": {
+          "title": "Präzise Konvertierungen",
+          "description": "Präzise Berechnungen für alle Entfernungseinheiten mit ordnungsgemäßer Rundung"
+        },
+        "comprehensive": {
+          "title": "Umfassende Einheiten",
+          "description": "Unterstützt metrische, imperiale und wissenschaftliche Entfernungseinheiten"
+        },
+        "fast": {
+          "title": "Sofortige Ergebnisse",
+          "description": "Erhalten Sie Ihre Entfernungskonvertierungen in Sekunden"
+        }
+      }
+    }
+  },
+  "weightConverter": {
+    "title": "Gewichtsrechner",
+    "subtitle": "Konvertieren zwischen verschiedenen Gewichtseinheiten",
+    "meta": {
+      "title": "Gewichtsrechner | Masse- und Gewichtseinheiten konvertieren",
+      "description": "Kostenloser Gewichtsrechner zur Umrechnung zwischen Milligramm, Gramm, Kilogramm, Pfund, Unzen, Tonnen und Stone mit präzisen Berechnungen."
+    },
+    "form": {
+      "value": "Gewicht",
+      "valuePlaceholder": "Gewichtswert eingeben",
+      "toUnit": "Konvertieren zu",
+      "toUnitPlaceholder": "Zieleinheit auswählen",
+      "convert": "Gewicht konvertieren",
+      "reset": "Zurücksetzen"
+    },
+    "units": {
+      "milligrams": "mg",
+      "grams": "g",
+      "kilograms": "kg",
+      "pounds": "lbs",
+      "ounces": "oz",
+      "tons": "t",
+      "stone": "st"
+    },
+    "result": {
+      "title": "Gewichtskonvertierung",
+      "subtitle": "Konvertierter Gewichtswert",
+      "convertedFrom": "Konvertiert von {value} {fromUnit}"
+    },
+    "examples": {
+      "title": "Gewichtsrechner Beispiele",
+      "subtitle": "Sehen Sie, wie der Gewichtsrechner mit verschiedenen Szenarien funktioniert",
+      "valueLabel": "Gewicht",
+      "toLabel": "Konvertieren zu",
+      "result": "Ergebnis",
+      "kgToPounds": {
+        "title": "Kilogramm zu Pfund",
+        "description": "70 Kilogramm zu Pfund konvertieren",
+        "result": "154.32 lbs"
+      },
+      "poundsToKg": {
+        "title": "Pfund zu Kilogramm",
+        "description": "150 Pfund zu Kilogramm konvertieren",
+        "result": "68.04 kg"
+      },
+      "ouncesToGrams": {
+        "title": "Unzen zu Gramm",
+        "description": "16 Unzen zu Gramm konvertieren",
+        "result": "453.59 g"
+      },
+      "gramsToOunces": {
+        "title": "Gramm zu Unzen",
+        "description": "500 Gramm zu Unzen konvertieren",
+        "result": "17.64 oz"
+      },
+      "stoneToKg": {
+        "title": "Stone zu Kilogramm",
+        "description": "10 Stone zu Kilogramm konvertieren",
+        "result": "63.50 kg"
+      },
+      "tonsToKg": {
+        "title": "Tonnen zu Kilogramm",
+        "description": "2 Tonnen zu Kilogramm konvertieren",
+        "result": "2000.00 kg"
+      },
+      "features": {
+        "title": "Warum unseren Gewichtsrechner verwenden?",
+        "subtitle": "Präzise, vielseitig und einfach zu verwenden",
+        "precise": {
+          "title": "Präzise Berechnungen",
+          "description": "Präzise Konvertierungen für alle Gewichtseinheiten mit ordnungsgemäßer Präzision"
+        },
+        "versatile": {
+          "title": "Vielseitige Einheiten",
+          "description": "Unterstützt metrische, imperiale und spezialisierte Gewichtseinheiten"
+        },
+        "fast": {
+          "title": "Sofortige Ergebnisse",
+          "description": "Erhalten Sie Ihre Gewichtskonvertierungen in Sekunden"
+        }
+      }
+    }
+  },
+  "temperatureConverter": {
+    "title": "Temperaturrechner",
+    "subtitle": "Konvertieren zwischen verschiedenen Temperaturskalen",
+    "meta": {
+      "title": "Temperaturrechner | Temperatureinheiten konvertieren",
+      "description": "Kostenloser Temperaturrechner zur Umrechnung zwischen Celsius, Fahrenheit, Kelvin und Rankine mit präzisen wissenschaftlichen Berechnungen."
+    },
+    "form": {
+      "value": "Temperatur",
+      "valuePlaceholder": "Temperaturwert eingeben",
+      "toUnit": "Konvertieren zu",
+      "toUnitPlaceholder": "Zielskala auswählen",
+      "convert": "Temperatur konvertieren",
+      "reset": "Zurücksetzen"
+    },
+    "units": {
+      "celsius": "C",
+      "fahrenheit": "F",
+      "kelvin": "K",
+      "rankine": "R"
+    },
+    "result": {
+      "title": "Temperaturkonvertierung",
+      "subtitle": "Konvertierter Temperaturwert",
+      "convertedFrom": "Konvertiert von {value}°{fromUnit}"
+    },
+    "examples": {
+      "title": "Temperaturrechner Beispiele",
+      "subtitle": "Sehen Sie, wie der Temperaturrechner mit verschiedenen Szenarien funktioniert",
+      "valueLabel": "Temperatur",
+      "toLabel": "Konvertieren zu",
+      "result": "Ergebnis",
+      "celsiusToFahrenheit": {
+        "title": "Celsius zu Fahrenheit",
+        "description": "25°C zu Fahrenheit konvertieren",
+        "result": "77.00°F"
+      },
+      "fahrenheitToCelsius": {
+        "title": "Fahrenheit zu Celsius",
+        "description": "77°F zu Celsius konvertieren",
+        "result": "25.00°C"
+      },
+      "celsiusToKelvin": {
+        "title": "Celsius zu Kelvin",
+        "description": "0°C zu Kelvin konvertieren",
+        "result": "273.15 K"
+      },
+      "kelvinToCelsius": {
+        "title": "Kelvin zu Celsius",
+        "description": "273.15 K zu Celsius konvertieren",
+        "result": "0.00°C"
+      },
+      "fahrenheitToKelvin": {
+        "title": "Fahrenheit zu Kelvin",
+        "description": "32°F zu Kelvin konvertieren",
+        "result": "273.15 K"
+      },
+      "rankineToCelsius": {
+        "title": "Rankine zu Celsius",
+        "description": "491.67°R zu Celsius konvertieren",
+        "result": "0.00°C"
+      },
+      "features": {
+        "title": "Warum unseren Temperaturrechner verwenden?",
+        "subtitle": "Wissenschaftlich, präzise und einfach zu verwenden",
+        "scientific": {
+          "title": "Wissenschaftliche Skalen",
+          "description": "Unterstützt alle wichtigen Temperaturskalen einschließlich Kelvin und Rankine"
+        },
+        "accurate": {
+          "title": "Präzise Konvertierungen",
+          "description": "Präzise wissenschaftliche Berechnungen für alle Temperaturkonvertierungen"
+        },
+        "fast": {
+          "title": "Sofortige Ergebnisse",
+          "description": "Erhalten Sie Ihre Temperaturkonvertierungen in Sekunden"
+        }
+      }
+    }
+  },
+  "speedConverter": {
+    "title": "Geschwindigkeitsrechner",
+    "subtitle": "Konvertieren zwischen verschiedenen Geschwindigkeitseinheiten",
+    "meta": {
+      "title": "Geschwindigkeitsrechner | Geschwindigkeits- und Geschwindigkeitseinheiten konvertieren",
+      "description": "Kostenloser Geschwindigkeitsrechner zur Umrechnung zwischen m/s, km/h, mph, ft/s, Knoten und Mach mit präzisen Berechnungen."
+    },
+    "form": {
+      "value": "Geschwindigkeit",
+      "valuePlaceholder": "Geschwindigkeitswert eingeben",
+      "toUnit": "Konvertieren zu",
+      "toUnitPlaceholder": "Zieleinheit auswählen",
+      "convert": "Geschwindigkeit konvertieren",
+      "reset": "Zurücksetzen"
+    },
+    "units": {
+      "mps": "m/s",
+      "kmh": "km/h",
+      "mph": "mph",
+      "fps": "ft/s",
+      "knots": "Knoten",
+      "mach": "Mach"
+    },
+    "result": {
+      "title": "Geschwindigkeitskonvertierung",
+      "subtitle": "Konvertierter Geschwindigkeitswert",
+      "convertedFrom": "Konvertiert von {value} {fromUnit}"
+    },
+    "examples": {
+      "title": "Geschwindigkeitsrechner Beispiele",
+      "subtitle": "Sehen Sie, wie der Geschwindigkeitsrechner mit verschiedenen Szenarien funktioniert",
+      "valueLabel": "Geschwindigkeit",
+      "toLabel": "Konvertieren zu",
+      "result": "Ergebnis",
+      "kmhToMph": {
+        "title": "km/h zu mph",
+        "description": "100 km/h zu mph konvertieren",
+        "result": "62.14 mph"
+      },
+      "mphToKmh": {
+        "title": "mph zu km/h",
+        "description": "60 mph zu km/h konvertieren",
+        "result": "96.56 km/h"
+      },
+      "mpsToKmh": {
+        "title": "m/s zu km/h",
+        "description": "10 m/s zu km/h konvertieren",
+        "result": "36.00 km/h"
+      },
+      "knotsToMph": {
+        "title": "Knoten zu mph",
+        "description": "30 Knoten zu mph konvertieren",
+        "result": "34.52 mph"
+      },
+      "fpsToMph": {
+        "title": "ft/s zu mph",
+        "description": "88 ft/s zu mph konvertieren",
+        "result": "60.00 mph"
+      },
+      "machToKmh": {
+        "title": "Mach zu km/h",
+        "description": "1 Mach zu km/h konvertieren",
+        "result": "1234.80 km/h"
+      },
+      "features": {
+        "title": "Warum unseren Geschwindigkeitsrechner verwenden?",
+        "subtitle": "Präzise, umfassend und einfach zu verwenden",
+        "precise": {
+          "title": "Präzise Berechnungen",
+          "description": "Präzise Konvertierungen für alle Geschwindigkeitseinheiten mit ordnungsgemäßer Präzision"
+        },
+        "comprehensive": {
+          "title": "Umfassende Einheiten",
+          "description": "Unterstützt automotiv, Luftfahrt und wissenschaftliche Geschwindigkeitseinheiten"
+        },
+        "fast": {
+          "title": "Sofortige Ergebnisse",
+          "description": "Erhalten Sie Ihre Geschwindigkeitskonvertierungen in Sekunden"
         }
       }
     }
