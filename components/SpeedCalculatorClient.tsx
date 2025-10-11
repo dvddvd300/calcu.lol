@@ -121,9 +121,16 @@ export default function SpeedCalculatorClient() {
     }
   };
 
-  const calculate = (fileSizeValue: number, fileSizeUnitValue: string, speedValue: number, speedUnitValue: string) => {
-    const fileSizeBytes = convertToBytes(fileSizeValue, fileSizeUnitValue);
-    const speedBps = convertToBps(speedValue, speedUnitValue);
+  const calculate = (fileSizeValue: string | number, fileSizeUnitValue: string, speedValue: string | number, speedUnitValue: string) => {
+    const numFileSize = typeof fileSizeValue === 'string' ? parseFloat(fileSizeValue) : fileSizeValue;
+    const numSpeed = typeof speedValue === 'string' ? parseFloat(speedValue) : speedValue;
+    
+    if (!numFileSize || numFileSize <= 0 || !numSpeed || numSpeed <= 0) {
+      return null;
+    }
+    
+    const fileSizeBytes = convertToBytes(numFileSize, fileSizeUnitValue);
+    const speedBps = convertToBps(numSpeed, speedUnitValue);
     const timeInSeconds = fileSizeBytes / speedBps;
     const formattedResult = formatTime(timeInSeconds);
 

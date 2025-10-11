@@ -13,8 +13,11 @@ export default function TipCalculatorClient() {
   const [billUnit, setBillUnit] = useState('currency');
   const [tipUnit, setTipUnit] = useState('percent');
 
-  const calculateTip = (billValue: number, billUnit: string, tipValue: number, tipUnit: string) => {
-    if (billValue <= 0 || tipValue < 0) return null;
+  const calculateTip = (billValue: string | number, billUnit: string, tipValue: string | number, tipUnit: string) => {
+    const numBillValue = typeof billValue === 'string' ? parseFloat(billValue) : billValue;
+    const numTipValue = typeof tipValue === 'string' ? parseFloat(tipValue) : tipValue;
+    
+    if (!numBillValue || numBillValue <= 0 || !numTipValue || numTipValue < 0) return null;
 
     let tipAmount: number;
     let totalBill: number;
@@ -23,13 +26,13 @@ export default function TipCalculatorClient() {
 
     if (tipUnit === 'percent') {
       // Calculate tip as percentage of bill
-      tipAmount = (billValue * tipValue) / 100;
+      tipAmount = (numBillValue * numTipValue) / 100;
     } else {
       // Calculate tip as fixed amount
-      tipAmount = tipValue;
+      tipAmount = numTipValue;
     }
 
-    totalBill = billValue + tipAmount;
+    totalBill = numBillValue + tipAmount;
     totalPerPerson = totalBill / peopleCount;
 
     const result = {

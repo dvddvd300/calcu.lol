@@ -215,9 +215,9 @@ export default function Calculator2In1Out({config, className = ''}: Calculator2I
     const params = new URLSearchParams();
     
     if (config.input1.value) params.set(config.urlParams.input1Param, config.input1.value);
-    if (config.input1.unit && config.input1.unit !== config.input1.units[0]?.value) params.set(config.urlParams.input1UnitParam, config.input1.unit);
+    if (config.input1.unit && config.input1.units && config.input1.unit !== config.input1.units[0]?.value) params.set(config.urlParams.input1UnitParam, config.input1.unit);
     if (config.input2.value) params.set(config.urlParams.input2Param, config.input2.value);
-    if (config.input2.unit && config.input2.unit !== config.input2.units[0]?.value) params.set(config.urlParams.input2UnitParam, config.input2.unit);
+    if (config.input2.unit && config.input2.units && config.input2.unit !== config.input2.units[0]?.value) params.set(config.urlParams.input2UnitParam, config.input2.unit);
 
     const shareUrl = params.toString() ? `${window.location.origin}${window.location.pathname}?${params.toString()}` : window.location.href;
     

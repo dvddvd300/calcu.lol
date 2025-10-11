@@ -10,34 +10,41 @@ export default function ExampleCalculator() {
   const [speed, setSpeed] = useState('');
   const [speedUnit, setSpeedUnit] = useState('kmh');
 
-  const calculate = (distanceValue: number, distanceUnitValue: string, speedValue: number, speedUnitValue: string) => {
+  const calculate = (distanceValue: string | number, distanceUnitValue: string, speedValue: string | number, speedUnitValue: string) => {
+    const numDistance = typeof distanceValue === 'string' ? parseFloat(distanceValue) : distanceValue;
+    const numSpeed = typeof speedValue === 'string' ? parseFloat(speedValue) : speedValue;
+    
+    if (!numDistance || numDistance <= 0 || !numSpeed || numSpeed <= 0) {
+      return null;
+    }
+    
     // Convert to common units (km and km/h)
-    let distanceKm = distanceValue;
-    let speedKmh = speedValue;
+    let distanceKm = numDistance;
+    let speedKmh = numSpeed;
 
     // Convert distance to km
     switch (distanceUnitValue) {
       case 'm':
-        distanceKm = distanceValue / 1000;
+        distanceKm = numDistance / 1000;
         break;
       case 'mi':
-        distanceKm = distanceValue * 1.60934;
+        distanceKm = numDistance * 1.60934;
         break;
       case 'ft':
-        distanceKm = distanceValue * 0.0003048;
+        distanceKm = numDistance * 0.0003048;
         break;
     }
 
     // Convert speed to km/h
     switch (speedUnitValue) {
       case 'ms':
-        speedKmh = speedValue * 3.6;
+        speedKmh = numSpeed * 3.6;
         break;
       case 'mph':
-        speedKmh = speedValue * 1.60934;
+        speedKmh = numSpeed * 1.60934;
         break;
       case 'knots':
-        speedKmh = speedValue * 1.852;
+        speedKmh = numSpeed * 1.852;
         break;
     }
 

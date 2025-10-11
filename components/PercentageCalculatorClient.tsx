@@ -12,8 +12,11 @@ export default function PercentageCalculatorClient() {
   const [valueUnit, setValueUnit] = useState('number');
   const [percentageUnit, setPercentageUnit] = useState('percent');
 
-  const calculatePercentage = (inputValue: number, inputValueUnit: string, inputPercentage: number, inputPercentageUnit: string) => {
-    if (inputValue <= 0 || inputPercentage < 0) return null;
+  const calculatePercentage = (inputValue: string | number, inputValueUnit: string, inputPercentage: string | number, inputPercentageUnit: string) => {
+    const numInputValue = typeof inputValue === 'string' ? parseFloat(inputValue) : inputValue;
+    const numInputPercentage = typeof inputPercentage === 'string' ? parseFloat(inputPercentage) : inputPercentage;
+    
+    if (!numInputValue || numInputValue <= 0 || !numInputPercentage || numInputPercentage < 0) return null;
 
     let result: number;
     let title: string;
@@ -21,14 +24,14 @@ export default function PercentageCalculatorClient() {
 
     if (inputPercentageUnit === 'percent') {
       // Calculate percentage of value
-      result = (inputValue * inputPercentage) / 100;
+      result = (numInputValue * numInputPercentage) / 100;
       title = t('result.percentage');
-      subtitle = `${inputPercentage}% of ${inputValue.toLocaleString()}`;
+      subtitle = `${numInputPercentage}% of ${numInputValue.toLocaleString()}`;
     } else {
       // Calculate percentage from two values
-      result = (inputPercentage / inputValue) * 100;
+      result = (numInputPercentage / numInputValue) * 100;
       title = t('result.percentage');
-      subtitle = `${inputPercentage} is ${result.toFixed(2)}% of ${inputValue.toLocaleString()}`;
+      subtitle = `${numInputPercentage} is ${result.toFixed(2)}% of ${numInputValue.toLocaleString()}`;
     }
 
     return {

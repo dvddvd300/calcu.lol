@@ -14,13 +14,13 @@ export default function AgeCalculatorClient() {
     return today.toISOString().split('T')[0];
   });
 
-  const calculateAge = (birthdayValue: string, currentDateValue: string) => {
+  const calculateAge = (birthdayValue: string | number, currentDateValue: string | number) => {
     if (!birthdayValue || !currentDateValue) {
       return null;
     }
 
-    const birthDate = new Date(birthdayValue);
-    const today = new Date(currentDateValue);
+    const birthDate = new Date(String(birthdayValue));
+    const today = new Date(String(currentDateValue));
     
     // Validate dates
     if (isNaN(birthDate.getTime()) || isNaN(today.getTime())) {
@@ -173,12 +173,14 @@ export default function AgeCalculatorClient() {
       iconBgColor: 'bg-gradient-to-r from-purple-500 to-pink-500'
     },
     
-    calculate: (birthdayValue: string, _unit1: string, currentDateValue: string, _unit2: string) => calculateAge(birthdayValue, currentDateValue),
+    calculate: (birthdayValue: string | number, _unit1: string, currentDateValue: string | number, _unit2: string) => calculateAge(birthdayValue, currentDateValue),
     
     urlParams: {
       enabled: true,
       input1Param: 'birthday',
-      input2Param: 'currentDate'
+      input1UnitParam: 'birthdayUnit',
+      input2Param: 'currentDate',
+      input2UnitParam: 'currentDateUnit'
     }
   }), [t, birthday, currentDate]);
 

@@ -77,13 +77,16 @@ export default function TimeCalculatorClient() {
     }
   };
 
-  const calculateTime = (time1Value: number, time1UnitValue: string, time2Value: number, time2UnitValue: string) => {
-    if (!time1Value || !time2Value) {
+  const calculateTime = (time1Value: string | number, time1UnitValue: string, time2Value: string | number, time2UnitValue: string) => {
+    const numTime1 = typeof time1Value === 'string' ? parseFloat(time1Value) : time1Value;
+    const numTime2 = typeof time2Value === 'string' ? parseFloat(time2Value) : time2Value;
+    
+    if (!numTime1 || !numTime2) {
       return null;
     }
 
-    const time1Seconds = convertToSeconds(time1Value, time1UnitValue);
-    const time2Seconds = convertToSeconds(time2Value, time2UnitValue);
+    const time1Seconds = convertToSeconds(numTime1, time1UnitValue);
+    const time2Seconds = convertToSeconds(numTime2, time2UnitValue);
     
     let resultSeconds: number;
     let operationText: string;
@@ -207,7 +210,7 @@ export default function TimeCalculatorClient() {
       iconBgColor: 'bg-gradient-to-r from-purple-500 to-pink-500'
     },
     
-    calculate: (time1Value: number, time1UnitValue: string, time2Value: number, time2UnitValue: string) => calculateTime(time1Value, time1UnitValue, time2Value, time2UnitValue),
+    calculate: (time1Value: string | number, time1UnitValue: string, time2Value: string | number, time2UnitValue: string) => calculateTime(time1Value, time1UnitValue, time2Value, time2UnitValue),
     
     urlParams: {
       enabled: true,

@@ -11,8 +11,9 @@ export default function TemperatureConverterClient() {
   const [fromUnit, setFromUnit] = useState('celsius');
   const [toUnit, setToUnit] = useState('fahrenheit');
 
-  const convertTemperature = (value: number, fromUnitValue: string, toUnitValue: string) => {
-    if (value === null || value === undefined) {
+  const convertTemperature = (value: string | number, fromUnitValue: string, toUnitValue: string) => {
+    const numValue = typeof value === 'string' ? parseFloat(value) : value;
+    if (numValue === null || numValue === undefined || isNaN(numValue)) {
       return null;
     }
 
@@ -20,19 +21,19 @@ export default function TemperatureConverterClient() {
     let celsius: number;
     switch (fromUnitValue) {
       case 'celsius':
-        celsius = value;
+        celsius = numValue;
         break;
       case 'fahrenheit':
-        celsius = (value - 32) * 5/9;
+        celsius = (numValue - 32) * 5/9;
         break;
       case 'kelvin':
-        celsius = value - 273.15;
+        celsius = numValue - 273.15;
         break;
       case 'rankine':
-        celsius = (value - 491.67) * 5/9;
+        celsius = (numValue - 491.67) * 5/9;
         break;
       default:
-        celsius = value;
+        celsius = numValue;
     }
 
     // Convert from Celsius to target unit
@@ -166,7 +167,7 @@ export default function TemperatureConverterClient() {
       iconBgColor: 'bg-gradient-to-r from-orange-500 to-red-500'
     },
     
-    calculate: (value: number, fromUnitValue: string, _unused: number, toUnitValue: string) => convertTemperature(value, fromUnitValue, toUnitValue),
+    calculate: (value: string | number, fromUnitValue: string, _unused: string | number, toUnitValue: string) => convertTemperature(value, fromUnitValue, toUnitValue),
     
     urlParams: {
       enabled: true,

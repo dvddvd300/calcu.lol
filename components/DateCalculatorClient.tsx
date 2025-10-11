@@ -14,13 +14,13 @@ export default function DateCalculatorClient() {
     return today.toISOString().split('T')[0];
   });
 
-  const calculateDateDifference = (startDateValue: string, endDateValue: string) => {
+  const calculateDateDifference = (startDateValue: string | number, endDateValue: string | number) => {
     if (!startDateValue || !endDateValue) {
       return null;
     }
 
-    const start = new Date(startDateValue);
-    const end = new Date(endDateValue);
+    const start = new Date(String(startDateValue));
+    const end = new Date(String(endDateValue));
     
     // Validate dates
     if (isNaN(start.getTime()) || isNaN(end.getTime())) {
@@ -181,12 +181,14 @@ export default function DateCalculatorClient() {
       iconBgColor: 'bg-gradient-to-r from-purple-500 to-pink-500'
     },
     
-    calculate: (startDateValue: string, _unit1: string, endDateValue: string, _unit2: string) => calculateDateDifference(startDateValue, endDateValue),
+    calculate: (startDateValue: string | number, _unit1: string, endDateValue: string | number, _unit2: string) => calculateDateDifference(startDateValue, endDateValue),
     
     urlParams: {
       enabled: true,
       input1Param: 'startDate',
-      input2Param: 'endDate'
+      input1UnitParam: 'startDateUnit',
+      input2Param: 'endDate',
+      input2UnitParam: 'endDateUnit'
     }
   }), [t, startDate, endDate]);
 

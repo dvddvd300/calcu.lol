@@ -11,8 +11,9 @@ export default function DistanceConverterClient() {
   const [fromUnit, setFromUnit] = useState('meters');
   const [toUnit, setToUnit] = useState('kilometers');
 
-  const convertDistance = (value: number, fromUnitValue: string, toUnitValue: string) => {
-    if (!value || value <= 0) {
+  const convertDistance = (value: string | number, fromUnitValue: string, toUnitValue: string) => {
+    const numValue = typeof value === 'string' ? parseFloat(value) : value;
+    if (!numValue || numValue <= 0) {
       return null;
     }
 
@@ -28,7 +29,7 @@ export default function DistanceConverterClient() {
       'miles': 1609.34
     };
 
-    const valueInMeters = value * (metersPerUnit[fromUnitValue] || 1);
+    const valueInMeters = numValue * (metersPerUnit[fromUnitValue] || 1);
     const result = valueInMeters / (metersPerUnit[toUnitValue] || 1);
 
     // Format result based on magnitude
@@ -53,7 +54,7 @@ export default function DistanceConverterClient() {
             {formattedResult}
           </div>
           <div className="text-sm text-gray-600 mt-2">
-            {t('result.convertedFrom', {value: value, fromUnit: t(`units.${fromUnitValue}`)})}
+            {t('result.convertedFrom', {value: numValue, fromUnit: t(`units.${fromUnitValue}`)})}
           </div>
         </div>
       ),
@@ -161,7 +162,7 @@ export default function DistanceConverterClient() {
       iconBgColor: 'bg-gradient-to-r from-orange-500 to-red-500'
     },
     
-    calculate: (value: number, fromUnitValue: string, _unused: number, toUnitValue: string) => convertDistance(value, fromUnitValue, toUnitValue),
+    calculate: (value: string | number, fromUnitValue: string, _unused: string | number, toUnitValue: string) => convertDistance(value, fromUnitValue, toUnitValue),
     
     urlParams: {
       enabled: true,

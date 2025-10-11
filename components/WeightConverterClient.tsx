@@ -11,8 +11,9 @@ export default function WeightConverterClient() {
   const [fromUnit, setFromUnit] = useState('kilograms');
   const [toUnit, setToUnit] = useState('pounds');
 
-  const convertWeight = (value: number, fromUnitValue: string, toUnitValue: string) => {
-    if (!value || value <= 0) {
+  const convertWeight = (value: string | number, fromUnitValue: string, toUnitValue: string) => {
+    const numValue = typeof value === 'string' ? parseFloat(value) : value;
+    if (!numValue || numValue <= 0) {
       return null;
     }
 
@@ -27,7 +28,7 @@ export default function WeightConverterClient() {
       'stone': 6350.29
     };
 
-    const valueInGrams = value * (gramsPerUnit[fromUnitValue] || 1);
+    const valueInGrams = numValue * (gramsPerUnit[fromUnitValue] || 1);
     const result = valueInGrams / (gramsPerUnit[toUnitValue] || 1);
 
     // Format result based on magnitude
@@ -52,7 +53,7 @@ export default function WeightConverterClient() {
             {formattedResult}
           </div>
           <div className="text-sm text-gray-600 mt-2">
-            {t('result.convertedFrom', {value: value, fromUnit: t(`units.${fromUnitValue}`)})}
+            {t('result.convertedFrom', {value: numValue, fromUnit: t(`units.${fromUnitValue}`)})}
           </div>
         </div>
       ),
@@ -158,7 +159,7 @@ export default function WeightConverterClient() {
       iconBgColor: 'bg-gradient-to-r from-orange-500 to-red-500'
     },
     
-    calculate: (value: number, fromUnitValue: string, _unused: number, toUnitValue: string) => convertWeight(value, fromUnitValue, toUnitValue),
+    calculate: (value: string | number, fromUnitValue: string, _unused: string | number, toUnitValue: string) => convertWeight(value, fromUnitValue, toUnitValue),
     
     urlParams: {
       enabled: true,

@@ -11,8 +11,9 @@ export default function SpeedConverterClient() {
   const [fromUnit, setFromUnit] = useState('kmh');
   const [toUnit, setToUnit] = useState('mph');
 
-  const convertSpeed = (value: number, fromUnitValue: string, toUnitValue: string) => {
-    if (!value || value <= 0) {
+  const convertSpeed = (value: string | number, fromUnitValue: string, toUnitValue: string) => {
+    const numValue = typeof value === 'string' ? parseFloat(value) : value;
+    if (!numValue || numValue <= 0) {
       return null;
     }
 
@@ -26,7 +27,7 @@ export default function SpeedConverterClient() {
       'mach': 343 // mach (speed of sound at sea level)
     };
 
-    const valueInMs = value * (msPerUnit[fromUnitValue] || 1);
+    const valueInMs = numValue * (msPerUnit[fromUnitValue] || 1);
     const result = valueInMs / (msPerUnit[toUnitValue] || 1);
 
     // Format result based on magnitude
@@ -49,7 +50,7 @@ export default function SpeedConverterClient() {
             {formattedResult}
           </div>
           <div className="text-sm text-gray-600 mt-2">
-            {t('result.convertedFrom', {value: value, fromUnit: t(`units.${fromUnitValue}`)})}
+            {t('result.convertedFrom', {value: numValue, fromUnit: t(`units.${fromUnitValue}`)})}
           </div>
         </div>
       ),
@@ -153,7 +154,7 @@ export default function SpeedConverterClient() {
       iconBgColor: 'bg-gradient-to-r from-orange-500 to-red-500'
     },
     
-    calculate: (value: number, fromUnitValue: string, _unused: number, toUnitValue: string) => convertSpeed(value, fromUnitValue, toUnitValue),
+    calculate: (value: string | number, fromUnitValue: string, _unused: string | number, toUnitValue: string) => convertSpeed(value, fromUnitValue, toUnitValue),
     
     urlParams: {
       enabled: true,
