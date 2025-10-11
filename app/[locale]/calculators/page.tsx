@@ -115,7 +115,7 @@ export default async function CalculatorsPage({params}: Props) {
           key: 'date',
           name: t('calculators.date.name'),
           description: t('calculators.date.description'),
-          path: '/date-calculator',
+          path: '/time/date-calculator',
           icon: '📅'
         }
       ]

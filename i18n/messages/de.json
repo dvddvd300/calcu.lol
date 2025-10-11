@@ -351,5 +351,86 @@
         }
       }
     }
+  },
+  "dateCalc": {
+    "title": "Datum-Rechner",
+    "subtitle": "Berechne die Differenz zwischen zwei Daten",
+    "meta": {
+      "title": "Datum-Rechner | Berechne Datumsdifferenzen",
+      "description": "Kostenloser Datum-Rechner zur Berechnung der Differenz zwischen zwei Daten. Erhalte Ergebnisse in Tagen, Wochen, Monaten und Jahren mit präzisen Berechnungen."
+    },
+    "form": {
+      "startDate": "Startdatum",
+      "startDatePlaceholder": "Startdatum auswählen",
+      "endDate": "Enddatum",
+      "endDatePlaceholder": "Enddatum auswählen",
+      "calculate": "Differenz Berechnen",
+      "reset": "Zurücksetzen"
+    },
+    "result": {
+      "title": "Datumsdifferenz",
+      "subtitle": "Zeit zwischen den beiden Daten",
+      "days": "Tage",
+      "weeks": "Wochen",
+      "months": "Monate",
+      "years": "Jahre",
+      "sameDay": "Gleicher Tag",
+      "oneDay": "1 Tag",
+      "forward": "Vorwärts in der Zeit",
+      "backward": "Rückwärts in der Zeit"
+    },
+    "examples": {
+      "title": "Datum-Rechner Beispiele",
+      "subtitle": "Sieh, wie der Datum-Rechner mit verschiedenen Szenarien funktioniert",
+      "startDateLabel": "Startdatum",
+      "endDateLabel": "Enddatum",
+      "result": "Ergebnis",
+      "shortPeriod": {
+        "title": "Kurzer Zeitraum",
+        "description": "Berechne Differenz für wenige Tage",
+        "result": "5 Tage"
+      },
+      "mediumPeriod": {
+        "title": "Mittlerer Zeitraum",
+        "description": "Berechne Differenz für mehrere Monate",
+        "result": "5 Monate, 15 Tage"
+      },
+      "longPeriod": {
+        "title": "Langer Zeitraum",
+        "description": "Berechne Differenz für mehrere Jahre",
+        "result": "4 Jahre, 0 Monate, 0 Tage"
+      },
+      "leapYear": {
+        "title": "Schaltjahr",
+        "description": "Behandelt Schaltjahr-Daten korrekt",
+        "result": "4 Jahre, 0 Monate, 0 Tage"
+      },
+      "reverseOrder": {
+        "title": "Umgekehrte Reihenfolge",
+        "description": "Funktioniert mit Daten in beliebiger Reihenfolge",
+        "result": "11 Monate, 30 Tage (rückwärts)"
+      },
+      "sameDay": {
+        "title": "Gleicher Tag",
+        "description": "Zeigt gleicher Tag Ergebnis",
+        "result": "Gleicher Tag"
+      },
+      "features": {
+        "title": "Warum unseren Datum-Rechner verwenden?",
+        "subtitle": "Präzise, flexibel und einfach zu verwenden",
+        "accurate": {
+          "title": "Präzise Berechnungen",
+          "description": "Behandelt Schaltjahre, Monatsunterschiede und Grenzfälle perfekt"
+        },
+        "flexible": {
+          "title": "Flexible Anzeige",
+          "description": "Zeigt Ergebnisse in Tagen, Wochen, Monaten und Jahren je nach Bedarf"
+        },
+        "fast": {
+          "title": "Sofortige Ergebnisse",
+          "description": "Erhalte deine Datumsdifferenz-Berechnungen in Sekunden"
+        }
+      }
+    }
   }
 }

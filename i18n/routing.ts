@@ -81,6 +81,12 @@ export const routing = defineRouting({
       es: '/tiempo/calculadora-edad',
       de: '/zeit/alter-rechner',
       fr: '/temps/calculateur-age'
+    },
+    '/time/date-calculator': {
+      en: '/time/date-calculator',
+      es: '/tiempo/calculadora-fecha',
+      de: '/zeit/datum-rechner',
+      fr: '/temps/calculateur-date'
     }
   }
 });
