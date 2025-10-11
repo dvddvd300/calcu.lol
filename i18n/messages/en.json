@@ -432,5 +432,90 @@
         }
       }
     }
+  },
+  "timeCalc": {
+    "title": "Time Calculator",
+    "subtitle": "Add and subtract time values with different units",
+    "meta": {
+      "title": "Time Calculator | Add and Subtract Time Values",
+      "description": "Free time calculator to add and subtract time values. Supports seconds, minutes, hours, and days with automatic unit conversion."
+    },
+    "form": {
+      "time1": "First Time",
+      "time1Placeholder": "Enter first time value",
+      "time2": "Second Time",
+      "time2Placeholder": "Enter second time value",
+      "operation": "Operation",
+      "add": "Add",
+      "subtract": "Subtract",
+      "calculate": "Calculate Time",
+      "reset": "Reset"
+    },
+    "units": {
+      "seconds": "seconds",
+      "minutes": "minutes",
+      "hours": "hours",
+      "days": "days"
+    },
+    "result": {
+      "title": "Time Result",
+      "subtitle": "Calculated time value",
+      "added": "Time values added together",
+      "subtracted": "Time values subtracted"
+    },
+    "examples": {
+      "title": "Time Calculator Examples",
+      "subtitle": "See how the time calculator works with different scenarios",
+      "time1Label": "First Time",
+      "time2Label": "Second Time",
+      "operationLabel": "Operation",
+      "result": "Result",
+      "addition": {
+        "title": "Time Addition",
+        "description": "Add two time values together",
+        "result": "2 hours 30 minutes"
+      },
+      "subtraction": {
+        "title": "Time Subtraction",
+        "description": "Subtract one time value from another",
+        "result": "2 hours 15 minutes"
+      },
+      "mixedUnits": {
+        "title": "Mixed Units",
+        "description": "Add time values with different units",
+        "result": "1 day 6 hours"
+      },
+      "largeNumbers": {
+        "title": "Large Time Values",
+        "description": "Calculate with large time values",
+        "result": "2 days 12 hours"
+      },
+      "seconds": {
+        "title": "Seconds Calculation",
+        "description": "Work with seconds and minutes",
+        "result": "1 hour 30 minutes"
+      },
+      "negativeResult": {
+        "title": "Negative Results",
+        "description": "Handles negative results by showing absolute value",
+        "result": "1 hour"
+      },
+      "features": {
+        "title": "Why Use Our Time Calculator?",
+        "subtitle": "Flexible, smart, and easy to use",
+        "flexible": {
+          "title": "Flexible Units",
+          "description": "Supports seconds, minutes, hours, and days with automatic conversion"
+        },
+        "smart": {
+          "title": "Smart Display",
+          "description": "Shows results in the most appropriate unit with breakdowns"
+        },
+        "fast": {
+          "title": "Instant Results",
+          "description": "Get your time calculations in seconds"
+        }
+      }
+    }
   }
 }

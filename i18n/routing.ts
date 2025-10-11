@@ -87,6 +87,12 @@ export const routing = defineRouting({
       es: '/tiempo/calculadora-fecha',
       de: '/zeit/datum-rechner',
       fr: '/temps/calculateur-date'
+    },
+    '/time/time-calculator': {
+      en: '/time/time-calculator',
+      es: '/tiempo/calculadora-tiempo',
+      de: '/zeit/zeit-rechner',
+      fr: '/temps/calculateur-temps'
     }
   }
 });
