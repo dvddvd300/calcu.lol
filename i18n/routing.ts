@@ -75,6 +75,12 @@ export const routing = defineRouting({
       es: '/finanzas/calculadora-propina',
       de: '/finanzen/trinkgeld-rechner',
       fr: '/finance/calculateur-pourboire'
+    },
+    '/time/age-calculator': {
+      en: '/time/age-calculator',
+      es: '/tiempo/calculadora-edad',
+      de: '/zeit/alter-rechner',
+      fr: '/temps/calculateur-age'
     }
   }
 });

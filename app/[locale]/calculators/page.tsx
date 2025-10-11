@@ -101,7 +101,7 @@ export default async function CalculatorsPage({params}: Props) {
           key: 'age',
           name: t('calculators.age.name'),
           description: t('calculators.age.description'),
-          path: '/age-calculator',
+          path: '/time/age-calculator',
           icon: '🎂'
         },
         {

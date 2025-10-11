@@ -254,7 +254,7 @@
       },
       "age": {
         "name": "Calculateur d'Âge",
-        "description": "Calculez l'âge en années, mois et jours"
+        "description": "Calculez l'âge et le temps jusqu'au prochain anniversaire"
       },
       "time": {
         "name": "Calculateur de Temps",
@@ -275,6 +275,80 @@
       "temperature": {
         "name": "Convertisseur de Température",
         "description": "Convertir entre échelles de température"
+      }
+    },
+    "temps": {
+      "age": {
+        "name": "Calculateur d'Âge",
+        "description": "Calcule l'âge et le temps jusqu'au prochain anniversaire"
+      }
+    }
+  },
+  "ageCalc": {
+    "title": "Calculateur d'Âge",
+    "subtitle": "Calculez votre âge et le temps jusqu'à votre prochain anniversaire",
+    "meta": {
+      "title": "Calculateur d'Âge | Calculez l'Âge et le Compte à Rebours d'Anniversaire",
+      "description": "Calculateur d'âge gratuit pour déterminer votre âge exact et le compte à rebours jusqu'à votre prochain anniversaire. Prend en charge les années bissextiles et les calculs de date précis."
+    },
+    "form": {
+      "birthday": "Anniversaire",
+      "birthdayPlaceholder": "Sélectionnez votre anniversaire",
+      "currentDate": "Date Actuelle",
+      "currentDatePlaceholder": "Sélectionnez la date actuelle",
+      "calculate": "Calculer l'Âge",
+      "reset": "Réinitialiser"
+    },
+    "result": {
+      "title": "Résultat d'Âge",
+      "subtitle": "Votre âge et informations d'anniversaire",
+      "years": "ans",
+      "futureBirthday": "L'anniversaire est dans le futur",
+      "futureSubtitle": "Veuillez sélectionner un anniversaire valide",
+      "daysSinceBirthday": "{days} jours depuis votre dernier anniversaire",
+      "daysUntilBirthday": "{days} jours jusqu'à votre prochain anniversaire"
+    },
+    "examples": {
+      "title": "Exemples de Calculateur d'Âge",
+      "subtitle": "Voyez comment le calculateur d'âge fonctionne avec différents scénarios",
+      "birthdayLabel": "Anniversaire",
+      "currentDateLabel": "Date Actuelle",
+      "result": "Résultat",
+      "birthday": {
+        "title": "Anniversaire Régulier",
+        "description": "Calculez l'âge pour un scénario d'anniversaire standard",
+        "result": "33 ans, 45 jours depuis le dernier anniversaire"
+      },
+      "recentBirthday": {
+        "title": "Anniversaire Récent",
+        "description": "Anniversaire dans les 3 derniers mois - montre les jours depuis",
+        "result": "38 ans, 45 jours depuis le dernier anniversaire"
+      },
+      "futureBirthday": {
+        "title": "Anniversaire Futur",
+        "description": "Anniversaire dans le futur - montre un message d'erreur",
+        "result": "L'anniversaire est dans le futur"
+      },
+      "leapYear": {
+        "title": "Anniversaire d'Année Bissextile",
+        "description": "Gère correctement les anniversaires d'année bissextile",
+        "result": "24 ans, 155 jours jusqu'au prochain anniversaire"
+      },
+      "features": {
+        "title": "Pourquoi utiliser notre Calculateur d'Âge ?",
+        "subtitle": "Précis, intelligent et facile à utiliser",
+        "accurate": {
+          "title": "Calculs Précis",
+          "description": "Gère les années bissextiles, les différences de mois et les cas limites parfaitement"
+        },
+        "smart": {
+          "title": "Affichage Intelligent",
+          "description": "Montre les jours depuis le dernier anniversaire (dans les 3 mois) ou les jours jusqu'au prochain anniversaire"
+        },
+        "fast": {
+          "title": "Résultats Instantanés",
+          "description": "Obtenez votre âge et informations d'anniversaire en secondes"
+        }
       }
     }
   }

@@ -8,10 +8,11 @@ export interface InputConfig {
   label: string;
   placeholder: string;
   value: string;
-  unit: string;
-  units: Array<{value: string; label: string}>;
+  unit?: string;
+  units?: Array<{value: string; label: string}>;
+  type?: string;
   onChange: (value: string) => void;
-  onUnitChange: (unit: string) => void;
+  onUnitChange?: (unit: string) => void;
 }
 
 export interface ResultConfig {
@@ -102,25 +103,37 @@ export default function Calculator2In1Out({config, className = ''}: Calculator2I
     const input2UnitParam = searchParams.get(config.urlParams.input2UnitParam);
 
     if (input1Param) {
-      const num = parseFloat(input1Param);
-      if (!isNaN(num) && num > 0) {
+      if (config.input1.type === 'date') {
+        // For date inputs, use the value directly
         config.input1.onChange(input1Param);
+      } else {
+        // For number inputs, parse as number
+        const num = parseFloat(input1Param);
+        if (!isNaN(num) && num > 0) {
+          config.input1.onChange(input1Param);
+        }
       }
     }
     
-    if (input1UnitParam && config.input1.units.some(u => u.value === input1UnitParam)) {
-      config.input1.onUnitChange(input1UnitParam);
+    if (input1UnitParam && config.input1.units?.some(u => u.value === input1UnitParam)) {
+      config.input1.onUnitChange?.(input1UnitParam);
     }
     
     if (input2Param) {
-      const num = parseFloat(input2Param);
-      if (!isNaN(num) && num > 0) {
+      if (config.input2.type === 'date') {
+        // For date inputs, use the value directly
         config.input2.onChange(input2Param);
+      } else {
+        // For number inputs, parse as number
+        const num = parseFloat(input2Param);
+        if (!isNaN(num) && num > 0) {
+          config.input2.onChange(input2Param);
+        }
       }
     }
     
-    if (input2UnitParam && config.input2.units.some(u => u.value === input2UnitParam)) {
-      config.input2.onUnitChange(input2UnitParam);
+    if (input2UnitParam && config.input2.units?.some(u => u.value === input2UnitParam)) {
+      config.input2.onUnitChange?.(input2UnitParam);
     }
     
     setUrlParamsLoaded(true);
@@ -158,15 +171,23 @@ export default function Calculator2In1Out({config, className = ''}: Calculator2I
   const calculate = () => {
     if (!config.input1.value || !config.input2.value) return;
 
-    const input1Num = parseFloat(config.input1.value);
-    const input2Num = parseFloat(config.input2.value);
+    // Handle different input types
+    if (config.input1.type === 'date' || config.input2.type === 'date') {
+      // For date inputs, pass the string values directly
+      const result = config.calculate(config.input1.value, config.input1.unit || '', config.input2.value, config.input2.unit || '');
+      setResult(result);
+    } else {
+      // For number inputs, parse as numbers
+      const input1Num = parseFloat(config.input1.value);
+      const input2Num = parseFloat(config.input2.value);
 
-    if (isNaN(input1Num) || isNaN(input2Num) || input1Num <= 0 || input2Num <= 0) {
-      return;
+      if (isNaN(input1Num) || isNaN(input2Num) || input1Num <= 0 || input2Num <= 0) {
+        return;
+      }
+
+      const result = config.calculate(input1Num, config.input1.unit || '', input2Num, config.input2.unit || '');
+      setResult(result);
     }
-
-    const result = config.calculate(input1Num, config.input1.unit, input2Num, config.input2.unit);
-    setResult(result);
   };
 
   const reset = () => {
@@ -231,35 +252,37 @@ export default function Calculator2In1Out({config, className = ''}: Calculator2I
               <label className="block text-lg font-semibold text-gray-900 mb-3">
                 {config.input1.label}
               </label>
-              <div className="flex rounded-2xl overflow-hidden shadow-lg border border-gray-200 focus-within:ring-2 focus-within:ring-blue-500 focus-within:border-blue-500 transition-all duration-300">
+              <div className={`${config.input1.units ? 'flex' : ''} rounded-2xl overflow-hidden shadow-lg border border-gray-200 focus-within:ring-2 focus-within:ring-blue-500 focus-within:border-blue-500 transition-all duration-300`}>
                 <input
-                  type="number"
+                  type={config.input1.type || "number"}
                   value={config.input1.value}
                   onChange={(e) => {
                     config.input1.onChange(e.target.value);
                     if (config.urlParams?.enabled) {
-                      debouncedUpdateURL(e.target.value, config.input1.unit, config.input2.value, config.input2.unit);
+                      debouncedUpdateURL(e.target.value, config.input1.unit || '', config.input2.value, config.input2.unit || '');
                     }
                   }}
                   placeholder={config.input1.placeholder}
                   className="flex-1 px-6 py-4 text-lg focus:outline-none bg-white"
                 />
-                <select
-                  value={config.input1.unit}
-                  onChange={(e) => {
-                    config.input1.onUnitChange(e.target.value);
-                    if (config.urlParams?.enabled) {
-                      updateURLParams(config.input1.value, e.target.value, config.input2.value, config.input2.unit);
-                    }
-                  }}
-                  className="px-6 py-4 text-lg focus:outline-none bg-gray-50 border-l border-gray-200 font-medium"
-                >
-                  {config.input1.units.map((unit) => (
-                    <option key={unit.value} value={unit.value}>
-                      {unit.label}
-                    </option>
-                  ))}
-                </select>
+                {config.input1.units && (
+                  <select
+                    value={config.input1.unit}
+                    onChange={(e) => {
+                      config.input1.onUnitChange?.(e.target.value);
+                      if (config.urlParams?.enabled) {
+                        updateURLParams(config.input1.value, e.target.value, config.input2.value, config.input2.unit || '');
+                      }
+                    }}
+                    className="px-6 py-4 text-lg focus:outline-none bg-gray-50 border-l border-gray-200 font-medium"
+                  >
+                    {config.input1.units.map((unit) => (
+                      <option key={unit.value} value={unit.value}>
+                        {unit.label}
+                      </option>
+                    ))}
+                  </select>
+                )}
               </div>
             </div>
 
@@ -268,35 +291,37 @@ export default function Calculator2In1Out({config, className = ''}: Calculator2I
               <label className="block text-lg font-semibold text-gray-900 mb-3">
                 {config.input2.label}
               </label>
-              <div className="flex rounded-2xl overflow-hidden shadow-lg border border-gray-200 focus-within:ring-2 focus-within:ring-blue-500 focus-within:border-blue-500 transition-all duration-300">
+              <div className={`${config.input2.units ? 'flex' : ''} rounded-2xl overflow-hidden shadow-lg border border-gray-200 focus-within:ring-2 focus-within:ring-blue-500 focus-within:border-blue-500 transition-all duration-300`}>
                 <input
-                  type="number"
+                  type={config.input2.type || "number"}
                   value={config.input2.value}
                   onChange={(e) => {
                     config.input2.onChange(e.target.value);
                     if (config.urlParams?.enabled) {
-                      debouncedUpdateURL(config.input1.value, config.input1.unit, e.target.value, config.input2.unit);
+                      debouncedUpdateURL(config.input1.value, config.input1.unit || '', e.target.value, config.input2.unit || '');
                     }
                   }}
                   placeholder={config.input2.placeholder}
                   className="flex-1 px-6 py-4 text-lg focus:outline-none bg-white"
                 />
-                <select
-                  value={config.input2.unit}
-                  onChange={(e) => {
-                    config.input2.onUnitChange(e.target.value);
-                    if (config.urlParams?.enabled) {
-                      updateURLParams(config.input1.value, config.input1.unit, config.input2.value, e.target.value);
-                    }
-                  }}
-                  className="px-6 py-4 text-lg focus:outline-none bg-gray-50 border-l border-gray-200 font-medium"
-                >
-                  {config.input2.units.map((unit) => (
-                    <option key={unit.value} value={unit.value}>
-                      {unit.label}
-                    </option>
-                  ))}
-                </select>
+                {config.input2.units && (
+                  <select
+                    value={config.input2.unit}
+                    onChange={(e) => {
+                      config.input2.onUnitChange?.(e.target.value);
+                      if (config.urlParams?.enabled) {
+                        updateURLParams(config.input1.value, config.input1.unit || '', config.input2.value, e.target.value);
+                      }
+                    }}
+                    className="px-6 py-4 text-lg focus:outline-none bg-gray-50 border-l border-gray-200 font-medium"
+                  >
+                    {config.input2.units.map((unit) => (
+                      <option key={unit.value} value={unit.value}>
+                        {unit.label}
+                      </option>
+                    ))}
+                  </select>
+                )}
               </div>
             </div>
           </div>

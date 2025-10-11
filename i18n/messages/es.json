@@ -254,7 +254,7 @@
       },
       "age": {
         "name": "Calculadora de Edad",
-        "description": "Calcula la edad en años, meses y días"
+        "description": "Calcula la edad y tiempo hasta el próximo cumpleaños"
       },
       "time": {
         "name": "Calculadora de Tiempo",
@@ -275,6 +275,80 @@
       "temperature": {
         "name": "Convertidor de Temperatura",
         "description": "Convierte entre escalas de temperatura"
+      }
+    },
+    "tiempo": {
+      "edad": {
+        "name": "Calculadora de Edad",
+        "description": "Calcula la edad y tiempo hasta el próximo cumpleaños"
+      }
+    }
+  },
+  "ageCalc": {
+    "title": "Calculadora de Edad",
+    "subtitle": "Calcula tu edad y tiempo hasta tu próximo cumpleaños",
+    "meta": {
+      "title": "Calculadora de Edad | Calcula Edad y Cuenta Regresiva de Cumpleaños",
+      "description": "Calculadora de edad gratuita para determinar tu edad exacta y cuenta regresiva hasta tu próximo cumpleaños. Soporta años bisiestos y cálculos de fecha precisos."
+    },
+    "form": {
+      "birthday": "Cumpleaños",
+      "birthdayPlaceholder": "Selecciona tu cumpleaños",
+      "currentDate": "Fecha Actual",
+      "currentDatePlaceholder": "Selecciona fecha actual",
+      "calculate": "Calcular Edad",
+      "reset": "Reiniciar"
+    },
+    "result": {
+      "title": "Resultado de Edad",
+      "subtitle": "Tu edad e información de cumpleaños",
+      "years": "años",
+      "futureBirthday": "El cumpleaños es en el futuro",
+      "futureSubtitle": "Por favor selecciona un cumpleaños válido",
+      "daysSinceBirthday": "{days} días desde tu último cumpleaños",
+      "daysUntilBirthday": "{days} días hasta tu próximo cumpleaños"
+    },
+    "examples": {
+      "title": "Ejemplos de Calculadora de Edad",
+      "subtitle": "Ve cómo funciona la calculadora de edad con diferentes escenarios",
+      "birthdayLabel": "Cumpleaños",
+      "currentDateLabel": "Fecha Actual",
+      "result": "Resultado",
+      "birthday": {
+        "title": "Cumpleaños Regular",
+        "description": "Calcula la edad para un escenario de cumpleaños estándar",
+        "result": "33 años, 45 días desde el último cumpleaños"
+      },
+      "recentBirthday": {
+        "title": "Cumpleaños Reciente",
+        "description": "Cumpleaños dentro de los últimos 3 meses - muestra días desde",
+        "result": "38 años, 45 días desde el último cumpleaños"
+      },
+      "futureBirthday": {
+        "title": "Cumpleaños Futuro",
+        "description": "Cumpleaños en el futuro - muestra mensaje de error",
+        "result": "El cumpleaños es en el futuro"
+      },
+      "leapYear": {
+        "title": "Cumpleaños de Año Bisiesto",
+        "description": "Maneja correctamente los cumpleaños de año bisiesto",
+        "result": "24 años, 155 días hasta el próximo cumpleaños"
+      },
+      "features": {
+        "title": "¿Por qué usar nuestra Calculadora de Edad?",
+        "subtitle": "Precisa, inteligente y fácil de usar",
+        "accurate": {
+          "title": "Cálculos Precisos",
+          "description": "Maneja años bisiestos, diferencias de mes y casos límite perfectamente"
+        },
+        "smart": {
+          "title": "Visualización Inteligente",
+          "description": "Muestra días desde el último cumpleaños (dentro de 3 meses) o días hasta el próximo cumpleaños"
+        },
+        "fast": {
+          "title": "Resultados Instantáneos",
+          "description": "Obtén tu edad e información de cumpleaños en segundos"
+        }
       }
     }
   }

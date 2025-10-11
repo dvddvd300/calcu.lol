@@ -254,7 +254,7 @@
       },
       "age": {
         "name": "Altersrechner",
-        "description": "Berechne Alter in Jahren, Monaten und Tagen"
+        "description": "Berechne Alter und Zeit bis zum nächsten Geburtstag"
       },
       "time": {
         "name": "Zeitrechner",
@@ -275,6 +275,80 @@
       "temperature": {
         "name": "Temperaturumrechner",
         "description": "Konvertieren zwischen Temperaturskalen"
+      }
+    },
+    "zeit": {
+      "alter": {
+        "name": "Altersrechner",
+        "description": "Berechne Alter und Zeit bis zum nächsten Geburtstag"
+      }
+    }
+  },
+  "ageCalc": {
+    "title": "Altersrechner",
+    "subtitle": "Berechne dein Alter und die Zeit bis zu deinem nächsten Geburtstag",
+    "meta": {
+      "title": "Altersrechner | Berechne Alter und Geburtstags-Countdown",
+      "description": "Kostenloser Altersrechner zur Bestimmung deines genauen Alters und Countdown bis zu deinem nächsten Geburtstag. Unterstützt Schaltjahre und präzise Datumsberechnungen."
+    },
+    "form": {
+      "birthday": "Geburtstag",
+      "birthdayPlaceholder": "Wähle deinen Geburtstag",
+      "currentDate": "Aktuelles Datum",
+      "currentDatePlaceholder": "Wähle aktuelles Datum",
+      "calculate": "Alter Berechnen",
+      "reset": "Zurücksetzen"
+    },
+    "result": {
+      "title": "Altersergebnis",
+      "subtitle": "Dein Alter und Geburtstagsinformationen",
+      "years": "Jahre alt",
+      "futureBirthday": "Geburtstag ist in der Zukunft",
+      "futureSubtitle": "Bitte wähle einen gültigen Geburtstag",
+      "daysSinceBirthday": "{days} Tage seit deinem letzten Geburtstag",
+      "daysUntilBirthday": "{days} Tage bis zu deinem nächsten Geburtstag"
+    },
+    "examples": {
+      "title": "Altersrechner Beispiele",
+      "subtitle": "Sieh, wie der Altersrechner mit verschiedenen Szenarien funktioniert",
+      "birthdayLabel": "Geburtstag",
+      "currentDateLabel": "Aktuelles Datum",
+      "result": "Ergebnis",
+      "birthday": {
+        "title": "Normaler Geburtstag",
+        "description": "Berechne Alter für ein Standard-Geburtstagsszenario",
+        "result": "33 Jahre alt, 45 Tage seit letztem Geburtstag"
+      },
+      "recentBirthday": {
+        "title": "Kürzlicher Geburtstag",
+        "description": "Geburtstag innerhalb der letzten 3 Monate - zeigt Tage seit",
+        "result": "38 Jahre alt, 45 Tage seit letztem Geburtstag"
+      },
+      "futureBirthday": {
+        "title": "Zukünftiger Geburtstag",
+        "description": "Geburtstag in der Zukunft - zeigt Fehlermeldung",
+        "result": "Geburtstag ist in der Zukunft"
+      },
+      "leapYear": {
+        "title": "Schaltjahr-Geburtstag",
+        "description": "Behandelt Schaltjahr-Geburtstage korrekt",
+        "result": "24 Jahre alt, 155 Tage bis zum nächsten Geburtstag"
+      },
+      "features": {
+        "title": "Warum unseren Altersrechner verwenden?",
+        "subtitle": "Präzise, intelligent und einfach zu verwenden",
+        "accurate": {
+          "title": "Präzise Berechnungen",
+          "description": "Behandelt Schaltjahre, Monatsunterschiede und Grenzfälle perfekt"
+        },
+        "smart": {
+          "title": "Intelligente Anzeige",
+          "description": "Zeigt Tage seit letztem Geburtstag (innerhalb von 3 Monaten) oder Tage bis zum nächsten Geburtstag"
+        },
+        "fast": {
+          "title": "Sofortige Ergebnisse",
+          "description": "Erhalte dein Alter und Geburtstagsinformationen in Sekunden"
+        }
       }
     }
   }
