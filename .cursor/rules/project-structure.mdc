@@ -21,12 +21,73 @@ This project is a multi-language calculator website built with Next.js 15, TypeS
 - All calculators use consistent patterns and i18n
 
 ### Current Calculators:
-- **Math**: Percentage Calculator (`/math/percentage-calculator`)
-- **Finance**: Tip Calculator (`/finance/tip-calculator`)
-- **Technology**: Speed Calculator, Storage Converter (`/ti/`)
-- **Health**: BMI Calculator
-- **Time**: Age, Time, Date Calculators
-- **Conversion**: Unit, Currency, Temperature Converters
+
+#### Math Calculators
+- **Percentage Calculator** (`/math/percentage-calculator`)
+  - Calculate percentages, percentage change, and percentage of totals
+  - URL: `https://calcu.lol/en/math/percentage-calculator`
+
+#### Finance Calculators
+- **Tip Calculator** (`/finance/tip-calculator`)
+  - Calculate tips and split bills
+  - URL: `https://calcu.lol/en/finance/tip-calculator`
+
+#### Technology Calculators (ti/)
+- **Speed Calculator** (`/ti/speed-calculator`)
+  - Calculate speed, distance, and time relationships
+  - URL: `https://calcu.lol/en/ti/speed-calculator`
+- **Storage Calculator** (`/ti/storage-calculator`)
+  - Convert between different storage units (bytes, KB, MB, GB, TB, etc.)
+  - URL: `https://calcu.lol/en/ti/storage-calculator`
+
+#### Time & Date Calculators
+- **Age Calculator** (`/time/age-calculator`)
+  - Calculate age in years, months, days, hours, minutes, and seconds
+  - URL: `https://calcu.lol/en/time/age-calculator`
+- **Date Calculator** (`/time/date-calculator`)
+  - Calculate the difference between two dates
+  - URL: `https://calcu.lol/en/time/date-calculator`
+- **Time Calculator** (`/time/time-calculator`)
+  - Add or subtract time values
+  - URL: `https://calcu.lol/en/time/time-calculator`
+
+#### Conversion Calculators
+- **Distance Converter** (`/conversion/distance-converter`)
+  - Convert between different distance units (km, miles, meters, feet, etc.)
+  - URL: `https://calcu.lol/en/conversion/distance-converter`
+- **Speed Converter** (`/conversion/speed-converter`)
+  - Convert between different speed units (km/h, mph, m/s, etc.)
+  - URL: `https://calcu.lol/en/conversion/speed-converter`
+- **Temperature Converter** (`/conversion/temperature-converter`)
+  - Convert between Celsius, Fahrenheit, and Kelvin
+  - URL: `https://calcu.lol/en/conversion/temperature-converter`
+- **Weight Converter** (`/conversion/weight-converter`)
+  - Convert between different weight units (kg, lbs, grams, etc.)
+  - URL: `https://calcu.lol/en/conversion/weight-converter`
+
+## AI Endpoints for LLM Integration
+
+### Root-Level AI Endpoints:
+- **`/llms.txt`** - AI/LLM site metadata with essential information about calculators
+- **`/llms-full.txt`** - Complete documentation for LLMs with detailed calculator information
+- **`/manifest.json`** - Progressive Web App manifest for mobile installation
+- **`/app-ads.txt`** - App advertising configuration
+- **`/.well-known/traffic-advice`** - Chrome prefetching hints for performance
+
+### AI Endpoint Content Guidelines:
+- **DO NOT expose technical implementation details** (Next.js, TypeScript, etc.)
+- **DO NOT expose API endpoints** or internal routes
+- **DO provide calculator URLs** for each tool mentioned
+- **DO include calculator descriptions** and use cases
+- **DO mention multi-language support** (English, Spanish, French, German)
+- **DO include target audience** and use cases
+- **DO provide site overview** and purpose
+
+### AI Endpoint Updates:
+- Update `/llms.txt` and `/llms-full.txt` when adding new calculators
+- Include new calculator URLs in the documentation
+- Maintain consistent formatting and structure
+- Keep content focused on user-facing features, not technical implementation
 
 ## URL Structure & Internationalization
 
@@ -152,11 +213,18 @@ Always add to `i18n/routing.ts`:
 - [ ] Include comprehensive examples
 - [ ] Use consistent styling and animations
 
-### 5. Testing:
+### 5. AI Endpoints:
+- [ ] Update `/llms.txt` with new calculator information
+- [ ] Update `/llms-full.txt` with detailed calculator documentation
+- [ ] Include new calculator URL in AI endpoint content
+- [ ] Verify AI endpoint content doesn't expose technical details
+
+### 6. Testing:
 - [ ] Test all language variants
 - [ ] Test URL parameter functionality
 - [ ] Test share functionality
 - [ ] Verify SEO metadata
+- [ ] Test AI endpoints return correct content
 
 ## Critical Rules (Always Follow)
 
@@ -179,6 +247,14 @@ Always add to `i18n/routing.ts`:
 - Use tool name as namespace (e.g., `tipCalc`, `percentageCalc`)
 - Always include: `title`, `subtitle`, `meta`, `form`, `result`, `examples`
 - Add to all 4 language files: `en.json`, `es.json`, `de.json`, `fr.json`
+
+### 5. AI Endpoint Content Rules
+- **NEVER expose technical implementation** (Next.js, TypeScript, build tools, etc.)
+- **NEVER expose internal API endpoints** or server-side routes
+- **ALWAYS include calculator URLs** when mentioning tools
+- **ALWAYS update AI endpoints** when adding new calculators
+- **ALWAYS focus on user-facing features** and benefits
+- **ALWAYS mention multi-language support** and target audience
 
 ## Common Patterns
 
