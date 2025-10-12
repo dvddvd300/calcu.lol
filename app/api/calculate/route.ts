@@ -7,13 +7,6 @@ interface SpeedParams {
   speedUnit: string;
 }
 
-interface BMIParams {
-  height: number;
-  weight: number;
-  heightUnit: string;
-  weightUnit: string;
-}
-
 interface PercentageParams {
   value: number;
   percentage: number;
@@ -27,7 +20,7 @@ interface TipParams {
 
 interface LogEvent {
   tool: string;
-  params: SpeedParams | BMIParams | PercentageParams | TipParams;
+  params: SpeedParams | PercentageParams | TipParams;
   locale: string;
   timestamp: number;
   result: unknown;
@@ -47,9 +40,6 @@ export async function POST(req: NextRequest) {
     switch (tool) {
       case 'speed':
         result = calculateSpeed(params);
-        break;
-      case 'bmi':
-        result = calculateBMI(params);
         break;
       case 'percentage':
         result = calculatePercentage(params);
@@ -88,30 +78,6 @@ function calculateSpeed(params: SpeedParams) {
   return {
     timeInSeconds,
     formatted: formatTime(timeInSeconds)
-  };
-}
-
-function calculateBMI(params: BMIParams) {
-  const {height, weight, heightUnit, weightUnit} = params;
-  
-  let heightInMeters = height;
-  let weightInKg = weight;
-  
-  if (heightUnit === 'ft') {
-    heightInMeters = height * 0.3048;
-  } else if (heightUnit === 'in') {
-    heightInMeters = height * 0.0254;
-  }
-  
-  if (weightUnit === 'lbs') {
-    weightInKg = weight * 0.453592;
-  }
-  
-  const bmi = weightInKg / (heightInMeters * heightInMeters);
-  
-  return {
-    bmi: Math.round(bmi * 10) / 10,
-    category: getBMICategory(bmi)
   };
 }
 
@@ -173,13 +139,6 @@ function formatTime(seconds: number): string {
     const days = seconds / 86400;
     return `${Math.round(days * 100) / 100} days`;
   }
-}
-
-function getBMICategory(bmi: number): string {
-  if (bmi < 18.5) return 'underweight';
-  if (bmi < 25) return 'normal';
-  if (bmi < 30) return 'overweight';
-  return 'obese';
 }
 
 async function logEvent(event: LogEvent) {

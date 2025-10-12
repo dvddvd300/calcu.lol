@@ -2,15 +2,14 @@
   "home": {
     "title": "Kostenlose Online-Rechner",
     "subtitle": "Berechne alles mit unseren kostenlosen Tools",
-    "description": "Eine umfassende Sammlung kostenloser Rechner für alltägliche Berechnungen. Von Geschwindigkeit und Zeit bis zu BMI und Prozentsätzen.",
+    "description": "Eine umfassende Sammlung kostenloser Rechner für alltägliche Berechnungen. Von Geschwindigkeit und Zeit bis zu Prozentsätzen.",
     "meta": {
       "title": "Kostenlose Online-Rechner | calcu.lol",
-      "description": "Kostenlose Online-Rechner für Geschwindigkeit, Zeit, BMI, Prozentsätze und mehr. Berechne alles mit unserer umfassenden Tool-Sammlung."
+      "description": "Kostenlose Online-Rechner für Geschwindigkeit, Zeit, Prozentsätze und mehr. Berechne alles mit unserer umfassenden Tool-Sammlung."
     },
     "featured": {
       "title": "Empfohlene Rechner",
       "speed": "Geschwindigkeitsrechner",
-      "bmi": "BMI-Rechner",
       "percentage": "Prozentrechner",
       "tip": "Trinkgeldrechner"
     }

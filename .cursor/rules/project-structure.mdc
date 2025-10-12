@@ -248,6 +248,13 @@ Always add to `i18n/routing.ts`:
 - Always include: `title`, `subtitle`, `meta`, `form`, `result`, `examples`
 - Add to all 4 language files: `en.json`, `es.json`, `de.json`, `fr.json`
 
+### Translation File Format (CRITICAL):
+- **ALWAYS wrap translation content in namespace object**
+- **CORRECT format**: `{"toolName": { "title": "...", "subtitle": "..." }}`
+- **INCORRECT format**: `{"title": "...", "subtitle": "..."}`
+- **Example**: For `countdownTimer.json`, wrap all content in `{"countdownTimer": { ... }}`
+- **This prevents "MISSING_MESSAGE" errors during runtime**
+
 ### 5. AI Endpoint Content Rules
 - **NEVER expose technical implementation** (Next.js, TypeScript, build tools, etc.)
 - **NEVER expose internal API endpoints** or server-side routes

@@ -1,0 +1,101 @@
+{
+  "workHoursCalc": {
+    "title": "Calculateur d'Heures de Travail",
+    "subtitle": "Calculez vos heures de travail quotidiennes incluant les pauses et les heures supplémentaires",
+  "meta": {
+    "title": "Calculateur d'Heures de Travail | Calculer les Heures de Travail Quotidiennes et Heures Supplémentaires",
+    "description": "Calculateur gratuit d'heures de travail pour calculer les heures de travail quotidiennes, temps de pause, heures supplémentaires et métriques de productivité. Parfait pour le suivi du temps, la paie et l'analyse de productivité."
+  },
+  "form": {
+    "startTime": "Heure de Début",
+    "startTimePlaceholder": "Sélectionner l'heure de début",
+    "endTime": "Heure de Fin",
+    "endTimePlaceholder": "Sélectionner l'heure de fin",
+    "breakDuration": "Durée de Pause",
+    "minutes": "Minutes",
+    "hours": "Heures",
+    "breakNote": "Entrez votre temps de pause total pour la journée",
+    "calculate": "Calculer",
+    "reset": "Réinitialiser"
+  },
+  "result": {
+    "title": "Résumé des Heures de Travail",
+    "subtitle": "Répartition de votre temps de travail quotidien",
+    "hours": "heures",
+    "worked": "travaillées",
+    "breakdown": "Répartition du Temps",
+    "totalTime": "Temps Total",
+    "breakTime": "Temps de Pause",
+    "workTime": "Temps de Travail",
+    "overtime": "Analyse des Heures Supplémentaires",
+    "standardHours": "Heures Standard",
+    "overtimeHours": "Heures Supplémentaires",
+    "none": "Aucune",
+    "efficiency": "Efficacité",
+    "workHours": "Répartition des Heures de Travail",
+    "dailyHours": "Heures Quotidiennes",
+    "weeklyHours": "Heures Hebdomadaires",
+    "monthlyHours": "Heures Mensuelles"
+  },
+  "examples": {
+    "title": "Scénarios de Travail Courants",
+    "subtitle": "Découvrez comment le calculateur d'heures de travail aide dans différentes situations de travail",
+    "input": "Entrée",
+    "output": "Sortie",
+    "explanation": "Explication",
+    "standard": {
+      "title": "Journée de Travail Standard",
+      "description": "Journée de travail régulière de 8 heures avec pauses",
+      "scenario1": {
+        "input": "9h00 - 17h00 avec 1 heure de pause",
+        "output": "7 heures travaillées",
+        "explanation": "Journée de travail standard à temps plein avec pause déjeuner"
+      },
+      "scenario2": {
+        "input": "8h00 - 16h30 avec 30 minutes de pause",
+        "output": "8 heures travaillées",
+        "explanation": "Journée complète de 8 heures avec pause courte"
+      }
+    },
+    "overtime": {
+      "title": "Travail en Heures Supplémentaires",
+      "description": "Heures étendues au-delà de la journée de travail standard",
+      "scenario1": {
+        "input": "9h00 - 19h00 avec 1 heure de pause",
+        "output": "9 heures travaillées (1 heure supplémentaire)",
+        "explanation": "Travail en heures supplémentaires avec potentiel temps et demi"
+      },
+      "scenario2": {
+        "input": "8h00 - 18h00 avec 1 heure de pause",
+        "output": "9 heures travaillées (1 heure supplémentaire)",
+        "explanation": "Journée étendue pour finaliser le projet"
+      }
+    },
+    "shift": {
+      "title": "Travail par Équipes",
+      "description": "Horaires de travail non traditionnels",
+      "scenario1": {
+        "input": "23h00 - 7h00 avec 30 minutes de pause",
+        "output": "7,5 heures travaillées",
+        "explanation": "Équipe de nuit avec heures de nuit"
+      }
+    },
+    "tips": {
+      "title": "Conseils Pro",
+      "description": "Tirez le meilleur parti du suivi des heures de travail",
+      "tip1": {
+        "title": "Suivi des Pauses",
+        "description": "Incluez toutes les pauses : déjeuner, pauses café et temps personnel"
+      },
+      "tip2": {
+        "title": "Calcul des Heures Supplémentaires",
+        "description": "Suivez les heures supplémentaires pour une compensation adéquate et l'équilibre travail-vie"
+      },
+      "tip3": {
+        "title": "Métriques de Productivité",
+        "description": "Utilisez les pourcentages d'efficacité pour optimiser votre planning de travail"
+      }
+    }
+  }
+  }
+}

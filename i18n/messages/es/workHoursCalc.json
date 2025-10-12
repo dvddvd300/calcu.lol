@@ -1,0 +1,101 @@
+{
+  "workHoursCalc": {
+    "title": "Calculadora de Horas de Trabajo",
+    "subtitle": "Calcula tus horas de trabajo diarias incluyendo descansos y horas extra",
+  "meta": {
+    "title": "Calculadora de Horas de Trabajo | Calcular Horas de Trabajo Diarias y Horas Extra",
+    "description": "Calculadora gratuita de horas de trabajo para calcular horas de trabajo diarias, tiempo de descanso, horas extra y métricas de productividad. Perfecta para seguimiento de tiempo, nómina y análisis de productividad."
+  },
+  "form": {
+    "startTime": "Hora de Inicio",
+    "startTimePlaceholder": "Selecciona hora de inicio",
+    "endTime": "Hora de Fin",
+    "endTimePlaceholder": "Selecciona hora de fin",
+    "breakDuration": "Duración del Descanso",
+    "minutes": "Minutos",
+    "hours": "Horas",
+    "breakNote": "Ingresa tu tiempo total de descanso del día",
+    "calculate": "Calcular",
+    "reset": "Reiniciar"
+  },
+  "result": {
+    "title": "Resumen de Horas de Trabajo",
+    "subtitle": "Desglose de tu tiempo de trabajo diario",
+    "hours": "horas",
+    "worked": "trabajadas",
+    "breakdown": "Desglose de Tiempo",
+    "totalTime": "Tiempo Total",
+    "breakTime": "Tiempo de Descanso",
+    "workTime": "Tiempo de Trabajo",
+    "overtime": "Análisis de Horas Extra",
+    "standardHours": "Horas Estándar",
+    "overtimeHours": "Horas Extra",
+    "none": "Ninguna",
+    "efficiency": "Eficiencia",
+    "workHours": "Desglose de Horas de Trabajo",
+    "dailyHours": "Horas Diarias",
+    "weeklyHours": "Horas Semanales",
+    "monthlyHours": "Horas Mensuales"
+  },
+  "examples": {
+    "title": "Escenarios de Trabajo Comunes",
+    "subtitle": "Ve cómo la calculadora de horas de trabajo ayuda en diferentes situaciones laborales",
+    "input": "Entrada",
+    "output": "Salida",
+    "explanation": "Explicación",
+    "standard": {
+      "title": "Jornada Laboral Estándar",
+      "description": "Jornada laboral regular de 8 horas con descansos",
+      "scenario1": {
+        "input": "9:00 AM - 5:00 PM con 1 hora de descanso",
+        "output": "7 horas trabajadas",
+        "explanation": "Jornada laboral estándar de tiempo completo con descanso para almorzar"
+      },
+      "scenario2": {
+        "input": "8:00 AM - 4:30 PM con 30 minutos de descanso",
+        "output": "8 horas trabajadas",
+        "explanation": "Día completo de 8 horas con descanso corto"
+      }
+    },
+    "overtime": {
+      "title": "Trabajo de Horas Extra",
+      "description": "Horas extendidas más allá de la jornada laboral estándar",
+      "scenario1": {
+        "input": "9:00 AM - 7:00 PM con 1 hora de descanso",
+        "output": "9 horas trabajadas (1 hora extra)",
+        "explanation": "Trabajo de horas extra con potencial de tiempo y medio"
+      },
+      "scenario2": {
+        "input": "8:00 AM - 6:00 PM con 1 hora de descanso",
+        "output": "9 horas trabajadas (1 hora extra)",
+        "explanation": "Día extendido para completar proyecto"
+      }
+    },
+    "shift": {
+      "title": "Trabajo por Turnos",
+      "description": "Horarios de trabajo no tradicionales",
+      "scenario1": {
+        "input": "11:00 PM - 7:00 AM con 30 minutos de descanso",
+        "output": "7.5 horas trabajadas",
+        "explanation": "Turno nocturno con horas durante la noche"
+      }
+    },
+    "tips": {
+      "title": "Consejos Profesionales",
+      "description": "Aprovecha al máximo el seguimiento de horas de trabajo",
+      "tip1": {
+        "title": "Seguimiento de Descansos",
+        "description": "Incluye todos los descansos: almuerzo, descansos para café y tiempo personal"
+      },
+      "tip2": {
+        "title": "Cálculo de Horas Extra",
+        "description": "Rastrea las horas extra para compensación adecuada y equilibrio trabajo-vida"
+      },
+      "tip3": {
+        "title": "Métricas de Productividad",
+        "description": "Usa porcentajes de eficiencia para optimizar tu horario de trabajo"
+      }
+    }
+  }
+  }
+}

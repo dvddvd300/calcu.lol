@@ -1,0 +1,101 @@
+{
+  "workHoursCalc": {
+    "title": "Arbeitsstunden-Rechner",
+    "subtitle": "Berechnen Sie Ihre täglichen Arbeitsstunden inklusive Pausen und Überstunden",
+  "meta": {
+    "title": "Arbeitsstunden-Rechner | Tägliche Arbeitsstunden und Überstunden berechnen",
+    "description": "Kostenloser Arbeitsstunden-Rechner zur Berechnung täglicher Arbeitsstunden, Pausenzeit, Überstunden und Produktivitätsmetriken. Perfekt für Zeiterfassung, Lohnabrechnung und Produktivitätsanalyse."
+  },
+  "form": {
+    "startTime": "Startzeit",
+    "startTimePlaceholder": "Startzeit auswählen",
+    "endTime": "Endzeit",
+    "endTimePlaceholder": "Endzeit auswählen",
+    "breakDuration": "Pausendauer",
+    "minutes": "Minuten",
+    "hours": "Stunden",
+    "breakNote": "Geben Sie Ihre gesamte Pausenzeit für den Tag ein",
+    "calculate": "Berechnen",
+    "reset": "Zurücksetzen"
+  },
+  "result": {
+    "title": "Arbeitsstunden-Zusammenfassung",
+    "subtitle": "Ihre tägliche Arbeitszeit-Aufschlüsselung",
+    "hours": "Stunden",
+    "worked": "gearbeitet",
+    "breakdown": "Zeit-Aufschlüsselung",
+    "totalTime": "Gesamtzeit",
+    "breakTime": "Pausenzeit",
+    "workTime": "Arbeitszeit",
+    "overtime": "Überstunden-Analyse",
+    "standardHours": "Standardstunden",
+    "overtimeHours": "Überstunden",
+    "none": "Keine",
+    "efficiency": "Effizienz",
+    "workHours": "Arbeitsstunden-Aufschlüsselung",
+    "dailyHours": "Tägliche Stunden",
+    "weeklyHours": "Wöchentliche Stunden",
+    "monthlyHours": "Monatliche Stunden"
+  },
+  "examples": {
+    "title": "Häufige Arbeitsszenarien",
+    "subtitle": "Sehen Sie, wie der Arbeitsstunden-Rechner in verschiedenen Arbeitssituationen hilft",
+    "input": "Eingabe",
+    "output": "Ausgabe",
+    "explanation": "Erklärung",
+    "standard": {
+      "title": "Standard-Arbeitstag",
+      "description": "Regulärer 8-Stunden-Arbeitstag mit Pausen",
+      "scenario1": {
+        "input": "9:00 - 17:00 mit 1 Stunde Pause",
+        "output": "7 Stunden gearbeitet",
+        "explanation": "Standard-Vollzeit-Arbeitstag mit Mittagspause"
+      },
+      "scenario2": {
+        "input": "8:00 - 16:30 mit 30 Minuten Pause",
+        "output": "8 Stunden gearbeitet",
+        "explanation": "Vollständiger 8-Stunden-Tag mit kurzer Pause"
+      }
+    },
+    "overtime": {
+      "title": "Überstunden-Arbeit",
+      "description": "Verlängerte Stunden über den Standard-Arbeitstag hinaus",
+      "scenario1": {
+        "input": "9:00 - 19:00 mit 1 Stunde Pause",
+        "output": "9 Stunden gearbeitet (1 Stunde Überstunden)",
+        "explanation": "Überstunden-Arbeit mit Zeit-und-ein-Halb-Potenzial"
+      },
+      "scenario2": {
+        "input": "8:00 - 18:00 mit 1 Stunde Pause",
+        "output": "9 Stunden gearbeitet (1 Stunde Überstunden)",
+        "explanation": "Verlängerter Tag für Projektabschluss"
+      }
+    },
+    "shift": {
+      "title": "Schichtarbeit",
+      "description": "Nicht-traditionelle Arbeitszeiten",
+      "scenario1": {
+        "input": "23:00 - 7:00 mit 30 Minuten Pause",
+        "output": "7,5 Stunden gearbeitet",
+        "explanation": "Nachtschicht mit Übernachtstunden"
+      }
+    },
+    "tips": {
+      "title": "Profi-Tipps",
+      "description": "Nutzen Sie die Arbeitsstunden-Verfolgung optimal",
+      "tip1": {
+        "title": "Pausen-Verfolgung",
+        "description": "Schließen Sie alle Pausen ein: Mittagessen, Kaffeepausen und persönliche Zeit"
+      },
+      "tip2": {
+        "title": "Überstunden-Berechnung",
+        "description": "Verfolgen Sie Überstunden für angemessene Entschädigung und Work-Life-Balance"
+      },
+      "tip3": {
+        "title": "Produktivitäts-Metriken",
+        "description": "Nutzen Sie Effizienz-Prozentsätze zur Optimierung Ihres Arbeitsplans"
+      }
+    }
+  }
+  }
+}

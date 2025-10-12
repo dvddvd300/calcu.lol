@@ -94,6 +94,24 @@ export const routing = defineRouting({
       de: '/zeit/zeit-rechner',
       fr: '/temps/calculateur-temps'
     },
+    '/time/timezone-converter': {
+      en: '/time/timezone-converter',
+      es: '/tiempo/convertidor-zona-horaria',
+      de: '/zeit/zeitzonen-umrechner',
+      fr: '/temps/convertisseur-fuseau-horaire'
+    },
+    '/time/work-hours-calculator': {
+      en: '/time/work-hours-calculator',
+      es: '/tiempo/calculadora-horas-trabajo',
+      de: '/zeit/arbeitsstunden-rechner',
+      fr: '/temps/calculateur-heures-travail'
+    },
+    '/time/countdown-timer': {
+      en: '/time/countdown-timer',
+      es: '/tiempo/cronometro-cuenta-regresiva',
+      de: '/zeit/countdown-timer',
+      fr: '/temps/compte-a-rebours'
+    },
     '/conversion/distance-converter': {
       en: '/conversion/distance-converter',
       es: '/conversion/convertidor-distancia',

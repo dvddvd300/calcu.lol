@@ -23,7 +23,10 @@ export default getRequestConfig(async ({requestLocale}) => {
     'distanceConverter',
     'weightConverter',
     'temperatureConverter',
-    'speedConverter'
+    'speedConverter',
+    'timezoneConverter',
+    'workHoursCalc',
+    'countdownTimer'
   ];
 
   const messages = {};

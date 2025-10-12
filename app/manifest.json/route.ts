@@ -4,7 +4,7 @@ export async function GET() {
   const manifest = {
     "name": "calcu.lol - Free Online Calculators",
     "short_name": "calcu.lol",
-    "description": "Free online calculators for speed, time, BMI, percentages, and more. Calculate anything with our comprehensive collection of tools.",
+    "description": "Free online calculators for speed, time, percentages, and more. Calculate anything with our comprehensive collection of tools.",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",

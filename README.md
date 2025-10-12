@@ -22,7 +22,6 @@ The application uses subdirectory-based internationalization:
 ## Available Calculators
 
 - **Speed Calculator** - Calculate download time based on file size and connection speed
-- **BMI Calculator** - Calculate Body Mass Index with health recommendations
 - **Percentage Calculator** - Calculate percentages, increases, and decreases
 - **Tip Calculator** - Calculate tip amounts and split bills
 - **Age Calculator** - Calculate age in years, months, and days

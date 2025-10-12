@@ -1,0 +1,101 @@
+{
+  "workHoursCalc": {
+    "title": "Work Hours Calculator",
+    "subtitle": "Calculate your daily work hours including breaks and overtime",
+    "meta": {
+    "title": "Work Hours Calculator | Calculate Daily Work Hours & Overtime",
+    "description": "Free work hours calculator to calculate daily work hours, break time, overtime, and productivity metrics. Perfect for time tracking, payroll, and productivity analysis."
+  },
+  "form": {
+    "startTime": "Start Time",
+    "startTimePlaceholder": "Select start time",
+    "endTime": "End Time",
+    "endTimePlaceholder": "Select end time",
+    "breakDuration": "Break Duration",
+    "minutes": "Minutes",
+    "hours": "Hours",
+    "breakNote": "Enter your total break time for the day",
+    "calculate": "Calculate",
+    "reset": "Reset"
+  },
+  "result": {
+    "title": "Work Hours Summary",
+    "subtitle": "Your daily work time breakdown",
+    "hours": "hours",
+    "worked": "worked",
+    "breakdown": "Time Breakdown",
+    "totalTime": "Total Time",
+    "breakTime": "Break Time",
+    "workTime": "Work Time",
+    "overtime": "Overtime Analysis",
+    "standardHours": "Standard Hours",
+    "overtimeHours": "Overtime Hours",
+    "none": "None",
+    "efficiency": "Efficiency",
+    "workHours": "Work Hours Breakdown",
+    "dailyHours": "Daily Hours",
+    "weeklyHours": "Weekly Hours",
+    "monthlyHours": "Monthly Hours"
+  },
+  "examples": {
+    "title": "Common Work Scenarios",
+    "subtitle": "See how the work hours calculator helps in different work situations",
+    "input": "Input",
+    "output": "Output",
+    "explanation": "Explanation",
+    "standard": {
+      "title": "Standard Work Day",
+      "description": "Regular 8-hour work day with breaks",
+      "scenario1": {
+        "input": "9:00 AM - 5:00 PM with 1 hour break",
+        "output": "7 hours worked",
+        "explanation": "Standard full-time work day with lunch break"
+      },
+      "scenario2": {
+        "input": "8:00 AM - 4:30 PM with 30 minutes break",
+        "output": "8 hours worked",
+        "explanation": "Full 8-hour day with short break"
+      }
+    },
+    "overtime": {
+      "title": "Overtime Work",
+      "description": "Extended hours beyond standard work day",
+      "scenario1": {
+        "input": "9:00 AM - 7:00 PM with 1 hour break",
+        "output": "9 hours worked (1 hour overtime)",
+        "explanation": "Overtime work with time-and-a-half potential"
+      },
+      "scenario2": {
+        "input": "8:00 AM - 6:00 PM with 1 hour break",
+        "output": "9 hours worked (1 hour overtime)",
+        "explanation": "Extended day for project completion"
+      }
+    },
+    "shift": {
+      "title": "Shift Work",
+      "description": "Non-traditional work schedules",
+      "scenario1": {
+        "input": "11:00 PM - 7:00 AM with 30 minutes break",
+        "output": "7.5 hours worked",
+        "explanation": "Night shift with overnight hours"
+      }
+    },
+    "tips": {
+      "title": "Pro Tips",
+      "description": "Get the most out of work hours tracking",
+      "tip1": {
+        "title": "Break Tracking",
+        "description": "Include all breaks: lunch, coffee breaks, and personal time"
+      },
+      "tip2": {
+        "title": "Overtime Calculation",
+        "description": "Track overtime hours for proper compensation and work-life balance"
+      },
+      "tip3": {
+        "title": "Productivity Metrics",
+        "description": "Use efficiency percentages to optimize your work schedule"
+      }
+    }
+  }
+  }
+}

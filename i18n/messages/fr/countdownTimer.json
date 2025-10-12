@@ -1,0 +1,98 @@
+{
+  "countdownTimer": {
+    "title": "Compte à Rebours",
+    "subtitle": "Créez des comptes à rebours pour les événements, échéances et moments spéciaux",
+  "meta": {
+    "title": "Compte à Rebours | Créer des Temporisateurs pour Événements et Échéances",
+    "description": "Outil gratuit de compte à rebours pour créer des temporisateurs pour les événements, échéances et moments spéciaux. Parfait pour suivre le temps jusqu'aux dates importantes, échéances de projets et célébrations."
+  },
+  "form": {
+    "targetDate": "Date Cible",
+    "targetDatePlaceholder": "Sélectionner la date cible",
+    "targetTime": "Heure Cible",
+    "targetTimePlaceholder": "Sélectionner l'heure cible",
+    "liveCountdown": "Compte à Rebours en Direct",
+    "start": "Démarrer le Temporisateur",
+    "stop": "Arrêter le Temporisateur",
+    "running": "En cours",
+    "paused": "En pause",
+    "calculate": "Calculer",
+    "reset": "Réinitialiser"
+  },
+  "result": {
+    "title": "Compte à Rebours",
+    "subtitle": "Temps restant jusqu'à votre objectif",
+    "timeUp": "Le Temps est Écoulé !",
+    "timeRemaining": "Temps Restant",
+    "countdownComplete": "Compte à Rebours Terminé !",
+    "pastDate": "Cette date est déjà passée",
+    "days": "Jours",
+    "hours": "Heures",
+    "minutes": "Minutes",
+    "seconds": "Secondes"
+  },
+  "errors": {
+    "pastDate": "Veuillez sélectionner une date et heure futures"
+  },
+  "examples": {
+    "title": "Scénarios Courants de Compte à Rebours",
+    "subtitle": "Découvrez comment les comptes à rebours aident à suivre les moments importants",
+    "input": "Entrée",
+    "output": "Sortie",
+    "explanation": "Explication",
+    "events": {
+      "title": "Événements Spéciaux",
+      "description": "Compte à rebours vers les célébrations importantes et jalons",
+      "scenario1": {
+        "input": "Réveillon 2024 (31 décembre, 23h59)",
+        "output": "Compte à rebours en direct avec jours, heures, minutes, secondes",
+        "explanation": "Parfait pour les célébrations du Nouvel An et planification de fêtes"
+      },
+      "scenario2": {
+        "input": "Fête d'anniversaire (Samedi prochain, 14h00)",
+        "output": "Temps exact restant jusqu'à la célébration",
+        "explanation": "Excellent pour la planification d'anniversaire et préparation de cadeaux"
+      }
+    },
+    "deadlines": {
+      "title": "Échéances de Projets",
+      "description": "Suivez le temps restant pour les échéances de travail importantes",
+      "scenario1": {
+        "input": "Soumission de projet (Vendredi prochain, 17h00)",
+        "output": "Jours et heures restants pour terminer le projet",
+        "explanation": "Aide à gérer le temps et prioriser les tâches efficacement"
+      },
+      "scenario2": {
+        "input": "Date d'examen (Mois prochain, 09h00)",
+        "output": "Temps d'étude restant avant l'examen",
+        "explanation": "Motive un planning d'étude cohérent et la préparation"
+      }
+    },
+    "personal": {
+      "title": "Objectifs Personnels",
+      "description": "Suivez les progrès vers les jalons personnels",
+      "scenario1": {
+        "input": "Début de vacances (Mois prochain, 06h00)",
+        "output": "Construction d'excitation avec temps exact restant",
+        "explanation": "Construit l'anticipation et aide avec la préparation du voyage"
+      }
+    },
+    "tips": {
+      "title": "Conseils Pro",
+      "description": "Tirez le meilleur parti de vos comptes à rebours",
+      "tip1": {
+        "title": "Mises à Jour en Direct",
+        "description": "Le temporisateur se met à jour en temps réel, montrant le temps exact restant"
+      },
+      "tip2": {
+        "title": "Progrès Visuel",
+        "description": "Utilisez la barre de progrès pour voir combien de temps s'est écoulé"
+      },
+      "tip3": {
+        "title": "Temporisateurs Multiples",
+        "description": "Créez différents temporisateurs pour divers événements et échéances"
+      }
+    }
+  }
+  }
+}

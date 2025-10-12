@@ -23,10 +23,6 @@
         "name": "Storage Converter",
         "description": "Convert between different storage units (bytes, KB, MB, GB, TB, PB, etc.)"
       },
-      "bmi": {
-        "name": "BMI Calculator",
-        "description": "Calculate your Body Mass Index with health recommendations"
-      },
       "percentage": {
         "name": "Percentage Calculator",
         "description": "Calculate percentages, increases, and decreases"
@@ -46,6 +42,18 @@
       "date": {
         "name": "Date Calculator",
         "description": "Calculate differences between dates"
+      },
+      "timezone": {
+        "name": "Timezone Converter",
+        "description": "Convert time between different timezones worldwide"
+      },
+      "workHours": {
+        "name": "Work Hours Calculator",
+        "description": "Calculate daily work hours including breaks and overtime"
+      },
+      "countdown": {
+        "name": "Countdown Timer",
+        "description": "Create countdown timers for events and deadlines"
       },
       "distance": {
         "name": "Distance Converter",

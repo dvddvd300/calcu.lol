@@ -1,0 +1,98 @@
+{
+  "countdownTimer": {
+    "title": "Countdown Timer",
+    "subtitle": "Create countdown timers for events, deadlines, and special moments",
+    "meta": {
+    "title": "Countdown Timer | Create Timers for Events & Deadlines",
+    "description": "Free countdown timer tool to create timers for events, deadlines, and special moments. Perfect for tracking time until important dates, project deadlines, and celebrations."
+  },
+  "form": {
+    "targetDate": "Target Date",
+    "targetDatePlaceholder": "Select target date",
+    "targetTime": "Target Time",
+    "targetTimePlaceholder": "Select target time",
+    "liveCountdown": "Live Countdown",
+    "start": "Start Timer",
+    "stop": "Stop Timer",
+    "running": "Running",
+    "paused": "Paused",
+    "calculate": "Calculate",
+    "reset": "Reset"
+  },
+  "result": {
+    "title": "Countdown Timer",
+    "subtitle": "Time remaining until your target",
+    "timeUp": "Time's Up!",
+    "timeRemaining": "Time Remaining",
+    "countdownComplete": "Countdown Complete!",
+    "pastDate": "This date has already passed",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds"
+  },
+  "errors": {
+    "pastDate": "Please select a future date and time"
+  },
+  "examples": {
+    "title": "Common Countdown Scenarios",
+    "subtitle": "See how countdown timers help track important moments",
+    "input": "Input",
+    "output": "Output",
+    "explanation": "Explanation",
+    "events": {
+      "title": "Special Events",
+      "description": "Count down to important celebrations and milestones",
+      "scenario1": {
+        "input": "New Year's Eve 2024 (December 31, 11:59 PM)",
+        "output": "Live countdown with days, hours, minutes, seconds",
+        "explanation": "Perfect for New Year celebrations and party planning"
+      },
+      "scenario2": {
+        "input": "Birthday party (Next Saturday, 2:00 PM)",
+        "output": "Exact time remaining until the celebration",
+        "explanation": "Great for birthday planning and gift preparation"
+      }
+    },
+    "deadlines": {
+      "title": "Project Deadlines",
+      "description": "Track time remaining for important work deadlines",
+      "scenario1": {
+        "input": "Project submission (Next Friday, 5:00 PM)",
+        "output": "Days and hours left to complete the project",
+        "explanation": "Helps manage time and prioritize tasks effectively"
+      },
+      "scenario2": {
+        "input": "Exam date (Next month, 9:00 AM)",
+        "output": "Study time remaining before the exam",
+        "explanation": "Motivates consistent study schedule and preparation"
+      }
+    },
+    "personal": {
+      "title": "Personal Goals",
+      "description": "Track progress toward personal milestones",
+      "scenario1": {
+        "input": "Vacation start (Next month, 6:00 AM)",
+        "output": "Excitement building with exact time remaining",
+        "explanation": "Builds anticipation and helps with travel preparation"
+      }
+    },
+    "tips": {
+      "title": "Pro Tips",
+      "description": "Get the most out of your countdown timers",
+      "tip1": {
+        "title": "Live Updates",
+        "description": "The timer updates in real-time, showing exact time remaining"
+      },
+      "tip2": {
+        "title": "Visual Progress",
+        "description": "Use the progress bar to see how much time has passed"
+      },
+      "tip3": {
+        "title": "Multiple Timers",
+        "description": "Create different timers for various events and deadlines"
+      }
+    }
+  }
+  }
+}

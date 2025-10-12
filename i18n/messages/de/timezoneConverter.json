@@ -1,0 +1,86 @@
+{
+  "timezoneConverter": {
+    "title": "Zeitzonen-Umrechner",
+    "subtitle": "Konvertieren Sie Zeit zwischen verschiedenen Zeitzonen weltweit",
+  "meta": {
+    "title": "Zeitzonen-Umrechner | Zeit zwischen Zeitzonen konvertieren",
+    "description": "Kostenloses Zeitzonen-Konvertierungstool zur Umrechnung von Zeit zwischen verschiedenen Zeitzonen weltweit. Perfekt für Geschäftstreffen, Reiseplanung und Remote-Work-Koordination."
+  },
+  "form": {
+    "dateTime": "Datum & Zeit",
+    "dateTimePlaceholder": "Datum und Uhrzeit auswählen",
+    "fromTimezone": "Von Zeitzone",
+    "fromTimezonePlaceholder": "Quellzeitzone auswählen",
+    "toTimezone": "Zu Zeitzone",
+    "convert": "Konvertieren",
+    "reset": "Zurücksetzen"
+  },
+  "result": {
+    "title": "Konvertierte Zeit",
+    "subtitle": "Zeit in der Zielzeitzone",
+    "from": "Von",
+    "to": "Zu",
+    "hoursDifference": "Stunden Unterschied"
+  },
+  "examples": {
+    "title": "Häufige Anwendungsfälle",
+    "subtitle": "Sehen Sie, wie der Zeitzonen-Umrechner in realen Szenarien hilft",
+    "input": "Eingabe",
+    "output": "Ausgabe",
+    "explanation": "Erklärung",
+    "business": {
+      "title": "Geschäftstreffen",
+      "description": "Planen Sie Meetings über verschiedene Zeitzonen",
+      "scenario1": {
+        "input": "Meeting um 14:00 EST (New York)",
+        "output": "19:00 GMT (London)",
+        "explanation": "Perfekt für die Koordination mit europäischen Kollegen"
+      },
+      "scenario2": {
+        "input": "Konferenzanruf um 09:00 PST (Los Angeles)",
+        "output": "12:00 EST (New York), 18:00 CET (Paris)",
+        "explanation": "Ideal für globale Teamkoordination"
+      }
+    },
+    "travel": {
+      "title": "Reiseplanung",
+      "description": "Planen Sie Ihre Reise und vermeiden Sie Jetlag-Verwirrung",
+      "scenario1": {
+        "input": "Flugabflug um 15:30 JST (Tokio)",
+        "output": "23:30 PST (Los Angeles) vorheriger Tag",
+        "explanation": "Hilft Ihnen, rechtzeitig am Flughafen anzukommen"
+      },
+      "scenario2": {
+        "input": "Hotel-Check-in um 14:00 CET (Paris)",
+        "output": "08:00 EST (New York)",
+        "explanation": "Planen Sie Ihre Ankunftszeit entsprechend"
+      }
+    },
+    "remote": {
+      "title": "Remote-Arbeit",
+      "description": "Koordinieren Sie mit verteilten Teams",
+      "scenario1": {
+        "input": "Tägliches Standup um 10:00 IST (Mumbai)",
+        "output": "23:30 EST (New York) vorheriger Tag",
+        "explanation": "Hilft Remote-Arbeitern, ihren Zeitplan zu planen"
+      }
+    },
+    "tips": {
+      "title": "Profi-Tipps",
+      "description": "Nutzen Sie die Zeitzonen-Konvertierung optimal",
+      "tip1": {
+        "title": "Sommerzeit",
+        "description": "Denken Sie daran, dass einige Regionen Sommerzeit beobachten, was die Verschiebung beeinflusst"
+      },
+      "tip2": {
+        "title": "Geschäftszeiten",
+        "description": "Berücksichtigen Sie die Geschäftszeiten in beiden Zeitzonen bei der Terminplanung"
+      },
+      "tip3": {
+        "title": "Internationale Datumsgrenze",
+        "description": "Das Überschreiten der Internationalen Datumsgrenze kann zu verschiedenen Daten führen"
+      }
+    }
+  }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "timezoneConverter": {
+    "title": "Timezone Converter",
+    "subtitle": "Convert time between different timezones around the world",
+    "meta": {
+    "title": "Timezone Converter | Convert Time Between Timezones",
+    "description": "Free timezone converter tool to convert time between different timezones worldwide. Perfect for business meetings, travel planning, and remote work coordination."
+  },
+  "form": {
+    "dateTime": "Date & Time",
+    "dateTimePlaceholder": "Select date and time",
+    "fromTimezone": "From Timezone",
+    "fromTimezonePlaceholder": "Select source timezone",
+    "toTimezone": "To Timezone",
+    "convert": "Convert",
+    "reset": "Reset"
+  },
+  "result": {
+    "title": "Converted Time",
+    "subtitle": "Time in target timezone",
+    "from": "From",
+    "to": "To",
+    "hoursDifference": "hours difference"
+  },
+  "examples": {
+    "title": "Common Use Cases",
+    "subtitle": "See how the timezone converter helps in real-world scenarios",
+    "input": "Input",
+    "output": "Output",
+    "explanation": "Explanation",
+    "business": {
+      "title": "Business Meetings",
+      "description": "Schedule meetings across different timezones",
+      "scenario1": {
+        "input": "Meeting at 2:00 PM EST (New York)",
+        "output": "7:00 PM GMT (London)",
+        "explanation": "Perfect for coordinating with European colleagues"
+      },
+      "scenario2": {
+        "input": "Conference call at 9:00 AM PST (Los Angeles)",
+        "output": "12:00 PM EST (New York), 6:00 PM CET (Paris)",
+        "explanation": "Ideal for global team coordination"
+      }
+    },
+    "travel": {
+      "title": "Travel Planning",
+      "description": "Plan your travel and avoid jet lag confusion",
+      "scenario1": {
+        "input": "Flight departure at 3:30 PM JST (Tokyo)",
+        "output": "11:30 PM PST (Los Angeles) previous day",
+        "explanation": "Helps you arrive at the airport on time"
+      },
+      "scenario2": {
+        "input": "Hotel check-in at 2:00 PM CET (Paris)",
+        "output": "8:00 AM EST (New York)",
+        "explanation": "Plan your arrival time accordingly"
+      }
+    },
+    "remote": {
+      "title": "Remote Work",
+      "description": "Coordinate with distributed teams",
+      "scenario1": {
+        "input": "Daily standup at 10:00 AM IST (Mumbai)",
+        "output": "11:30 PM EST (New York) previous day",
+        "explanation": "Helps remote workers plan their schedule"
+      }
+    },
+    "tips": {
+      "title": "Pro Tips",
+      "description": "Get the most out of timezone conversion",
+      "tip1": {
+        "title": "Daylight Saving Time",
+        "description": "Remember that some regions observe daylight saving time, which affects the offset"
+      },
+      "tip2": {
+        "title": "Business Hours",
+        "description": "Consider business hours in both timezones when scheduling meetings"
+      },
+      "tip3": {
+        "title": "International Date Line",
+        "description": "Crossing the International Date Line can result in different dates"
+      }
+    }
+  }
+  }
+}

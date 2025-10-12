@@ -117,6 +117,27 @@ export default async function CalculatorsPage({params}: Props) {
           description: t('calculators.date.description'),
           path: '/time/date-calculator',
           icon: '📅'
+        },
+        {
+          key: 'timezone',
+          name: t('calculators.timezone.name'),
+          description: t('calculators.timezone.description'),
+          path: '/time/timezone-converter',
+          icon: '🌍'
+        },
+        {
+          key: 'workHours',
+          name: t('calculators.workHours.name'),
+          description: t('calculators.workHours.description'),
+          path: '/time/work-hours-calculator',
+          icon: '💼'
+        },
+        {
+          key: 'countdown',
+          name: t('calculators.countdown.name'),
+          description: t('calculators.countdown.description'),
+          path: '/time/countdown-timer',
+          icon: '⏳'
         }
       ]
     },

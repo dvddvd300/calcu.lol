@@ -11,6 +11,7 @@ export interface InputConfig {
   unit?: string;
   units?: Array<{value: string; label: string}>;
   type?: string;
+  hidden?: boolean;
   onChange: (value: string) => void;
   onUnitChange?: (unit: string) => void;
 }
@@ -172,8 +173,8 @@ export default function Calculator2In1Out({config, className = ''}: Calculator2I
     if (!config.input1.value) return;
 
     // Handle different input types
-    if (config.input1.type === 'date' || config.input2.type === 'date') {
-      // For date inputs, pass the string values directly
+    if (config.input1.type === 'date' || config.input2.type === 'date' || config.input1.type === 'time' || config.input2.type === 'time') {
+      // For date and time inputs, pass the string values directly
       const result = config.calculate(config.input1.value, config.input1.unit || '', config.input2.value, config.input2.unit || '');
       setResult(result);
     } else {
@@ -296,6 +297,7 @@ export default function Calculator2In1Out({config, className = ''}: Calculator2I
             </div>
 
             {/* Input 2 */}
+            {!config.input2.hidden && (
             <div className="space-y-4">
               <label className="block text-lg font-semibold text-gray-900 mb-3">
                 {config.input2.label}
@@ -336,6 +338,7 @@ export default function Calculator2In1Out({config, className = ''}: Calculator2I
                 )}
               </div>
             </div>
+            )}
           </div>
 
           {/* Buttons */}

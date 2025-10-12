@@ -23,10 +23,6 @@
         "name": "Speicher-Konverter",
         "description": "Konvertieren zwischen verschiedenen Speichereinheiten (Bytes, KB, MB, GB, TB, PB, etc.)"
       },
-      "bmi": {
-        "name": "BMI-Rechner",
-        "description": "Berechne deinen Body-Mass-Index mit Gesundheitsempfehlungen"
-      },
       "percentage": {
         "name": "Prozentrechner",
         "description": "Berechne Prozentsätze, Steigerungen und Verringerungen"
@@ -46,6 +42,18 @@
       "date": {
         "name": "Datumsrechner",
         "description": "Berechne Unterschiede zwischen Daten"
+      },
+      "timezone": {
+        "name": "Zeitzonen-Umrechner",
+        "description": "Konvertieren Sie Zeit zwischen verschiedenen Zeitzonen weltweit"
+      },
+      "workHours": {
+        "name": "Arbeitsstunden-Rechner",
+        "description": "Berechnen Sie tägliche Arbeitsstunden inklusive Pausen und Überstunden"
+      },
+      "countdown": {
+        "name": "Countdown-Timer",
+        "description": "Erstellen Sie Countdown-Timer für Ereignisse und Fristen"
       },
       "distance": {
         "name": "Entfernungsrechner",

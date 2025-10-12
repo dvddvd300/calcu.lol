@@ -23,10 +23,6 @@
         "name": "Convertisseur de Stockage",
         "description": "Convertir entre différentes unités de stockage (bytes, KB, MB, GB, TB, PB, etc.)"
       },
-      "bmi": {
-        "name": "Calculateur d'IMC",
-        "description": "Calculez votre Indice de Masse Corporelle avec recommandations de santé"
-      },
       "percentage": {
         "name": "Calculateur de Pourcentage",
         "description": "Calculez les pourcentages, augmentations et diminutions"
@@ -46,6 +42,18 @@
       "date": {
         "name": "Calculateur de Date",
         "description": "Calculez les différences entre les dates"
+      },
+      "timezone": {
+        "name": "Convertisseur de Fuseau Horaire",
+        "description": "Convertissez l'heure entre différents fuseaux horaires du monde"
+      },
+      "workHours": {
+        "name": "Calculateur d'Heures de Travail",
+        "description": "Calculez les heures de travail quotidiennes incluant les pauses et heures supplémentaires"
+      },
+      "countdown": {
+        "name": "Compte à Rebours",
+        "description": "Créez des comptes à rebours pour les événements et échéances"
       },
       "distance": {
         "name": "Convertisseur de Distance",

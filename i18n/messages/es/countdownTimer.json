@@ -1,0 +1,98 @@
+{
+  "countdownTimer": {
+    "title": "Cronómetro de Cuenta Regresiva",
+    "subtitle": "Crea cronómetros de cuenta regresiva para eventos, fechas límite y momentos especiales",
+    "meta": {
+    "title": "Cronómetro de Cuenta Regresiva | Crear Temporizadores para Eventos y Fechas Límite",
+    "description": "Herramienta gratuita de cronómetro de cuenta regresiva para crear temporizadores para eventos, fechas límite y momentos especiales. Perfecto para rastrear tiempo hasta fechas importantes, fechas límite de proyectos y celebraciones."
+  },
+  "form": {
+    "targetDate": "Fecha Objetivo",
+    "targetDatePlaceholder": "Selecciona fecha objetivo",
+    "targetTime": "Hora Objetivo",
+    "targetTimePlaceholder": "Selecciona hora objetivo",
+    "liveCountdown": "Cuenta Regresiva en Vivo",
+    "start": "Iniciar Temporizador",
+    "stop": "Detener Temporizador",
+    "running": "Ejecutándose",
+    "paused": "Pausado",
+    "calculate": "Calcular",
+    "reset": "Reiniciar"
+  },
+  "result": {
+    "title": "Cronómetro de Cuenta Regresiva",
+    "subtitle": "Tiempo restante hasta tu objetivo",
+    "timeUp": "¡Se Acabó el Tiempo!",
+    "timeRemaining": "Tiempo Restante",
+    "countdownComplete": "¡Cuenta Regresiva Completa!",
+    "pastDate": "Esta fecha ya ha pasado",
+    "days": "Días",
+    "hours": "Horas",
+    "minutes": "Minutos",
+    "seconds": "Segundos"
+  },
+  "errors": {
+    "pastDate": "Por favor selecciona una fecha y hora futura"
+  },
+  "examples": {
+    "title": "Escenarios Comunes de Cuenta Regresiva",
+    "subtitle": "Ve cómo los cronómetros de cuenta regresiva ayudan a rastrear momentos importantes",
+    "input": "Entrada",
+    "output": "Salida",
+    "explanation": "Explicación",
+    "events": {
+      "title": "Eventos Especiales",
+      "description": "Cuenta regresiva hasta celebraciones importantes y hitos",
+      "scenario1": {
+        "input": "Nochevieja 2024 (31 de diciembre, 11:59 PM)",
+        "output": "Cuenta regresiva en vivo con días, horas, minutos, segundos",
+        "explanation": "Perfecto para celebraciones de Año Nuevo y planificación de fiestas"
+      },
+      "scenario2": {
+        "input": "Fiesta de cumpleaños (Próximo sábado, 2:00 PM)",
+        "output": "Tiempo exacto restante hasta la celebración",
+        "explanation": "Excelente para planificación de cumpleaños y preparación de regalos"
+      }
+    },
+    "deadlines": {
+      "title": "Fechas Límite de Proyectos",
+      "description": "Rastrea el tiempo restante para fechas límite importantes de trabajo",
+      "scenario1": {
+        "input": "Entrega de proyecto (Próximo viernes, 5:00 PM)",
+        "output": "Días y horas restantes para completar el proyecto",
+        "explanation": "Ayuda a gestionar el tiempo y priorizar tareas efectivamente"
+      },
+      "scenario2": {
+        "input": "Fecha de examen (Próximo mes, 9:00 AM)",
+        "output": "Tiempo de estudio restante antes del examen",
+        "explanation": "Motiva un horario de estudio consistente y preparación"
+      }
+    },
+    "personal": {
+      "title": "Metas Personales",
+      "description": "Rastrea el progreso hacia hitos personales",
+      "scenario1": {
+        "input": "Inicio de vacaciones (Próximo mes, 6:00 AM)",
+        "output": "Construcción de emoción con tiempo exacto restante",
+        "explanation": "Construye anticipación y ayuda con la preparación del viaje"
+      }
+    },
+    "tips": {
+      "title": "Consejos Profesionales",
+      "description": "Aprovecha al máximo tus cronómetros de cuenta regresiva",
+      "tip1": {
+        "title": "Actualizaciones en Vivo",
+        "description": "El temporizador se actualiza en tiempo real, mostrando el tiempo exacto restante"
+      },
+      "tip2": {
+        "title": "Progreso Visual",
+        "description": "Usa la barra de progreso para ver cuánto tiempo ha pasado"
+      },
+      "tip3": {
+        "title": "Múltiples Temporizadores",
+        "description": "Crea diferentes temporizadores para varios eventos y fechas límite"
+      }
+    }
+  }
+  }
+}

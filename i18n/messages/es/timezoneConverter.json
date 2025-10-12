@@ -1,0 +1,86 @@
+{
+  "timezoneConverter": {
+    "title": "Convertidor de Zona Horaria",
+    "subtitle": "Convierte tiempo entre diferentes zonas horarias del mundo",
+  "meta": {
+    "title": "Convertidor de Zona Horaria | Convertir Tiempo Entre Zonas Horarias",
+    "description": "Herramienta gratuita de conversión de zona horaria para convertir tiempo entre diferentes zonas horarias mundiales. Perfecto para reuniones de negocios, planificación de viajes y coordinación de trabajo remoto."
+  },
+  "form": {
+    "dateTime": "Fecha y Hora",
+    "dateTimePlaceholder": "Selecciona fecha y hora",
+    "fromTimezone": "Zona Horaria de Origen",
+    "fromTimezonePlaceholder": "Selecciona zona horaria de origen",
+    "toTimezone": "Zona Horaria de Destino",
+    "convert": "Convertir",
+    "reset": "Reiniciar"
+  },
+  "result": {
+    "title": "Tiempo Convertido",
+    "subtitle": "Tiempo en la zona horaria de destino",
+    "from": "Desde",
+    "to": "Hasta",
+    "hoursDifference": "horas de diferencia"
+  },
+  "examples": {
+    "title": "Casos de Uso Comunes",
+    "subtitle": "Ve cómo el convertidor de zona horaria ayuda en escenarios del mundo real",
+    "input": "Entrada",
+    "output": "Salida",
+    "explanation": "Explicación",
+    "business": {
+      "title": "Reuniones de Negocios",
+      "description": "Programa reuniones entre diferentes zonas horarias",
+      "scenario1": {
+        "input": "Reunión a las 2:00 PM EST (Nueva York)",
+        "output": "7:00 PM GMT (Londres)",
+        "explanation": "Perfecto para coordinar con colegas europeos"
+      },
+      "scenario2": {
+        "input": "Llamada de conferencia a las 9:00 AM PST (Los Ángeles)",
+        "output": "12:00 PM EST (Nueva York), 6:00 PM CET (París)",
+        "explanation": "Ideal para coordinación de equipos globales"
+      }
+    },
+    "travel": {
+      "title": "Planificación de Viajes",
+      "description": "Planifica tu viaje y evita la confusión del jet lag",
+      "scenario1": {
+        "input": "Salida de vuelo a las 3:30 PM JST (Tokio)",
+        "output": "11:30 PM PST (Los Ángeles) día anterior",
+        "explanation": "Te ayuda a llegar al aeropuerto a tiempo"
+      },
+      "scenario2": {
+        "input": "Check-in en hotel a las 2:00 PM CET (París)",
+        "output": "8:00 AM EST (Nueva York)",
+        "explanation": "Planifica tu hora de llegada en consecuencia"
+      }
+    },
+    "remote": {
+      "title": "Trabajo Remoto",
+      "description": "Coordina con equipos distribuidos",
+      "scenario1": {
+        "input": "Standup diario a las 10:00 AM IST (Mumbai)",
+        "output": "11:30 PM EST (Nueva York) día anterior",
+        "explanation": "Ayuda a los trabajadores remotos a planificar su horario"
+      }
+    },
+    "tips": {
+      "title": "Consejos Profesionales",
+      "description": "Aprovecha al máximo la conversión de zona horaria",
+      "tip1": {
+        "title": "Horario de Verano",
+        "description": "Recuerda que algunas regiones observan el horario de verano, lo que afecta el desplazamiento"
+      },
+      "tip2": {
+        "title": "Horario Comercial",
+        "description": "Considera el horario comercial en ambas zonas horarias al programar reuniones"
+      },
+      "tip3": {
+        "title": "Línea de Fecha Internacional",
+        "description": "Cruzar la Línea de Fecha Internacional puede resultar en fechas diferentes"
+      }
+    }
+  }
+  }
+}

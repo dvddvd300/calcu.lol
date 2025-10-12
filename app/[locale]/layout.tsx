@@ -31,8 +31,8 @@ export async function generateMetadata({params}: Props) {
       template: '%s | calcu.lol',
       default: 'Free Online Calculators | calcu.lol'
     },
-    description: 'Free online calculators for speed, time, BMI, percentages, and more. Calculate anything with our comprehensive collection of tools.',
-    keywords: ['calculator', 'online calculator', 'free calculator', 'speed calculator', 'BMI calculator', 'percentage calculator'],
+    description: 'Free online calculators for speed, time, percentages, and more. Calculate anything with our comprehensive collection of tools.',
+    keywords: ['calculator', 'online calculator', 'free calculator', 'speed calculator', 'percentage calculator'],
     authors: [{name: 'calcu.lol'}],
     creator: 'calcu.lol',
     publisher: 'calcu.lol',
@@ -53,7 +53,7 @@ export async function generateMetadata({params}: Props) {
       url: `https://calcu.lol/${locale}`,
       siteName: 'calcu.lol',
       title: 'Free Online Calculators | calcu.lol',
-      description: 'Free online calculators for speed, time, BMI, percentages, and more.',
+      description: 'Free online calculators for speed, time, percentages, and more.',
       images: [
         {
           url: '/og-image.png',
@@ -66,7 +66,7 @@ export async function generateMetadata({params}: Props) {
     twitter: {
       card: 'summary_large_image',
       title: 'Free Online Calculators | calcu.lol',
-      description: 'Free online calculators for speed, time, BMI, percentages, and more.',
+      description: 'Free online calculators for speed, time, percentages, and more.',
       images: ['/og-image.png'],
     },
     alternates: {
@@ -146,7 +146,7 @@ export default async function LocaleLayout({
                       <span className="text-2xl font-bold">calcu.lol</span>
                     </div>
                     <p className="text-gray-300 text-lg leading-relaxed max-w-md">
-                      Free online calculators for speed, time, BMI, percentages, and more. 
+                      Free online calculators for speed, time, percentages, and more. 
                       Calculate anything with our comprehensive collection of tools.
                     </p>
                   </div>

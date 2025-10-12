@@ -1,0 +1,86 @@
+{
+  "timezoneConverter": {
+    "title": "Convertisseur de Fuseau Horaire",
+    "subtitle": "Convertissez l'heure entre différents fuseaux horaires du monde",
+  "meta": {
+    "title": "Convertisseur de Fuseau Horaire | Convertir l'Heure Entre Fuseaux Horaires",
+    "description": "Outil gratuit de conversion de fuseau horaire pour convertir l'heure entre différents fuseaux horaires mondiaux. Parfait pour les réunions d'affaires, la planification de voyages et la coordination du travail à distance."
+  },
+  "form": {
+    "dateTime": "Date et Heure",
+    "dateTimePlaceholder": "Sélectionner la date et l'heure",
+    "fromTimezone": "Fuseau Horaire Source",
+    "fromTimezonePlaceholder": "Sélectionner le fuseau horaire source",
+    "toTimezone": "Fuseau Horaire de Destination",
+    "convert": "Convertir",
+    "reset": "Réinitialiser"
+  },
+  "result": {
+    "title": "Heure Convertie",
+    "subtitle": "Heure dans le fuseau horaire de destination",
+    "from": "De",
+    "to": "Vers",
+    "hoursDifference": "heures de différence"
+  },
+  "examples": {
+    "title": "Cas d'Usage Courants",
+    "subtitle": "Découvrez comment le convertisseur de fuseau horaire aide dans les scénarios réels",
+    "input": "Entrée",
+    "output": "Sortie",
+    "explanation": "Explication",
+    "business": {
+      "title": "Réunions d'Affaires",
+      "description": "Planifiez des réunions entre différents fuseaux horaires",
+      "scenario1": {
+        "input": "Réunion à 14h00 EST (New York)",
+        "output": "19h00 GMT (Londres)",
+        "explanation": "Parfait pour coordonner avec des collègues européens"
+      },
+      "scenario2": {
+        "input": "Appel de conférence à 09h00 PST (Los Angeles)",
+        "output": "12h00 EST (New York), 18h00 CET (Paris)",
+        "explanation": "Idéal pour la coordination d'équipes mondiales"
+      }
+    },
+    "travel": {
+      "title": "Planification de Voyage",
+      "description": "Planifiez votre voyage et évitez la confusion du décalage horaire",
+      "scenario1": {
+        "input": "Départ de vol à 15h30 JST (Tokyo)",
+        "output": "23h30 PST (Los Angeles) jour précédent",
+        "explanation": "Vous aide à arriver à l'aéroport à l'heure"
+      },
+      "scenario2": {
+        "input": "Check-in hôtel à 14h00 CET (Paris)",
+        "output": "08h00 EST (New York)",
+        "explanation": "Planifiez votre heure d'arrivée en conséquence"
+      }
+    },
+    "remote": {
+      "title": "Travail à Distance",
+      "description": "Coordonnez avec des équipes distribuées",
+      "scenario1": {
+        "input": "Standup quotidien à 10h00 IST (Mumbai)",
+        "output": "23h30 EST (New York) jour précédent",
+        "explanation": "Aide les travailleurs à distance à planifier leur emploi du temps"
+      }
+    },
+    "tips": {
+      "title": "Conseils Pro",
+      "description": "Tirez le meilleur parti de la conversion de fuseau horaire",
+      "tip1": {
+        "title": "Heure d'Été",
+        "description": "N'oubliez pas que certaines régions observent l'heure d'été, ce qui affecte le décalage"
+      },
+      "tip2": {
+        "title": "Heures de Bureau",
+        "description": "Considérez les heures de bureau dans les deux fuseaux horaires lors de la planification de réunions"
+      },
+      "tip3": {
+        "title": "Ligne de Date Internationale",
+        "description": "Traverser la Ligne de Date Internationale peut résulter en des dates différentes"
+      }
+    }
+  }
+  }
+}

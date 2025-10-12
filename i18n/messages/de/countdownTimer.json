@@ -1,0 +1,98 @@
+{
+  "countdownTimer": {
+    "title": "Countdown-Timer",
+    "subtitle": "Erstellen Sie Countdown-Timer für Ereignisse, Fristen und besondere Momente",
+  "meta": {
+    "title": "Countdown-Timer | Timer für Ereignisse und Fristen erstellen",
+    "description": "Kostenloses Countdown-Timer-Tool zur Erstellung von Timern für Ereignisse, Fristen und besondere Momente. Perfekt für die Verfolgung von Zeit bis zu wichtigen Daten, Projektfristen und Feiern."
+  },
+  "form": {
+    "targetDate": "Zieldatum",
+    "targetDatePlaceholder": "Zieldatum auswählen",
+    "targetTime": "Zielzeit",
+    "targetTimePlaceholder": "Zielzeit auswählen",
+    "liveCountdown": "Live-Countdown",
+    "start": "Timer Starten",
+    "stop": "Timer Stoppen",
+    "running": "Läuft",
+    "paused": "Pausiert",
+    "calculate": "Berechnen",
+    "reset": "Zurücksetzen"
+  },
+  "result": {
+    "title": "Countdown-Timer",
+    "subtitle": "Verbleibende Zeit bis zu Ihrem Ziel",
+    "timeUp": "Zeit ist abgelaufen!",
+    "timeRemaining": "Verbleibende Zeit",
+    "countdownComplete": "Countdown Abgeschlossen!",
+    "pastDate": "Dieses Datum ist bereits vergangen",
+    "days": "Tage",
+    "hours": "Stunden",
+    "minutes": "Minuten",
+    "seconds": "Sekunden"
+  },
+  "errors": {
+    "pastDate": "Bitte wählen Sie ein zukünftiges Datum und eine zukünftige Zeit aus"
+  },
+  "examples": {
+    "title": "Häufige Countdown-Szenarien",
+    "subtitle": "Sehen Sie, wie Countdown-Timer helfen, wichtige Momente zu verfolgen",
+    "input": "Eingabe",
+    "output": "Ausgabe",
+    "explanation": "Erklärung",
+    "events": {
+      "title": "Besondere Ereignisse",
+      "description": "Countdown zu wichtigen Feiern und Meilensteinen",
+      "scenario1": {
+        "input": "Silvester 2024 (31. Dezember, 23:59)",
+        "output": "Live-Countdown mit Tagen, Stunden, Minuten, Sekunden",
+        "explanation": "Perfekt für Silvesterfeiern und Partyplanung"
+      },
+      "scenario2": {
+        "input": "Geburtstagsfeier (Nächsten Samstag, 14:00)",
+        "output": "Exakte verbleibende Zeit bis zur Feier",
+        "explanation": "Großartig für Geburtstagsplanung und Geschenkvorbereitung"
+      }
+    },
+    "deadlines": {
+      "title": "Projektfristen",
+      "description": "Verfolgen Sie die verbleibende Zeit für wichtige Arbeitsfristen",
+      "scenario1": {
+        "input": "Projektabgabe (Nächsten Freitag, 17:00)",
+        "output": "Verbleibende Tage und Stunden zur Projektfertigstellung",
+        "explanation": "Hilft bei Zeitmanagement und effektiver Aufgabenpriorisierung"
+      },
+      "scenario2": {
+        "input": "Prüfungstermin (Nächsten Monat, 09:00)",
+        "output": "Verbleibende Lernzeit vor der Prüfung",
+        "explanation": "Motiviert zu konsequentem Lernplan und Vorbereitung"
+      }
+    },
+    "personal": {
+      "title": "Persönliche Ziele",
+      "description": "Verfolgen Sie den Fortschritt zu persönlichen Meilensteinen",
+      "scenario1": {
+        "input": "Urlaubsbeginn (Nächsten Monat, 06:00)",
+        "output": "Aufbau von Vorfreude mit exakter verbleibender Zeit",
+        "explanation": "Baut Vorfreude auf und hilft bei Reisevorbereitung"
+      }
+    },
+    "tips": {
+      "title": "Profi-Tipps",
+      "description": "Nutzen Sie Ihre Countdown-Timer optimal",
+      "tip1": {
+        "title": "Live-Updates",
+        "description": "Der Timer aktualisiert sich in Echtzeit und zeigt die exakte verbleibende Zeit"
+      },
+      "tip2": {
+        "title": "Visueller Fortschritt",
+        "description": "Nutzen Sie die Fortschrittsleiste, um zu sehen, wie viel Zeit vergangen ist"
+      },
+      "tip3": {
+        "title": "Mehrere Timer",
+        "description": "Erstellen Sie verschiedene Timer für verschiedene Ereignisse und Fristen"
+      }
+    }
+  }
+  }
+}
