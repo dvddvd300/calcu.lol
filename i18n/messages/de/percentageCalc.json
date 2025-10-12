@@ -1,0 +1,21 @@
+{
+  "percentageCalc": {
+    "title": "Prozentrechner",
+    "subtitle": "Berechne Prozentsätze einfach",
+    "meta": {
+      "title": "Prozentrechner | Prozentsätze berechnen",
+      "description": "Kostenloser Prozentrechner für alle deine Prozentberechnungen. Berechne Prozentsatzsteigerung, -verringerung und mehr."
+    },
+    "form": {
+      "value": "Wert",
+      "percentage": "Prozentsatz",
+      "calculate": "Berechnen",
+      "reset": "Zurücksetzen"
+    },
+    "result": {
+      "title": "Ergebnis",
+      "percentage": "Prozentsatz",
+      "value": "Wert"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "speedCalc": {
+    "title": "Calculateur de Vitesse de Téléchargement",
+    "subtitle": "Calculez le temps de téléchargement basé sur la taille du fichier et la vitesse de connexion",
+    "meta": {
+      "title": "Calculateur de Vitesse de Téléchargement | Calculer le Temps de Téléchargement",
+      "description": "Outil gratuit pour calculer le temps de téléchargement basé sur la taille du fichier et la vitesse de connexion internet. Prend en charge diverses unités et types de connexion."
+    },
+    "form": {
+      "fileSize": "Taille du Fichier",
+      "fileSizePlaceholder": "Entrez la taille du fichier",
+      "speed": "Vitesse de Connexion",
+      "speedPlaceholder": "Entrez la vitesse de connexion",
+      "calculate": "Calculer le Temps de Téléchargement",
+      "reset": "Réinitialiser"
+    },
+    "units": {
+      "fileSize": {
+        "bytes": "Bytes",
+        "kb": "KB",
+        "mb": "MB",
+        "gb": "GB",
+        "tb": "TB"
+      },
+      "speed": {
+        "bps": "bps",
+        "kbps": "Kbps",
+        "mbps": "Mbps",
+        "gbps": "Gbps",
+        "Bps": "B/s",
+        "KBps": "KB/s",
+        "MBps": "MB/s",
+        "GBps": "GB/s"
+      }
+    },
+    "result": {
+      "title": "Temps de Téléchargement",
+      "time": "Temps",
+      "hours": "heures",
+      "minutes": "minutes",
+      "seconds": "secondes",
+      "days": "jours",
+      "months": "mois",
+      "years": "années"
+    },
+    "examples": {
+      "title": "Exemples Courants",
+      "movie": "Film HD (4GB)",
+      "album": "Album Musical (100MB)",
+      "game": "Jeu Vidéo (50GB)",
+      "document": "Document PDF (5MB)",
+      "movieResult": "4GB à 100 Mbps = ~5 minutes",
+      "albumResult": "100MB à 50 Mbps = ~16 secondes",
+      "gameResult": "50GB à 200 Mbps = ~33 minutes",
+      "documentResult": "5MB à 25 Mbps = ~2 secondes"
+    }
+  }
+}

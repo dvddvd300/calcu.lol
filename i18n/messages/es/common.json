@@ -1,0 +1,22 @@
+{
+  "common": {
+    "buttons": {
+      "calculate": "Calcular",
+      "reset": "Reiniciar",
+      "clear": "Limpiar"
+    },
+    "navigation": {
+      "home": "Inicio",
+      "calculators": "Calculadoras",
+      "about": "Acerca de",
+      "contact": "Contacto"
+    },
+    "language": {
+      "switch": "Cambiar Idioma",
+      "english": "English",
+      "spanish": "Español",
+      "german": "Deutsch",
+      "french": "Français"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "common": {
+    "buttons": {
+      "calculate": "Berechnen",
+      "reset": "Zurücksetzen",
+      "clear": "Löschen"
+    },
+    "navigation": {
+      "home": "Startseite",
+      "calculators": "Rechner",
+      "about": "Über uns",
+      "contact": "Kontakt"
+    },
+    "language": {
+      "switch": "Sprache wechseln",
+      "english": "English",
+      "spanish": "Español",
+      "german": "Deutsch",
+      "french": "Français"
+    }
+  }
+}

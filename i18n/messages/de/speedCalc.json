@@ -1,0 +1,58 @@
+{
+  "speedCalc": {
+    "title": "Download-Geschwindigkeitsrechner",
+    "subtitle": "Berechne die Download-Zeit basierend auf Dateigröße und Verbindungsgeschwindigkeit",
+    "meta": {
+      "title": "Download-Geschwindigkeitsrechner | Download-Zeit berechnen",
+      "description": "Kostenloses Tool zur Berechnung der Download-Zeit basierend auf Dateigröße und Internetverbindungsgeschwindigkeit. Unterstützt verschiedene Einheiten und Verbindungstypen."
+    },
+    "form": {
+      "fileSize": "Dateigröße",
+      "fileSizePlaceholder": "Dateigröße eingeben",
+      "speed": "Verbindungsgeschwindigkeit",
+      "speedPlaceholder": "Verbindungsgeschwindigkeit eingeben",
+      "calculate": "Download-Zeit berechnen",
+      "reset": "Zurücksetzen"
+    },
+    "units": {
+      "fileSize": {
+        "bytes": "Bytes",
+        "kb": "KB",
+        "mb": "MB",
+        "gb": "GB",
+        "tb": "TB"
+      },
+      "speed": {
+        "bps": "bps",
+        "kbps": "Kbps",
+        "mbps": "Mbps",
+        "gbps": "Gbps",
+        "Bps": "B/s",
+        "KBps": "KB/s",
+        "MBps": "MB/s",
+        "GBps": "GB/s"
+      }
+    },
+    "result": {
+      "title": "Download-Zeit",
+      "time": "Zeit",
+      "hours": "Stunden",
+      "minutes": "Minuten",
+      "seconds": "Sekunden",
+      "days": "Tage",
+      "months": "Monate",
+      "years": "Jahre"
+    },
+    "examples": {
+      "title": "Häufige Beispiele",
+      "movie": "HD-Film (4GB)",
+      "album": "Musikalben (100MB)",
+      "game": "Videospiel (50GB)",
+      "document": "PDF-Dokument (5MB)",
+      "movieResult": "4GB bei 100 Mbps = ~5 Minuten",
+      "albumResult": "100MB bei 50 Mbps = ~16 Sekunden",
+      "gameResult": "50GB bei 200 Mbps = ~33 Minuten",
+      "documentResult": "5MB bei 25 Mbps = ~2 Sekunden"
+    }
+  }
+}

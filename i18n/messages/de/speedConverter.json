@@ -1,0 +1,84 @@
+{
+  "speedConverter": {
+    "title": "Geschwindigkeitsrechner",
+    "subtitle": "Konvertieren zwischen verschiedenen Geschwindigkeitseinheiten",
+    "meta": {
+      "title": "Geschwindigkeitsrechner | Geschwindigkeits- und Geschwindigkeitseinheiten konvertieren",
+      "description": "Kostenloser Geschwindigkeitsrechner zur Umrechnung zwischen m/s, km/h, mph, ft/s, Knoten und Mach mit präzisen Berechnungen."
+    },
+    "form": {
+      "value": "Geschwindigkeit",
+      "valuePlaceholder": "Geschwindigkeitswert eingeben",
+      "toUnit": "Konvertieren zu",
+      "toUnitPlaceholder": "Zieleinheit auswählen",
+      "convert": "Geschwindigkeit konvertieren",
+      "reset": "Zurücksetzen"
+    },
+    "units": {
+      "mps": "m/s",
+      "kmh": "km/h",
+      "mph": "mph",
+      "fps": "ft/s",
+      "knots": "Knoten",
+      "mach": "Mach"
+    },
+    "result": {
+      "title": "Geschwindigkeitskonvertierung",
+      "subtitle": "Konvertierter Geschwindigkeitswert",
+      "convertedFrom": "Konvertiert von {value} {fromUnit}"
+    },
+    "examples": {
+      "title": "Geschwindigkeitsrechner Beispiele",
+      "subtitle": "Sehen Sie, wie der Geschwindigkeitsrechner mit verschiedenen Szenarien funktioniert",
+      "valueLabel": "Geschwindigkeit",
+      "toLabel": "Konvertieren zu",
+      "result": "Ergebnis",
+      "kmhToMph": {
+        "title": "km/h zu mph",
+        "description": "100 km/h zu mph konvertieren",
+        "result": "62.14 mph"
+      },
+      "mphToKmh": {
+        "title": "mph zu km/h",
+        "description": "60 mph zu km/h konvertieren",
+        "result": "96.56 km/h"
+      },
+      "mpsToKmh": {
+        "title": "m/s zu km/h",
+        "description": "10 m/s zu km/h konvertieren",
+        "result": "36.00 km/h"
+      },
+      "knotsToMph": {
+        "title": "Knoten zu mph",
+        "description": "30 Knoten zu mph konvertieren",
+        "result": "34.52 mph"
+      },
+      "fpsToMph": {
+        "title": "ft/s zu mph",
+        "description": "88 ft/s zu mph konvertieren",
+        "result": "60.00 mph"
+      },
+      "machToKmh": {
+        "title": "Mach zu km/h",
+        "description": "1 Mach zu km/h konvertieren",
+        "result": "1234.80 km/h"
+      },
+      "features": {
+        "title": "Warum unseren Geschwindigkeitsrechner verwenden?",
+        "subtitle": "Präzise, umfassend und einfach zu verwenden",
+        "precise": {
+          "title": "Präzise Berechnungen",
+          "description": "Präzise Konvertierungen für alle Geschwindigkeitseinheiten mit ordnungsgemäßer Präzision"
+        },
+        "comprehensive": {
+          "title": "Umfassende Einheiten",
+          "description": "Unterstützt automotiv, Luftfahrt und wissenschaftliche Geschwindigkeitseinheiten"
+        },
+        "fast": {
+          "title": "Sofortige Ergebnisse",
+          "description": "Erhalten Sie Ihre Geschwindigkeitskonvertierungen in Sekunden"
+        }
+      }
+    }
+  }
+}

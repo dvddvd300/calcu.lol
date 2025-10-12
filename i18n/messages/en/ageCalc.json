@@ -1,0 +1,70 @@
+{
+  "ageCalc": {
+    "title": "Age Calculator",
+    "subtitle": "Calculate your age and time until your next birthday",
+    "meta": {
+      "title": "Age Calculator | Calculate Age and Birthday Countdown",
+      "description": "Free age calculator to determine your exact age and countdown to your next birthday. Supports leap years and accurate date calculations."
+    },
+    "form": {
+      "birthday": "Birthday",
+      "birthdayPlaceholder": "Select your birthday",
+      "currentDate": "Current Date",
+      "currentDatePlaceholder": "Select current date",
+      "calculate": "Calculate Age",
+      "reset": "Reset"
+    },
+    "result": {
+      "title": "Age Result",
+      "subtitle": "Your age and birthday information",
+      "years": "years old",
+      "futureBirthday": "Birthday is in the future",
+      "futureSubtitle": "Please select a valid birthday",
+      "daysSinceBirthday": "{days} days since your last birthday",
+      "daysUntilBirthday": "{days} days until your next birthday"
+    },
+    "examples": {
+      "title": "Age Calculator Examples",
+      "subtitle": "See how the age calculator works with different scenarios",
+      "birthdayLabel": "Birthday",
+      "currentDateLabel": "Current Date",
+      "result": "Result",
+      "birthday": {
+        "title": "Regular Birthday",
+        "description": "Calculate age for a standard birthday scenario",
+        "result": "33 years old, 45 days since last birthday"
+      },
+      "recentBirthday": {
+        "title": "Recent Birthday",
+        "description": "Birthday within the last 3 months - shows days since",
+        "result": "38 years old, 45 days since last birthday"
+      },
+      "futureBirthday": {
+        "title": "Future Birthday",
+        "description": "Birthday in the future - shows error message",
+        "result": "Birthday is in the future"
+      },
+      "leapYear": {
+        "title": "Leap Year Birthday",
+        "description": "Handles leap year birthdays correctly",
+        "result": "24 years old, 155 days until next birthday"
+      },
+      "features": {
+        "title": "Why Use Our Age Calculator?",
+        "subtitle": "Accurate, smart, and easy to use",
+        "accurate": {
+          "title": "Accurate Calculations",
+          "description": "Handles leap years, month differences, and edge cases perfectly"
+        },
+        "smart": {
+          "title": "Smart Display",
+          "description": "Shows days since last birthday (within 3 months) or days until next birthday"
+        },
+        "fast": {
+          "title": "Instant Results",
+          "description": "Get your age and birthday information in seconds"
+        }
+      }
+    }
+  }
+}

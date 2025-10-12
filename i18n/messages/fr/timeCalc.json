@@ -1,0 +1,87 @@
+{
+  "timeCalc": {
+    "title": "Calculateur de Temps",
+    "subtitle": "Additionnez et soustrayez les valeurs de temps avec différentes unités",
+    "meta": {
+      "title": "Calculateur de Temps | Additionnez et Soustrayez les Valeurs de Temps",
+      "description": "Calculateur de temps gratuit pour additionner et soustraire les valeurs de temps. Prend en charge les secondes, minutes, heures et jours avec conversion automatique d'unités."
+    },
+    "form": {
+      "time1": "Premier Temps",
+      "time1Placeholder": "Entrez la première valeur de temps",
+      "time2": "Deuxième Temps",
+      "time2Placeholder": "Entrez la deuxième valeur de temps",
+      "operation": "Opération",
+      "add": "Additionner",
+      "subtract": "Soustraire",
+      "calculate": "Calculer le Temps",
+      "reset": "Réinitialiser"
+    },
+    "units": {
+      "seconds": "secondes",
+      "minutes": "minutes",
+      "hours": "heures",
+      "days": "jours"
+    },
+    "result": {
+      "title": "Résultat de Temps",
+      "subtitle": "Valeur de temps calculée",
+      "added": "Valeurs de temps additionnées",
+      "subtracted": "Valeurs de temps soustraites"
+    },
+    "examples": {
+      "title": "Exemples de Calculateur de Temps",
+      "subtitle": "Voyez comment le calculateur de temps fonctionne avec différents scénarios",
+      "time1Label": "Premier Temps",
+      "time2Label": "Deuxième Temps",
+      "operationLabel": "Opération",
+      "result": "Résultat",
+      "addition": {
+        "title": "Addition de Temps",
+        "description": "Additionnez deux valeurs de temps",
+        "result": "2 heures 30 minutes"
+      },
+      "subtraction": {
+        "title": "Soustraction de Temps",
+        "description": "Soustrayez une valeur de temps d'une autre",
+        "result": "2 heures 15 minutes"
+      },
+      "mixedUnits": {
+        "title": "Unités Mixtes",
+        "description": "Additionnez des valeurs de temps avec différentes unités",
+        "result": "1 jour 6 heures"
+      },
+      "largeNumbers": {
+        "title": "Grandes Valeurs de Temps",
+        "description": "Calculez avec de grandes valeurs de temps",
+        "result": "2 jours 12 heures"
+      },
+      "seconds": {
+        "title": "Calcul de Secondes",
+        "description": "Travaillez avec des secondes et des minutes",
+        "result": "1 heure 30 minutes"
+      },
+      "negativeResult": {
+        "title": "Résultats Négatifs",
+        "description": "Gère les résultats négatifs en affichant la valeur absolue",
+        "result": "1 heure"
+      },
+      "features": {
+        "title": "Pourquoi utiliser notre Calculateur de Temps ?",
+        "subtitle": "Flexible, intelligent et facile à utiliser",
+        "flexible": {
+          "title": "Unités Flexibles",
+          "description": "Prend en charge les secondes, minutes, heures et jours avec conversion automatique"
+        },
+        "smart": {
+          "title": "Affichage Intelligent",
+          "description": "Affiche les résultats dans l'unité la plus appropriée avec des décompositions"
+        },
+        "fast": {
+          "title": "Résultats Instantanés",
+          "description": "Obtenez vos calculs de temps en secondes"
+        }
+      }
+    }
+  }
+}

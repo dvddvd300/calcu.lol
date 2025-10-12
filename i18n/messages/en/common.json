@@ -1,0 +1,22 @@
+{
+  "common": {
+    "buttons": {
+      "calculate": "Calculate",
+      "reset": "Reset",
+      "clear": "Clear"
+    },
+    "navigation": {
+      "home": "Home",
+      "calculators": "Calculators",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "language": {
+      "switch": "Switch Language",
+      "english": "English",
+      "spanish": "Español",
+      "german": "Deutsch",
+      "french": "Français"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "calculators": {
+    "title": "Todas las Calculadoras",
+    "subtitle": "Explora nuestra colección completa de calculadoras online gratuitas",
+    "meta": {
+      "title": "Todas las Calculadoras | Herramientas Online Gratuitas",
+      "description": "Colección completa de calculadoras online gratuitas organizadas por categoría. Encuentra la herramienta perfecta para tus cálculos."
+    },
+    "categories": {
+      "technology": "Tecnología",
+      "health": "Salud y Fitness",
+      "math": "Matemáticas y Ciencias",
+      "finance": "Finanzas",
+      "time": "Tiempo y Fecha",
+      "conversion": "Conversión de Unidades"
+    },
+    "calculators": {
+      "speed": {
+        "name": "Convertidor de Velocidad",
+        "description": "Convierte entre diferentes unidades de velocidad"
+      },
+      "storage": {
+        "name": "Convertidor de Almacenamiento",
+        "description": "Convierte entre diferentes unidades de almacenamiento (bytes, KB, MB, GB, TB, PB, etc.)"
+      },
+      "bmi": {
+        "name": "Calculadora de IMC",
+        "description": "Calcula tu Índice de Masa Corporal con recomendaciones de salud"
+      },
+      "percentage": {
+        "name": "Calculadora de Porcentaje",
+        "description": "Calcula porcentajes, aumentos y disminuciones"
+      },
+      "tip": {
+        "name": "Calculadora de Propina",
+        "description": "Calcula la cantidad de propina y divide cuentas"
+      },
+      "age": {
+        "name": "Calculadora de Edad",
+        "description": "Calcula la edad y tiempo hasta el próximo cumpleaños"
+      },
+      "time": {
+        "name": "Calculadora de Tiempo",
+        "description": "Suma y resta valores de tiempo"
+      },
+      "date": {
+        "name": "Calculadora de Fecha",
+        "description": "Calcula diferencias entre fechas"
+      },
+      "distance": {
+        "name": "Convertidor de Distancia",
+        "description": "Convierte entre diferentes unidades de distancia"
+      },
+      "weight": {
+        "name": "Convertidor de Peso",
+        "description": "Convierte entre diferentes unidades de peso"
+      },
+      "unit": {
+        "name": "Convertidor de Unidades",
+        "description": "Convierte entre diferentes unidades de medida"
+      },
+      "currency": {
+        "name": "Convertidor de Moneda",
+        "description": "Convierte entre diferentes monedas"
+      },
+      "temperature": {
+        "name": "Convertidor de Temperatura",
+        "description": "Convierte entre escalas de temperatura"
+      }
+    },
+    "tiempo": {
+      "edad": {
+        "name": "Calculadora de Edad",
+        "description": "Calcula la edad y tiempo hasta el próximo cumpleaños"
+      }
+    }
+  }
+}

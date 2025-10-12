@@ -1,0 +1,85 @@
+{
+  "weightConverter": {
+    "title": "Gewichtsrechner",
+    "subtitle": "Konvertieren zwischen verschiedenen Gewichtseinheiten",
+    "meta": {
+      "title": "Gewichtsrechner | Masse- und Gewichtseinheiten konvertieren",
+      "description": "Kostenloser Gewichtsrechner zur Umrechnung zwischen Milligramm, Gramm, Kilogramm, Pfund, Unzen, Tonnen und Stone mit präzisen Berechnungen."
+    },
+    "form": {
+      "value": "Gewicht",
+      "valuePlaceholder": "Gewichtswert eingeben",
+      "toUnit": "Konvertieren zu",
+      "toUnitPlaceholder": "Zieleinheit auswählen",
+      "convert": "Gewicht konvertieren",
+      "reset": "Zurücksetzen"
+    },
+    "units": {
+      "milligrams": "mg",
+      "grams": "g",
+      "kilograms": "kg",
+      "pounds": "lbs",
+      "ounces": "oz",
+      "tons": "t",
+      "stone": "st"
+    },
+    "result": {
+      "title": "Gewichtskonvertierung",
+      "subtitle": "Konvertierter Gewichtswert",
+      "convertedFrom": "Konvertiert von {value} {fromUnit}"
+    },
+    "examples": {
+      "title": "Gewichtsrechner Beispiele",
+      "subtitle": "Sehen Sie, wie der Gewichtsrechner mit verschiedenen Szenarien funktioniert",
+      "valueLabel": "Gewicht",
+      "toLabel": "Konvertieren zu",
+      "result": "Ergebnis",
+      "kgToPounds": {
+        "title": "Kilogramm zu Pfund",
+        "description": "70 Kilogramm zu Pfund konvertieren",
+        "result": "154.32 lbs"
+      },
+      "poundsToKg": {
+        "title": "Pfund zu Kilogramm",
+        "description": "150 Pfund zu Kilogramm konvertieren",
+        "result": "68.04 kg"
+      },
+      "ouncesToGrams": {
+        "title": "Unzen zu Gramm",
+        "description": "16 Unzen zu Gramm konvertieren",
+        "result": "453.59 g"
+      },
+      "gramsToOunces": {
+        "title": "Gramm zu Unzen",
+        "description": "500 Gramm zu Unzen konvertieren",
+        "result": "17.64 oz"
+      },
+      "stoneToKg": {
+        "title": "Stone zu Kilogramm",
+        "description": "10 Stone zu Kilogramm konvertieren",
+        "result": "63.50 kg"
+      },
+      "tonsToKg": {
+        "title": "Tonnen zu Kilogramm",
+        "description": "2 Tonnen zu Kilogramm konvertieren",
+        "result": "2000.00 kg"
+      },
+      "features": {
+        "title": "Warum unseren Gewichtsrechner verwenden?",
+        "subtitle": "Präzise, vielseitig und einfach zu verwenden",
+        "precise": {
+          "title": "Präzise Berechnungen",
+          "description": "Präzise Konvertierungen für alle Gewichtseinheiten mit ordnungsgemäßer Präzision"
+        },
+        "versatile": {
+          "title": "Vielseitige Einheiten",
+          "description": "Unterstützt metrische, imperiale und spezialisierte Gewichtseinheiten"
+        },
+        "fast": {
+          "title": "Sofortige Ergebnisse",
+          "description": "Erhalten Sie Ihre Gewichtskonvertierungen in Sekunden"
+        }
+      }
+    }
+  }
+}

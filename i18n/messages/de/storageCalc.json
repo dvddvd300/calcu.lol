@@ -1,0 +1,44 @@
+{
+  "storageCalc": {
+    "title": "Speicher-Einheiten-Konverter",
+    "subtitle": "Konvertieren zwischen verschiedenen Speichereinheiten (Bytes, KB, MB, GB, TB, PB, etc.)",
+    "meta": {
+      "title": "Speicher-Einheiten-Konverter | Bytes, KB, MB, GB, TB konvertieren",
+      "description": "Kostenloser Speicher-Einheiten-Konverter zum Konvertieren zwischen Bytes, Kilobytes, Megabytes, Gigabytes, Terabytes, Petabytes und mehr."
+    },
+    "form": {
+      "fromValue": "Von Wert",
+      "fromValuePlaceholder": "Speichermenge eingeben",
+      "toUnit": "Zu Einheit",
+      "toUnitPlaceholder": "Zieleinheit auswählen",
+      "convert": "Speicher konvertieren",
+      "reset": "Zurücksetzen"
+    },
+    "units": {
+      "bytes": "Bytes",
+      "kb": "KB",
+      "mb": "MB",
+      "gb": "GB",
+      "tb": "TB",
+      "pb": "PB",
+      "eb": "EB",
+      "zb": "ZB",
+      "yb": "YB"
+    },
+    "result": {
+      "title": "Konvertierter Speicher",
+      "subtitle": "Speicher-Einheiten-Konvertierungsergebnis"
+    },
+    "examples": {
+      "title": "Häufige Speicher-Beispiele",
+      "photo": "Hochauflösendes Foto (5MB)",
+      "song": "MP3-Song (4MB)",
+      "video": "HD-Video (1GB)",
+      "game": "Videospiel (50GB)",
+      "photoResult": "5MB = 5,000 KB",
+      "songResult": "4MB = 4,000 KB",
+      "videoResult": "1GB = 1,000 MB",
+      "gameResult": "50GB = 50,000 MB"
+    }
+  }
+}

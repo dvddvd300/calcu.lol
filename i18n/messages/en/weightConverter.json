@@ -1,0 +1,85 @@
+{
+  "weightConverter": {
+    "title": "Weight Converter",
+    "subtitle": "Convert between different weight units",
+    "meta": {
+      "title": "Weight Converter | Convert Mass and Weight Units",
+      "description": "Free weight converter to convert between milligrams, grams, kilograms, pounds, ounces, tons, and stone with precise calculations."
+    },
+    "form": {
+      "value": "Weight",
+      "valuePlaceholder": "Enter weight value",
+      "toUnit": "Convert To",
+      "toUnitPlaceholder": "Select target unit",
+      "convert": "Convert Weight",
+      "reset": "Reset"
+    },
+    "units": {
+      "milligrams": "mg",
+      "grams": "g",
+      "kilograms": "kg",
+      "pounds": "lbs",
+      "ounces": "oz",
+      "tons": "t",
+      "stone": "st"
+    },
+    "result": {
+      "title": "Weight Conversion",
+      "subtitle": "Converted weight value",
+      "convertedFrom": "Converted from {value} {fromUnit}"
+    },
+    "examples": {
+      "title": "Weight Converter Examples",
+      "subtitle": "See how the weight converter works with different scenarios",
+      "valueLabel": "Weight",
+      "toLabel": "Convert To",
+      "result": "Result",
+      "kgToPounds": {
+        "title": "Kilograms to Pounds",
+        "description": "Convert 70 kilograms to pounds",
+        "result": "154.32 lbs"
+      },
+      "poundsToKg": {
+        "title": "Pounds to Kilograms",
+        "description": "Convert 150 pounds to kilograms",
+        "result": "68.04 kg"
+      },
+      "ouncesToGrams": {
+        "title": "Ounces to Grams",
+        "description": "Convert 16 ounces to grams",
+        "result": "453.59 g"
+      },
+      "gramsToOunces": {
+        "title": "Grams to Ounces",
+        "description": "Convert 500 grams to ounces",
+        "result": "17.64 oz"
+      },
+      "stoneToKg": {
+        "title": "Stone to Kilograms",
+        "description": "Convert 10 stone to kilograms",
+        "result": "63.50 kg"
+      },
+      "tonsToKg": {
+        "title": "Tons to Kilograms",
+        "description": "Convert 2 tons to kilograms",
+        "result": "2000.00 kg"
+      },
+      "features": {
+        "title": "Why Use Our Weight Converter?",
+        "subtitle": "Precise, versatile, and easy to use",
+        "precise": {
+          "title": "Precise Calculations",
+          "description": "Accurate conversions for all weight units with proper precision"
+        },
+        "versatile": {
+          "title": "Versatile Units",
+          "description": "Supports metric, imperial, and specialized weight units"
+        },
+        "fast": {
+          "title": "Instant Results",
+          "description": "Get your weight conversions in seconds"
+        }
+      }
+    }
+  }
+}

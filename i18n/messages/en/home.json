@@ -1,0 +1,18 @@
+{
+  "home": {
+    "title": "Free Online Calculators",
+    "subtitle": "Calculate anything with our free online tools",
+    "description": "A comprehensive collection of free calculators for everyday calculations. From speed and time to BMI and percentages.",
+    "meta": {
+      "title": "Free Online Calculators | calcu.lol",
+      "description": "Free online calculators for speed, time, BMI, percentages, and more. Calculate anything with our comprehensive collection of tools."
+    },
+    "featured": {
+      "title": "Featured Calculators",
+      "speed": "Speed Calculator",
+      "bmi": "BMI Calculator",
+      "percentage": "Percentage Calculator",
+      "tip": "Tip Calculator"
+    }
+  }
+}

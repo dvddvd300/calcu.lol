@@ -8,8 +8,44 @@ export default getRequestConfig(async ({requestLocale}) => {
     throw new Error(`Invalid locale: ${locale}`);
   }
 
+  // Load all namespace files for the locale
+  const namespaces = [
+    'common',
+    'home', 
+    'speedCalc',
+    'percentageCalc',
+    'tipCalc',
+    'storageCalc',
+    'calculators',
+    'ageCalc',
+    'dateCalc',
+    'timeCalc',
+    'distanceConverter',
+    'weightConverter',
+    'temperatureConverter',
+    'speedConverter'
+  ];
+
+  const messages = {};
+  
+  for (const namespace of namespaces) {
+    try {
+      const namespaceData = (await import(`./i18n/messages/${locale}/${namespace}.json`)).default;
+      Object.assign(messages, namespaceData);
+    } catch (error) {
+      console.warn(`Failed to load namespace ${namespace} for locale ${locale}, falling back to English:`, error instanceof Error ? error.message : String(error));
+      try {
+        // Fallback to English version
+        const namespaceData = (await import(`./i18n/messages/en/${namespace}.json`)).default;
+        Object.assign(messages, namespaceData);
+      } catch (fallbackError) {
+        console.error(`Failed to load English fallback for namespace ${namespace}:`, fallbackError instanceof Error ? fallbackError.message : String(fallbackError));
+      }
+    }
+  }
+
   return {
     locale,
-    messages: (await import(`./i18n/messages/${locale}.json`)).default
+    messages
   };
 });

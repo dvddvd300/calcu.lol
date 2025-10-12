@@ -1,0 +1,18 @@
+{
+  "home": {
+    "title": "Calculadoras Online Gratuitas",
+    "subtitle": "Calcula cualquier cosa con nuestras herramientas gratuitas",
+    "description": "Una colección completa de calculadoras gratuitas para cálculos cotidianos. Desde velocidad y tiempo hasta IMC y porcentajes.",
+    "meta": {
+      "title": "Calculadoras Online Gratuitas | calcu.lol",
+      "description": "Calculadoras online gratuitas para velocidad, tiempo, IMC, porcentajes y más. Calcula cualquier cosa con nuestra colección completa de herramientas."
+    },
+    "featured": {
+      "title": "Calculadoras Destacadas",
+      "speed": "Calculadora de Velocidad",
+      "bmi": "Calculadora de IMC",
+      "percentage": "Calculadora de Porcentaje",
+      "tip": "Calculadora de Propina"
+    }
+  }
+}

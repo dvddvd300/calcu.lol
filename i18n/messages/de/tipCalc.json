@@ -1,0 +1,30 @@
+{
+  "tipCalc": {
+    "title": "Trinkgeldrechner",
+    "subtitle": "Berechne Trinkgeldbetrag und Gesamtrechnung",
+    "meta": {
+      "title": "Trinkgeldrechner | Trinkgeldbetrag berechnen",
+      "description": "Kostenloser Trinkgeldrechner zur Berechnung des Trinkgeldbetrags und der Gesamtrechnung. Unterstützt verschiedene Trinkgeldprozentsätze."
+    },
+    "form": {
+      "billAmount": "Rechnungsbetrag",
+      "tipPercentage": "Trinkgeldprozentsatz",
+      "people": "Anzahl Personen",
+      "peopleDescription": "Rechnung zwischen mehreren Personen aufteilen",
+      "peoplePlaceholder": "Anzahl Personen",
+      "calculate": "Trinkgeld berechnen",
+      "reset": "Zurücksetzen",
+      "share": "Teilen"
+    },
+    "result": {
+      "title": "Trinkgeldberechnung",
+      "tipAmount": "Trinkgeldbetrag",
+      "totalPerPerson": "Gesamt pro Person",
+      "totalBill": "Gesamtrechnung"
+    },
+    "examples": {
+      "title": "Häufige Trinkgeld-Beispiele",
+      "subtitle": "Probiere diese häufigen Trinkgeld-Berechnungen aus, um zu sehen, wie der Rechner funktioniert"
+    }
+  }
+}

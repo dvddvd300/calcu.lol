@@ -1,0 +1,85 @@
+{
+  "weightConverter": {
+    "title": "Convertidor de Peso",
+    "subtitle": "Convierte entre diferentes unidades de peso",
+    "meta": {
+      "title": "Convertidor de Peso | Convierte Unidades de Masa y Peso",
+      "description": "Convertidor de peso gratuito para convertir entre miligramos, gramos, kilogramos, libras, onzas, toneladas y piedras con cálculos precisos."
+    },
+    "form": {
+      "value": "Peso",
+      "valuePlaceholder": "Ingresa el valor de peso",
+      "toUnit": "Convertir A",
+      "toUnitPlaceholder": "Selecciona la unidad objetivo",
+      "convert": "Convertir Peso",
+      "reset": "Reiniciar"
+    },
+    "units": {
+      "milligrams": "mg",
+      "grams": "g",
+      "kilograms": "kg",
+      "pounds": "lbs",
+      "ounces": "oz",
+      "tons": "t",
+      "stone": "st"
+    },
+    "result": {
+      "title": "Conversión de Peso",
+      "subtitle": "Valor de peso convertido",
+      "convertedFrom": "Convertido desde {value} {fromUnit}"
+    },
+    "examples": {
+      "title": "Ejemplos del Convertidor de Peso",
+      "subtitle": "Ve cómo funciona el convertidor de peso con diferentes escenarios",
+      "valueLabel": "Peso",
+      "toLabel": "Convertir A",
+      "result": "Resultado",
+      "kgToPounds": {
+        "title": "Kilogramos a Libras",
+        "description": "Convertir 70 kilogramos a libras",
+        "result": "154.32 lbs"
+      },
+      "poundsToKg": {
+        "title": "Libras a Kilogramos",
+        "description": "Convertir 150 libras a kilogramos",
+        "result": "68.04 kg"
+      },
+      "ouncesToGrams": {
+        "title": "Onzas a Gramos",
+        "description": "Convertir 16 onzas a gramos",
+        "result": "453.59 g"
+      },
+      "gramsToOunces": {
+        "title": "Gramos a Onzas",
+        "description": "Convertir 500 gramos a onzas",
+        "result": "17.64 oz"
+      },
+      "stoneToKg": {
+        "title": "Piedras a Kilogramos",
+        "description": "Convertir 10 piedras a kilogramos",
+        "result": "63.50 kg"
+      },
+      "tonsToKg": {
+        "title": "Toneladas a Kilogramos",
+        "description": "Convertir 2 toneladas a kilogramos",
+        "result": "2000.00 kg"
+      },
+      "features": {
+        "title": "¿Por qué usar nuestro Convertidor de Peso?",
+        "subtitle": "Preciso, versátil y fácil de usar",
+        "precise": {
+          "title": "Cálculos Precisos",
+          "description": "Conversiones precisas para todas las unidades de peso con precisión adecuada"
+        },
+        "versatile": {
+          "title": "Unidades Versátiles",
+          "description": "Soporta unidades métricas, imperiales y especializadas de peso"
+        },
+        "fast": {
+          "title": "Resultados Instantáneos",
+          "description": "Obtén tus conversiones de peso en segundos"
+        }
+      }
+    }
+  }
+}

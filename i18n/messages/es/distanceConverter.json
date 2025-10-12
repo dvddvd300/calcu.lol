@@ -1,0 +1,86 @@
+{
+  "distanceConverter": {
+    "title": "Convertidor de Distancia",
+    "subtitle": "Convierte entre diferentes unidades de distancia",
+    "meta": {
+      "title": "Convertidor de Distancia | Convierte Unidades de Longitud y Distancia",
+      "description": "Convertidor de distancia gratuito para convertir entre milímetros, centímetros, metros, kilómetros, pulgadas, pies, yardas y millas con cálculos precisos."
+    },
+    "form": {
+      "value": "Distancia",
+      "valuePlaceholder": "Ingresa el valor de distancia",
+      "toUnit": "Convertir A",
+      "toUnitPlaceholder": "Selecciona la unidad objetivo",
+      "convert": "Convertir Distancia",
+      "reset": "Reiniciar"
+    },
+    "units": {
+      "millimeters": "mm",
+      "centimeters": "cm",
+      "meters": "m",
+      "kilometers": "km",
+      "inches": "pulg",
+      "feet": "pies",
+      "yards": "yardas",
+      "miles": "millas"
+    },
+    "result": {
+      "title": "Conversión de Distancia",
+      "subtitle": "Valor de distancia convertido",
+      "convertedFrom": "Convertido desde {value} {fromUnit}"
+    },
+    "examples": {
+      "title": "Ejemplos del Convertidor de Distancia",
+      "subtitle": "Ve cómo funciona el convertidor de distancia con diferentes escenarios",
+      "valueLabel": "Distancia",
+      "toLabel": "Convertir A",
+      "result": "Resultado",
+      "metersToKm": {
+        "title": "Metros a Kilómetros",
+        "description": "Convertir 1000 metros a kilómetros",
+        "result": "1.00 km"
+      },
+      "feetToMeters": {
+        "title": "Pies a Metros",
+        "description": "Convertir 10 pies a metros",
+        "result": "3.05 m"
+      },
+      "milesToKm": {
+        "title": "Millas a Kilómetros",
+        "description": "Convertir 5 millas a kilómetros",
+        "result": "8.05 km"
+      },
+      "inchesToCm": {
+        "title": "Pulgadas a Centímetros",
+        "description": "Convertir 12 pulgadas a centímetros",
+        "result": "30.48 cm"
+      },
+      "yardsToMeters": {
+        "title": "Yardas a Metros",
+        "description": "Convertir 100 yardas a metros",
+        "result": "91.44 m"
+      },
+      "smallUnits": {
+        "title": "Unidades Pequeñas",
+        "description": "Convertir 1 milímetro a pulgadas",
+        "result": "0.039370 pulg"
+      },
+      "features": {
+        "title": "¿Por qué usar nuestro Convertidor de Distancia?",
+        "subtitle": "Preciso, completo y fácil de usar",
+        "accurate": {
+          "title": "Conversiones Precisas",
+          "description": "Cálculos precisos para todas las unidades de distancia con redondeo adecuado"
+        },
+        "comprehensive": {
+          "title": "Unidades Completas",
+          "description": "Soporta unidades métricas, imperiales y científicas de distancia"
+        },
+        "fast": {
+          "title": "Resultados Instantáneos",
+          "description": "Obtén tus conversiones de distancia en segundos"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "dateCalc": {
+    "title": "Calculateur de Date",
+    "subtitle": "Calculez la différence entre deux dates",
+    "meta": {
+      "title": "Calculateur de Date | Calculez les Différences de Dates",
+      "description": "Calculateur de date gratuit pour calculer la différence entre deux dates. Obtenez des résultats en jours, semaines, mois et années avec des calculs précis."
+    },
+    "form": {
+      "startDate": "Date de Début",
+      "startDatePlaceholder": "Sélectionnez la date de début",
+      "endDate": "Date de Fin",
+      "endDatePlaceholder": "Sélectionnez la date de fin",
+      "calculate": "Calculer la Différence",
+      "reset": "Réinitialiser"
+    },
+    "result": {
+      "title": "Différence de Date",
+      "subtitle": "Temps entre les deux dates",
+      "days": "jours",
+      "weeks": "semaines",
+      "months": "mois",
+      "years": "années",
+      "sameDay": "Même jour",
+      "oneDay": "1 jour",
+      "forward": "Vers l'avant dans le temps",
+      "backward": "Vers l'arrière dans le temps"
+    },
+    "examples": {
+      "title": "Exemples de Calculateur de Date",
+      "subtitle": "Voyez comment le calculateur de date fonctionne avec différents scénarios",
+      "startDateLabel": "Date de Début",
+      "endDateLabel": "Date de Fin",
+      "result": "Résultat",
+      "shortPeriod": {
+        "title": "Période Courte",
+        "description": "Calculez la différence pour quelques jours",
+        "result": "5 jours"
+      },
+      "mediumPeriod": {
+        "title": "Période Moyenne",
+        "description": "Calculez la différence pour plusieurs mois",
+        "result": "5 mois, 15 jours"
+      },
+      "longPeriod": {
+        "title": "Période Longue",
+        "description": "Calculez la différence pour plusieurs années",
+        "result": "4 années, 0 mois, 0 jours"
+      },
+      "leapYear": {
+        "title": "Année Bissextile",
+        "description": "Gère les dates d'année bissextile correctement",
+        "result": "4 années, 0 mois, 0 jours"
+      },
+      "reverseOrder": {
+        "title": "Ordre Inverse",
+        "description": "Fonctionne avec les dates dans n'importe quel ordre",
+        "result": "11 mois, 30 jours (vers l'arrière)"
+      },
+      "sameDay": {
+        "title": "Même Jour",
+        "description": "Affiche le résultat du même jour",
+        "result": "Même jour"
+      },
+      "features": {
+        "title": "Pourquoi utiliser notre Calculateur de Date ?",
+        "subtitle": "Précis, flexible et facile à utiliser",
+        "accurate": {
+          "title": "Calculs Précis",
+          "description": "Gère les années bissextiles, les différences de mois et les cas limites parfaitement"
+        },
+        "flexible": {
+          "title": "Affichage Flexible",
+          "description": "Affiche les résultats en jours, semaines, mois et années selon le cas"
+        },
+        "fast": {
+          "title": "Résultats Instantanés",
+          "description": "Obtenez vos calculs de différence de date en secondes"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "tipCalc": {
+    "title": "Tip Calculator",
+    "subtitle": "Calculate tip amount and total bill",
+    "meta": {
+      "title": "Tip Calculator | Calculate Tip Amount",
+      "description": "Free tip calculator to calculate tip amount and total bill. Supports different tip percentages."
+    },
+    "form": {
+      "billAmount": "Bill Amount",
+      "tipPercentage": "Tip Percentage",
+      "people": "Number of People",
+      "peopleDescription": "Split the bill between multiple people",
+      "peoplePlaceholder": "Number of people",
+      "calculate": "Calculate Tip",
+      "reset": "Reset",
+      "share": "Share"
+    },
+    "result": {
+      "title": "Tip Calculation",
+      "tipAmount": "Tip Amount",
+      "totalPerPerson": "Total per Person",
+      "totalBill": "Total Bill"
+    },
+    "examples": {
+      "title": "Common Tip Examples",
+      "subtitle": "Try these common tip calculations to see how the calculator works"
+    }
+  }
+}

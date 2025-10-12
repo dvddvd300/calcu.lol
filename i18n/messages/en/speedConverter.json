@@ -1,0 +1,84 @@
+{
+  "speedConverter": {
+    "title": "Speed Converter",
+    "subtitle": "Convert between different speed units",
+    "meta": {
+      "title": "Speed Converter | Convert Speed and Velocity Units",
+      "description": "Free speed converter to convert between m/s, km/h, mph, ft/s, knots, and Mach with precise calculations."
+    },
+    "form": {
+      "value": "Speed",
+      "valuePlaceholder": "Enter speed value",
+      "toUnit": "Convert To",
+      "toUnitPlaceholder": "Select target unit",
+      "convert": "Convert Speed",
+      "reset": "Reset"
+    },
+    "units": {
+      "mps": "m/s",
+      "kmh": "km/h",
+      "mph": "mph",
+      "fps": "ft/s",
+      "knots": "knots",
+      "mach": "Mach"
+    },
+    "result": {
+      "title": "Speed Conversion",
+      "subtitle": "Converted speed value",
+      "convertedFrom": "Converted from {value} {fromUnit}"
+    },
+    "examples": {
+      "title": "Speed Converter Examples",
+      "subtitle": "See how the speed converter works with different scenarios",
+      "valueLabel": "Speed",
+      "toLabel": "Convert To",
+      "result": "Result",
+      "kmhToMph": {
+        "title": "km/h to mph",
+        "description": "Convert 100 km/h to mph",
+        "result": "62.14 mph"
+      },
+      "mphToKmh": {
+        "title": "mph to km/h",
+        "description": "Convert 60 mph to km/h",
+        "result": "96.56 km/h"
+      },
+      "mpsToKmh": {
+        "title": "m/s to km/h",
+        "description": "Convert 10 m/s to km/h",
+        "result": "36.00 km/h"
+      },
+      "knotsToMph": {
+        "title": "Knots to mph",
+        "description": "Convert 30 knots to mph",
+        "result": "34.52 mph"
+      },
+      "fpsToMph": {
+        "title": "ft/s to mph",
+        "description": "Convert 88 ft/s to mph",
+        "result": "60.00 mph"
+      },
+      "machToKmh": {
+        "title": "Mach to km/h",
+        "description": "Convert 1 Mach to km/h",
+        "result": "1234.80 km/h"
+      },
+      "features": {
+        "title": "Why Use Our Speed Converter?",
+        "subtitle": "Precise, comprehensive, and easy to use",
+        "precise": {
+          "title": "Precise Calculations",
+          "description": "Accurate conversions for all speed units with proper precision"
+        },
+        "comprehensive": {
+          "title": "Comprehensive Units",
+          "description": "Supports automotive, aviation, and scientific speed units"
+        },
+        "fast": {
+          "title": "Instant Results",
+          "description": "Get your speed conversions in seconds"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "weightConverter": {
+    "title": "Convertisseur de Poids",
+    "subtitle": "Convertir entre différentes unités de poids",
+    "meta": {
+      "title": "Convertisseur de Poids | Convertir les Unités de Masse et Poids",
+      "description": "Convertisseur de poids gratuit pour convertir entre milligrammes, grammes, kilogrammes, livres, onces, tonnes et stone avec des calculs précis."
+    },
+    "form": {
+      "value": "Poids",
+      "valuePlaceholder": "Entrez la valeur de poids",
+      "toUnit": "Convertir vers",
+      "toUnitPlaceholder": "Sélectionnez l'unité cible",
+      "convert": "Convertir Poids",
+      "reset": "Réinitialiser"
+    },
+    "units": {
+      "milligrams": "mg",
+      "grams": "g",
+      "kilograms": "kg",
+      "pounds": "lbs",
+      "ounces": "oz",
+      "tons": "t",
+      "stone": "st"
+    },
+    "result": {
+      "title": "Conversion de Poids",
+      "subtitle": "Valeur de poids convertie",
+      "convertedFrom": "Converti depuis {value} {fromUnit}"
+    },
+    "examples": {
+      "title": "Exemples du Convertisseur de Poids",
+      "subtitle": "Voyez comment le convertisseur de poids fonctionne avec différents scénarios",
+      "valueLabel": "Poids",
+      "toLabel": "Convertir vers",
+      "result": "Résultat",
+      "kgToPounds": {
+        "title": "Kilogrammes vers Livres",
+        "description": "Convertir 70 kilogrammes vers livres",
+        "result": "154.32 lbs"
+      },
+      "poundsToKg": {
+        "title": "Livres vers Kilogrammes",
+        "description": "Convertir 150 livres vers kilogrammes",
+        "result": "68.04 kg"
+      },
+      "ouncesToGrams": {
+        "title": "Onces vers Grammes",
+        "description": "Convertir 16 onces vers grammes",
+        "result": "453.59 g"
+      },
+      "gramsToOunces": {
+        "title": "Grammes vers Onces",
+        "description": "Convertir 500 grammes vers onces",
+        "result": "17.64 oz"
+      },
+      "stoneToKg": {
+        "title": "Stone vers Kilogrammes",
+        "description": "Convertir 10 stone vers kilogrammes",
+        "result": "63.50 kg"
+      },
+      "tonsToKg": {
+        "title": "Tonnes vers Kilogrammes",
+        "description": "Convertir 2 tonnes vers kilogrammes",
+        "result": "2000.00 kg"
+      },
+      "features": {
+        "title": "Pourquoi utiliser notre Convertisseur de Poids ?",
+        "subtitle": "Précis, polyvalent et facile à utiliser",
+        "precise": {
+          "title": "Calculs Précis",
+          "description": "Conversions précises pour toutes les unités de poids avec précision appropriée"
+        },
+        "versatile": {
+          "title": "Unités Polyvalentes",
+          "description": "Supporte les unités métriques, impériales et spécialisées de poids"
+        },
+        "fast": {
+          "title": "Résultats Instantanés",
+          "description": "Obtenez vos conversions de poids en secondes"
+        }
+      }
+    }
+  }
+}

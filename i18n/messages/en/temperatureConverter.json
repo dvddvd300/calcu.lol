@@ -1,0 +1,82 @@
+{
+  "temperatureConverter": {
+    "title": "Temperature Converter",
+    "subtitle": "Convert between different temperature scales",
+    "meta": {
+      "title": "Temperature Converter | Convert Temperature Units",
+      "description": "Free temperature converter to convert between Celsius, Fahrenheit, Kelvin, and Rankine with precise scientific calculations."
+    },
+    "form": {
+      "value": "Temperature",
+      "valuePlaceholder": "Enter temperature value",
+      "toUnit": "Convert To",
+      "toUnitPlaceholder": "Select target scale",
+      "convert": "Convert Temperature",
+      "reset": "Reset"
+    },
+    "units": {
+      "celsius": "C",
+      "fahrenheit": "F",
+      "kelvin": "K",
+      "rankine": "R"
+    },
+    "result": {
+      "title": "Temperature Conversion",
+      "subtitle": "Converted temperature value",
+      "convertedFrom": "Converted from {value}°{fromUnit}"
+    },
+    "examples": {
+      "title": "Temperature Converter Examples",
+      "subtitle": "See how the temperature converter works with different scenarios",
+      "valueLabel": "Temperature",
+      "toLabel": "Convert To",
+      "result": "Result",
+      "celsiusToFahrenheit": {
+        "title": "Celsius to Fahrenheit",
+        "description": "Convert 25°C to Fahrenheit",
+        "result": "77.00°F"
+      },
+      "fahrenheitToCelsius": {
+        "title": "Fahrenheit to Celsius",
+        "description": "Convert 77°F to Celsius",
+        "result": "25.00°C"
+      },
+      "celsiusToKelvin": {
+        "title": "Celsius to Kelvin",
+        "description": "Convert 0°C to Kelvin",
+        "result": "273.15 K"
+      },
+      "kelvinToCelsius": {
+        "title": "Kelvin to Celsius",
+        "description": "Convert 273.15 K to Celsius",
+        "result": "0.00°C"
+      },
+      "fahrenheitToKelvin": {
+        "title": "Fahrenheit to Kelvin",
+        "description": "Convert 32°F to Kelvin",
+        "result": "273.15 K"
+      },
+      "rankineToCelsius": {
+        "title": "Rankine to Celsius",
+        "description": "Convert 491.67°R to Celsius",
+        "result": "0.00°C"
+      },
+      "features": {
+        "title": "Why Use Our Temperature Converter?",
+        "subtitle": "Scientific, accurate, and easy to use",
+        "scientific": {
+          "title": "Scientific Scales",
+          "description": "Supports all major temperature scales including Kelvin and Rankine"
+        },
+        "accurate": {
+          "title": "Accurate Conversions",
+          "description": "Precise scientific calculations for all temperature conversions"
+        },
+        "fast": {
+          "title": "Instant Results",
+          "description": "Get your temperature conversions in seconds"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "timeCalc": {
+    "title": "Zeitrechner",
+    "subtitle": "Addiere und subtrahiere Zeitwerte mit verschiedenen Einheiten",
+    "meta": {
+      "title": "Zeitrechner | Addiere und Subtrahiere Zeitwerte",
+      "description": "Kostenloser Zeitrechner zum Addieren und Subtrahieren von Zeitwerten. Unterstützt Sekunden, Minuten, Stunden und Tage mit automatischer Einheitenumrechnung."
+    },
+    "form": {
+      "time1": "Erste Zeit",
+      "time1Placeholder": "Ersten Zeitwert eingeben",
+      "time2": "Zweite Zeit",
+      "time2Placeholder": "Zweiten Zeitwert eingeben",
+      "operation": "Operation",
+      "add": "Addieren",
+      "subtract": "Subtrahieren",
+      "calculate": "Zeit Berechnen",
+      "reset": "Zurücksetzen"
+    },
+    "units": {
+      "seconds": "Sekunden",
+      "minutes": "Minuten",
+      "hours": "Stunden",
+      "days": "Tage"
+    },
+    "result": {
+      "title": "Zeitergebnis",
+      "subtitle": "Berechneter Zeitwert",
+      "added": "Zeitwerte addiert",
+      "subtracted": "Zeitwerte subtrahiert"
+    },
+    "examples": {
+      "title": "Zeitrechner Beispiele",
+      "subtitle": "Sieh, wie der Zeitrechner mit verschiedenen Szenarien funktioniert",
+      "time1Label": "Erste Zeit",
+      "time2Label": "Zweite Zeit",
+      "operationLabel": "Operation",
+      "result": "Ergebnis",
+      "addition": {
+        "title": "Zeitaddition",
+        "description": "Addiere zwei Zeitwerte",
+        "result": "2 Stunden 30 Minuten"
+      },
+      "subtraction": {
+        "title": "Zeitsubtraktion",
+        "description": "Subtrahiere einen Zeitwert von einem anderen",
+        "result": "2 Stunden 15 Minuten"
+      },
+      "mixedUnits": {
+        "title": "Gemischte Einheiten",
+        "description": "Addiere Zeitwerte mit verschiedenen Einheiten",
+        "result": "1 Tag 6 Stunden"
+      },
+      "largeNumbers": {
+        "title": "Große Zeitwerte",
+        "description": "Berechne mit großen Zeitwerten",
+        "result": "2 Tage 12 Stunden"
+      },
+      "seconds": {
+        "title": "Sekundenberechnung",
+        "description": "Arbeite mit Sekunden und Minuten",
+        "result": "1 Stunde 30 Minuten"
+      },
+      "negativeResult": {
+        "title": "Negative Ergebnisse",
+        "description": "Behandelt negative Ergebnisse durch Anzeige des Absolutwerts",
+        "result": "1 Stunde"
+      },
+      "features": {
+        "title": "Warum unseren Zeitrechner verwenden?",
+        "subtitle": "Flexibel, intelligent und einfach zu verwenden",
+        "flexible": {
+          "title": "Flexible Einheiten",
+          "description": "Unterstützt Sekunden, Minuten, Stunden und Tage mit automatischer Umrechnung"
+        },
+        "smart": {
+          "title": "Intelligente Anzeige",
+          "description": "Zeigt Ergebnisse in der am besten geeigneten Einheit mit Aufschlüsselungen"
+        },
+        "fast": {
+          "title": "Sofortige Ergebnisse",
+          "description": "Erhalte deine Zeitberechnungen in Sekunden"
+        }
+      }
+    }
+  }
+}

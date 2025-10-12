@@ -1,0 +1,84 @@
+{
+  "speedConverter": {
+    "title": "Convertidor de Velocidad",
+    "subtitle": "Convierte entre diferentes unidades de velocidad",
+    "meta": {
+      "title": "Convertidor de Velocidad | Convierte Unidades de Velocidad y Velocidad",
+      "description": "Convertidor de velocidad gratuito para convertir entre m/s, km/h, mph, ft/s, nudos y Mach con cálculos precisos."
+    },
+    "form": {
+      "value": "Velocidad",
+      "valuePlaceholder": "Ingresa el valor de velocidad",
+      "toUnit": "Convertir A",
+      "toUnitPlaceholder": "Selecciona la unidad objetivo",
+      "convert": "Convertir Velocidad",
+      "reset": "Reiniciar"
+    },
+    "units": {
+      "mps": "m/s",
+      "kmh": "km/h",
+      "mph": "mph",
+      "fps": "pies/s",
+      "knots": "nudos",
+      "mach": "Mach"
+    },
+    "result": {
+      "title": "Conversión de Velocidad",
+      "subtitle": "Valor de velocidad convertido",
+      "convertedFrom": "Convertido desde {value} {fromUnit}"
+    },
+    "examples": {
+      "title": "Ejemplos del Convertidor de Velocidad",
+      "subtitle": "Ve cómo funciona el convertidor de velocidad con diferentes escenarios",
+      "valueLabel": "Velocidad",
+      "toLabel": "Convertir A",
+      "result": "Resultado",
+      "kmhToMph": {
+        "title": "km/h a mph",
+        "description": "Convertir 100 km/h a mph",
+        "result": "62.14 mph"
+      },
+      "mphToKmh": {
+        "title": "mph a km/h",
+        "description": "Convertir 60 mph a km/h",
+        "result": "96.56 km/h"
+      },
+      "mpsToKmh": {
+        "title": "m/s a km/h",
+        "description": "Convertir 10 m/s a km/h",
+        "result": "36.00 km/h"
+      },
+      "knotsToMph": {
+        "title": "Nudos a mph",
+        "description": "Convertir 30 nudos a mph",
+        "result": "34.52 mph"
+      },
+      "fpsToMph": {
+        "title": "pies/s a mph",
+        "description": "Convertir 88 pies/s a mph",
+        "result": "60.00 mph"
+      },
+      "machToKmh": {
+        "title": "Mach a km/h",
+        "description": "Convertir 1 Mach a km/h",
+        "result": "1234.80 km/h"
+      },
+      "features": {
+        "title": "¿Por qué usar nuestro Convertidor de Velocidad?",
+        "subtitle": "Preciso, completo y fácil de usar",
+        "precise": {
+          "title": "Cálculos Precisos",
+          "description": "Conversiones precisas para todas las unidades de velocidad con precisión adecuada"
+        },
+        "comprehensive": {
+          "title": "Unidades Completas",
+          "description": "Soporta unidades de velocidad automotrices, de aviación y científicas"
+        },
+        "fast": {
+          "title": "Resultados Instantáneos",
+          "description": "Obtén tus conversiones de velocidad en segundos"
+        }
+      }
+    }
+  }
+}

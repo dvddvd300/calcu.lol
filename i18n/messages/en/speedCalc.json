@@ -1,0 +1,58 @@
+{
+  "speedCalc": {
+    "title": "Download Speed Calculator",
+    "subtitle": "Calculate download time based on file size and connection speed",
+    "meta": {
+      "title": "Download Speed Calculator | Calculate Download Time",
+      "description": "Free tool to calculate download time based on file size and internet connection speed. Supports various units and connection types."
+    },
+    "form": {
+      "fileSize": "File Size",
+      "fileSizePlaceholder": "Enter file size",
+      "speed": "Connection Speed",
+      "speedPlaceholder": "Enter connection speed",
+      "calculate": "Calculate Download Time",
+      "reset": "Reset"
+    },
+    "units": {
+      "fileSize": {
+        "bytes": "Bytes",
+        "kb": "KB",
+        "mb": "MB",
+        "gb": "GB",
+        "tb": "TB"
+      },
+      "speed": {
+        "bps": "bps",
+        "kbps": "Kbps",
+        "mbps": "Mbps",
+        "gbps": "Gbps",
+        "Bps": "B/s",
+        "KBps": "KB/s",
+        "MBps": "MB/s",
+        "GBps": "GB/s"
+      }
+    },
+    "result": {
+      "title": "Download Time",
+      "time": "Time",
+      "hours": "hours",
+      "minutes": "minutes",
+      "seconds": "seconds",
+      "days": "days",
+      "months": "months",
+      "years": "years"
+    },
+    "examples": {
+      "title": "Common Examples",
+      "movie": "HD Movie (4GB)",
+      "album": "Music Album (100MB)",
+      "game": "Video Game (50GB)",
+      "document": "PDF Document (5MB)",
+      "movieResult": "4GB at 100 Mbps = ~5 minutes",
+      "albumResult": "100MB at 50 Mbps = ~16 seconds",
+      "gameResult": "50GB at 200 Mbps = ~33 minutes",
+      "documentResult": "5MB at 25 Mbps = ~2 seconds"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "dateCalc": {
+    "title": "Date Calculator",
+    "subtitle": "Calculate the difference between two dates",
+    "meta": {
+      "title": "Date Calculator | Calculate Date Differences",
+      "description": "Free date calculator to calculate the difference between two dates. Get results in days, weeks, months, and years with precise calculations."
+    },
+    "form": {
+      "startDate": "Start Date",
+      "startDatePlaceholder": "Select start date",
+      "endDate": "End Date",
+      "endDatePlaceholder": "Select end date",
+      "calculate": "Calculate Difference",
+      "reset": "Reset"
+    },
+    "result": {
+      "title": "Date Difference",
+      "subtitle": "Time between the two dates",
+      "days": "days",
+      "weeks": "weeks",
+      "months": "months",
+      "years": "years",
+      "sameDay": "Same day",
+      "oneDay": "1 day",
+      "forward": "Forward in time",
+      "backward": "Backward in time"
+    },
+    "examples": {
+      "title": "Date Calculator Examples",
+      "subtitle": "See how the date calculator works with different scenarios",
+      "startDateLabel": "Start Date",
+      "endDateLabel": "End Date",
+      "result": "Result",
+      "shortPeriod": {
+        "title": "Short Period",
+        "description": "Calculate difference for a few days",
+        "result": "5 days"
+      },
+      "mediumPeriod": {
+        "title": "Medium Period",
+        "description": "Calculate difference for several months",
+        "result": "5 months, 15 days"
+      },
+      "longPeriod": {
+        "title": "Long Period",
+        "description": "Calculate difference for multiple years",
+        "result": "4 years, 0 months, 0 days"
+      },
+      "leapYear": {
+        "title": "Leap Year",
+        "description": "Handles leap year dates correctly",
+        "result": "4 years, 0 months, 0 days"
+      },
+      "reverseOrder": {
+        "title": "Reverse Order",
+        "description": "Works with dates in any order",
+        "result": "11 months, 30 days (backward)"
+      },
+      "sameDay": {
+        "title": "Same Day",
+        "description": "Shows same day result",
+        "result": "Same day"
+      },
+      "features": {
+        "title": "Why Use Our Date Calculator?",
+        "subtitle": "Accurate, flexible, and easy to use",
+        "accurate": {
+          "title": "Accurate Calculations",
+          "description": "Handles leap years, month differences, and edge cases perfectly"
+        },
+        "flexible": {
+          "title": "Flexible Display",
+          "description": "Shows results in days, weeks, months, and years as appropriate"
+        },
+        "fast": {
+          "title": "Instant Results",
+          "description": "Get your date difference calculations in seconds"
+        }
+      }
+    }
+  }
+}

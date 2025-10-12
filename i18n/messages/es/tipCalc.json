@@ -1,0 +1,30 @@
+{
+  "tipCalc": {
+    "title": "Calculadora de Propina",
+    "subtitle": "Calcula la cantidad de propina y el total de la cuenta",
+    "meta": {
+      "title": "Calculadora de Propina | Calcular Cantidad de Propina",
+      "description": "Calculadora de propina gratuita para calcular la cantidad de propina y el total de la cuenta. Soporta diferentes porcentajes de propina."
+    },
+    "form": {
+      "billAmount": "Monto de la Cuenta",
+      "tipPercentage": "Porcentaje de Propina",
+      "people": "Número de Personas",
+      "peopleDescription": "Divide la cuenta entre múltiples personas",
+      "peoplePlaceholder": "Número de personas",
+      "calculate": "Calcular Propina",
+      "reset": "Reiniciar",
+      "share": "Compartir"
+    },
+    "result": {
+      "title": "Cálculo de Propina",
+      "tipAmount": "Cantidad de Propina",
+      "totalPerPerson": "Total por Persona",
+      "totalBill": "Total de la Cuenta"
+    },
+    "examples": {
+      "title": "Ejemplos Comunes de Propina",
+      "subtitle": "Prueba estos cálculos comunes de propina para ver cómo funciona la calculadora"
+    }
+  }
+}

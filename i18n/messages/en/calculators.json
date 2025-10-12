@@ -1,0 +1,78 @@
+{
+  "calculators": {
+    "title": "All Calculators",
+    "subtitle": "Browse our complete collection of free online calculators",
+    "meta": {
+      "title": "All Calculators | Free Online Tools",
+      "description": "Complete collection of free online calculators organized by category. Find the perfect tool for your calculations."
+    },
+    "categories": {
+      "technology": "Technology",
+      "health": "Health & Fitness",
+      "math": "Math & Science",
+      "finance": "Finance",
+      "time": "Time & Date",
+      "conversion": "Unit Conversion"
+    },
+    "calculators": {
+      "speed": {
+        "name": "Speed Converter",
+        "description": "Convert between different speed units"
+      },
+      "storage": {
+        "name": "Storage Converter",
+        "description": "Convert between different storage units (bytes, KB, MB, GB, TB, PB, etc.)"
+      },
+      "bmi": {
+        "name": "BMI Calculator",
+        "description": "Calculate your Body Mass Index with health recommendations"
+      },
+      "percentage": {
+        "name": "Percentage Calculator",
+        "description": "Calculate percentages, increases, and decreases"
+      },
+      "tip": {
+        "name": "Tip Calculator",
+        "description": "Calculate tip amount and split bills"
+      },
+      "age": {
+        "name": "Age Calculator",
+        "description": "Calculate age and time until next birthday"
+      },
+      "time": {
+        "name": "Time Calculator",
+        "description": "Add and subtract time values"
+      },
+      "date": {
+        "name": "Date Calculator",
+        "description": "Calculate differences between dates"
+      },
+      "distance": {
+        "name": "Distance Converter",
+        "description": "Convert between different distance units"
+      },
+      "weight": {
+        "name": "Weight Converter",
+        "description": "Convert between different weight units"
+      },
+      "temperature": {
+        "name": "Temperature Converter",
+        "description": "Convert between temperature scales"
+      },
+      "unit": {
+        "name": "Unit Converter",
+        "description": "Convert between different units of measurement"
+      },
+      "currency": {
+        "name": "Currency Converter",
+        "description": "Convert between different currencies"
+      }
+    },
+    "time": {
+      "age": {
+        "name": "Age Calculator",
+        "description": "Calculate age and time until next birthday"
+      }
+    }
+  }
+}

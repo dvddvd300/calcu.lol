@@ -1,0 +1,86 @@
+{
+  "distanceConverter": {
+    "title": "Convertisseur de Distance",
+    "subtitle": "Convertir entre différentes unités de distance",
+    "meta": {
+      "title": "Convertisseur de Distance | Convertir les Unités de Longueur et Distance",
+      "description": "Convertisseur de distance gratuit pour convertir entre millimètres, centimètres, mètres, kilomètres, pouces, pieds, yards et miles avec des calculs précis."
+    },
+    "form": {
+      "value": "Distance",
+      "valuePlaceholder": "Entrez la valeur de distance",
+      "toUnit": "Convertir vers",
+      "toUnitPlaceholder": "Sélectionnez l'unité cible",
+      "convert": "Convertir Distance",
+      "reset": "Réinitialiser"
+    },
+    "units": {
+      "millimeters": "mm",
+      "centimeters": "cm",
+      "meters": "m",
+      "kilometers": "km",
+      "inches": "pouces",
+      "feet": "pieds",
+      "yards": "yards",
+      "miles": "miles"
+    },
+    "result": {
+      "title": "Conversion de Distance",
+      "subtitle": "Valeur de distance convertie",
+      "convertedFrom": "Converti depuis {value} {fromUnit}"
+    },
+    "examples": {
+      "title": "Exemples du Convertisseur de Distance",
+      "subtitle": "Voyez comment le convertisseur de distance fonctionne avec différents scénarios",
+      "valueLabel": "Distance",
+      "toLabel": "Convertir vers",
+      "result": "Résultat",
+      "metersToKm": {
+        "title": "Mètres vers Kilomètres",
+        "description": "Convertir 1000 mètres vers kilomètres",
+        "result": "1.00 km"
+      },
+      "feetToMeters": {
+        "title": "Pieds vers Mètres",
+        "description": "Convertir 10 pieds vers mètres",
+        "result": "3.05 m"
+      },
+      "milesToKm": {
+        "title": "Miles vers Kilomètres",
+        "description": "Convertir 5 miles vers kilomètres",
+        "result": "8.05 km"
+      },
+      "inchesToCm": {
+        "title": "Pouces vers Centimètres",
+        "description": "Convertir 12 pouces vers centimètres",
+        "result": "30.48 cm"
+      },
+      "yardsToMeters": {
+        "title": "Yards vers Mètres",
+        "description": "Convertir 100 yards vers mètres",
+        "result": "91.44 m"
+      },
+      "smallUnits": {
+        "title": "Petites Unités",
+        "description": "Convertir 1 millimètre vers pouces",
+        "result": "0.039370 pouces"
+      },
+      "features": {
+        "title": "Pourquoi utiliser notre Convertisseur de Distance ?",
+        "subtitle": "Précis, complet et facile à utiliser",
+        "accurate": {
+          "title": "Conversions Précises",
+          "description": "Calculs précis pour toutes les unités de distance avec arrondi approprié"
+        },
+        "comprehensive": {
+          "title": "Unités Complètes",
+          "description": "Supporte les unités métriques, impériales et scientifiques de distance"
+        },
+        "fast": {
+          "title": "Résultats Instantanés",
+          "description": "Obtenez vos conversions de distance en secondes"
+        }
+      }
+    }
+  }
+}

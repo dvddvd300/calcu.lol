@@ -1,0 +1,18 @@
+{
+  "home": {
+    "title": "Calculateurs en Ligne Gratuits",
+    "subtitle": "Calculez tout avec nos outils gratuits",
+    "description": "Une collection complète de calculateurs gratuits pour les calculs quotidiens. De la vitesse et du temps au IMC et aux pourcentages.",
+    "meta": {
+      "title": "Calculateurs en Ligne Gratuits | calcu.lol",
+      "description": "Calculateurs en ligne gratuits pour la vitesse, le temps, l'IMC, les pourcentages et plus. Calculez tout avec notre collection complète d'outils."
+    },
+    "featured": {
+      "title": "Calculateurs en Vedette",
+      "speed": "Calculateur de Vitesse",
+      "bmi": "Calculateur d'IMC",
+      "percentage": "Calculateur de Pourcentage",
+      "tip": "Calculateur de Pourboire"
+    }
+  }
+}

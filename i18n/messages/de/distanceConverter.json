@@ -1,0 +1,86 @@
+{
+  "distanceConverter": {
+    "title": "Entfernungsrechner",
+    "subtitle": "Konvertieren zwischen verschiedenen Entfernungseinheiten",
+    "meta": {
+      "title": "Entfernungsrechner | Längen- und Entfernungseinheiten konvertieren",
+      "description": "Kostenloser Entfernungsrechner zur Umrechnung zwischen Millimetern, Zentimetern, Metern, Kilometern, Zoll, Fuß, Yards und Meilen mit präzisen Berechnungen."
+    },
+    "form": {
+      "value": "Entfernung",
+      "valuePlaceholder": "Entfernungswert eingeben",
+      "toUnit": "Konvertieren zu",
+      "toUnitPlaceholder": "Zieleinheit auswählen",
+      "convert": "Entfernung konvertieren",
+      "reset": "Zurücksetzen"
+    },
+    "units": {
+      "millimeters": "mm",
+      "centimeters": "cm",
+      "meters": "m",
+      "kilometers": "km",
+      "inches": "Zoll",
+      "feet": "Fuß",
+      "yards": "Yards",
+      "miles": "Meilen"
+    },
+    "result": {
+      "title": "Entfernungskonvertierung",
+      "subtitle": "Konvertierter Entfernungswert",
+      "convertedFrom": "Konvertiert von {value} {fromUnit}"
+    },
+    "examples": {
+      "title": "Entfernungsrechner Beispiele",
+      "subtitle": "Sehen Sie, wie der Entfernungsrechner mit verschiedenen Szenarien funktioniert",
+      "valueLabel": "Entfernung",
+      "toLabel": "Konvertieren zu",
+      "result": "Ergebnis",
+      "metersToKm": {
+        "title": "Meter zu Kilometer",
+        "description": "1000 Meter zu Kilometer konvertieren",
+        "result": "1.00 km"
+      },
+      "feetToMeters": {
+        "title": "Fuß zu Meter",
+        "description": "10 Fuß zu Meter konvertieren",
+        "result": "3.05 m"
+      },
+      "milesToKm": {
+        "title": "Meilen zu Kilometer",
+        "description": "5 Meilen zu Kilometer konvertieren",
+        "result": "8.05 km"
+      },
+      "inchesToCm": {
+        "title": "Zoll zu Zentimeter",
+        "description": "12 Zoll zu Zentimeter konvertieren",
+        "result": "30.48 cm"
+      },
+      "yardsToMeters": {
+        "title": "Yards zu Meter",
+        "description": "100 Yards zu Meter konvertieren",
+        "result": "91.44 m"
+      },
+      "smallUnits": {
+        "title": "Kleine Einheiten",
+        "description": "1 Millimeter zu Zoll konvertieren",
+        "result": "0.039370 Zoll"
+      },
+      "features": {
+        "title": "Warum unseren Entfernungsrechner verwenden?",
+        "subtitle": "Präzise, umfassend und einfach zu verwenden",
+        "accurate": {
+          "title": "Präzise Konvertierungen",
+          "description": "Präzise Berechnungen für alle Entfernungseinheiten mit ordnungsgemäßer Rundung"
+        },
+        "comprehensive": {
+          "title": "Umfassende Einheiten",
+          "description": "Unterstützt metrische, imperiale und wissenschaftliche Entfernungseinheiten"
+        },
+        "fast": {
+          "title": "Sofortige Ergebnisse",
+          "description": "Erhalten Sie Ihre Entfernungskonvertierungen in Sekunden"
+        }
+      }
+    }
+  }
+}

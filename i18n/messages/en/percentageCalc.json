@@ -1,0 +1,21 @@
+{
+  "percentageCalc": {
+    "title": "Percentage Calculator",
+    "subtitle": "Calculate percentages easily",
+    "meta": {
+      "title": "Percentage Calculator | Calculate Percentages",
+      "description": "Free percentage calculator for all your percentage calculations. Calculate percentage increase, decrease, and more."
+    },
+    "form": {
+      "value": "Value",
+      "percentage": "Percentage",
+      "calculate": "Calculate",
+      "reset": "Reset"
+    },
+    "result": {
+      "title": "Result",
+      "percentage": "Percentage",
+      "value": "Value"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "distanceConverter": {
+    "title": "Distance Converter",
+    "subtitle": "Convert between different distance units",
+    "meta": {
+      "title": "Distance Converter | Convert Length and Distance Units",
+      "description": "Free distance converter to convert between millimeters, centimeters, meters, kilometers, inches, feet, yards, and miles with precise calculations."
+    },
+    "form": {
+      "value": "Distance",
+      "valuePlaceholder": "Enter distance value",
+      "toUnit": "Convert To",
+      "toUnitPlaceholder": "Select target unit",
+      "convert": "Convert Distance",
+      "reset": "Reset"
+    },
+    "units": {
+      "millimeters": "mm",
+      "centimeters": "cm",
+      "meters": "m",
+      "kilometers": "km",
+      "inches": "in",
+      "feet": "ft",
+      "yards": "yd",
+      "miles": "mi"
+    },
+    "result": {
+      "title": "Distance Conversion",
+      "subtitle": "Converted distance value",
+      "convertedFrom": "Converted from {value} {fromUnit}"
+    },
+    "examples": {
+      "title": "Distance Converter Examples",
+      "subtitle": "See how the distance converter works with different scenarios",
+      "valueLabel": "Distance",
+      "toLabel": "Convert To",
+      "result": "Result",
+      "metersToKm": {
+        "title": "Meters to Kilometers",
+        "description": "Convert 1000 meters to kilometers",
+        "result": "1.00 km"
+      },
+      "feetToMeters": {
+        "title": "Feet to Meters",
+        "description": "Convert 10 feet to meters",
+        "result": "3.05 m"
+      },
+      "milesToKm": {
+        "title": "Miles to Kilometers",
+        "description": "Convert 5 miles to kilometers",
+        "result": "8.05 km"
+      },
+      "inchesToCm": {
+        "title": "Inches to Centimeters",
+        "description": "Convert 12 inches to centimeters",
+        "result": "30.48 cm"
+      },
+      "yardsToMeters": {
+        "title": "Yards to Meters",
+        "description": "Convert 100 yards to meters",
+        "result": "91.44 m"
+      },
+      "smallUnits": {
+        "title": "Small Units",
+        "description": "Convert 1 millimeter to inches",
+        "result": "0.039370 in"
+      },
+      "features": {
+        "title": "Why Use Our Distance Converter?",
+        "subtitle": "Accurate, comprehensive, and easy to use",
+        "accurate": {
+          "title": "Accurate Conversions",
+          "description": "Precise calculations for all distance units with proper rounding"
+        },
+        "comprehensive": {
+          "title": "Comprehensive Units",
+          "description": "Supports metric, imperial, and scientific distance units"
+        },
+        "fast": {
+          "title": "Instant Results",
+          "description": "Get your distance conversions in seconds"
+        }
+      }
+    }
+  }
+}
