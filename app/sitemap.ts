@@ -10,7 +10,7 @@ export default function sitemap() {
     url: `https://calcu.lol/en`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
-    priority: 1.0,
+    priority: '1.0',
     alternates: {
       languages: Object.fromEntries(
         routing.locales.map(l => [
@@ -27,7 +27,7 @@ export default function sitemap() {
     url: `https://calcu.lol/en${calculatorsPath}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
-    priority: 0.9,
+    priority: '0.9',
     alternates: {
       languages: Object.fromEntries(
         routing.locales.map(l => {
@@ -51,7 +51,7 @@ export default function sitemap() {
         url: `https://calcu.lol/en${primaryPath}`,
         lastModified: new Date(),
         changeFrequency: 'monthly' as const,
-        priority: 0.8,
+        priority: '0.8',
         alternates: {
           languages: Object.fromEntries(
             routing.locales.map(l => {
